@@ -1,0 +1,36 @@
+:root {
+    --main-text-color: black;
+    --title-text-color: #14017D;
+    --accent-color: rgb(53, 194, 291);
+    --btn-bck-color: #D588FA;
+}
+/* основний колір  #14017D */
+/* другорядний колір background: #000000 */
+
+body {
+    color: var(--main-text-color);
+    background-color: #FBDCF9;
+}
+
+.list {
+    list-style: none;
+}
+
+/* site nav */
+
+.site-nav a {
+    color: var(--title-text-color);
+}
+
+.site-nav a:hover,
+.site-nav a:focus {
+    color: var(--accent-color);
+}
+.site-nav .link.current {
+    color: var(--accent-color);
+}
+
+/* section */
+.section-title {
+    color: var(--title-text-color);
+}
