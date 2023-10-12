@@ -8,17 +8,53 @@
 /* другорядний колір background: #000000 */
 
 body {
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    /* letter-spacing: auto; */
+
     color: var(--main-text-color);
     background-color: #FBDCF9;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Amatic SC, sans-serif;
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 1.21;
+    text-align: center;
+
+    color: var(--title-text-color);
 }
 
 .list {
     list-style: none;
 }
 
+.btn {
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    padding: 23px 95px;
+
+    color: var(--main-text-color);
+    background-color: var(--btn-bck-color);
+}
+
 /* site nav */
+.site-nav {
+    display: flex;
+    gap: 104px;
+    text-align: justify;
+}
 
 .site-nav a {
+    font-family: Amatic SC, sans-serif;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: auto;
+    text-decoration: none;
+
     color: var(--title-text-color);
 }
 
@@ -31,6 +67,46 @@ body {
 }
 
 /* section */
-.section-title {
+
+.text {
+    font-size: 48px;
+}
+
+/* hero */
+
+.hero-title {
+    font-size: 64px;
+}
+
+/* FOOTER */ 
+
+.footer-text {
+    font-family: Amatic SC, sans-serif;
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 1.21;
+    text-decoration: none;
+
     color: var(--title-text-color);
+
+}
+/* HISTORIES PAGE */
+
+.history-text {
+    font-size: 48px;
+
+    color: var(--title-text-color);
+}
+.text-decoration {
+    font-size: 48px;
+}
+.text-decoration::before {
+        content: '';
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        border-radius: 6px;
+        margin-right: 15px;
+        margin-bottom: 10px;
+        background-color: var(--main-text-color);
 }
