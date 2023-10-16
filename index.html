@@ -14,15 +14,17 @@
 </head>
 <body>
     <header>
-        <a href="./index.html"><img src="./images/StarLogo.svg" alt="лого школи"/></a>
-        <nav class="container">
-            <ul class="site-nav list">
-                <li><a href="./doodle_sketch.html">Дудл у скетчі</a></li>
-                <li><a href="./doodle_procreate.html">Дудл у Procreate</a></li>
-                <li><a href="./doodle_nft.html">Дудл NFT</a></li>
-            </ul>
-        </nav>
-        <img src="./images/bucket.svg" alt="кошик"/>
+        <div class="container header">
+            <a href="./index.html"><img src="./images/StarLogo.svg" alt="лого школи" /></a>
+            <nav>
+                <ul class="site-nav list">
+                    <li><a href="./doodle_sketch.html">Дудл у скетчі</a></li>
+                    <li><a href="./doodle_procreate.html">Дудл у Procreate</a></li>
+                    <li><a href="./doodle_nft.html">Дудл NFT</a></li>
+                </ul>
+            </nav>
+            <img class="item" src="./images/bucket.svg" alt="кошик" />
+        </div>
     </header>
     <main>
         <!-- Hero section-->
@@ -33,24 +35,24 @@
             </div>
         </section>
         <!-- Opportunities -->
-        <section class="section">
+        <section class="section description">
             <div class="container">
                 <h2 class="section-title">У школі ти зможеш</h2>
-                <ul>
-                    <li>Прокачати свою уяву.</li>
-                    <li>Знайти свій стиль.</li>
-                    <li>Вигадати своїх героїв, написати їхні історії та створити неповторний світ.</li>
-                    <li>Малювати та анімувати в Procreate на IPad.</li>
-                    <li>Зробити свої наклейки та стікери в телеграм.</li>
-                    <li>Створити свою першу NFT-колецію та розпочати її продаж.</li>
+                <ul class="list description-list">
+                    <li class="item">Прокачати свою уяву.</li>
+                    <li class="item">Малювати та анімувати в Procreate на IPad. </li>
+                    <li class="item">Знайти свій стиль.</li>
+                    <li class="item">Зробити свої наклейки та стікери в телеграм.</li>
+                    <li class="item">Вигадати своїх героїв, написати їхні історії та створити неповторний світ.</li>
+                    <li class="item">Створити свою першу NFT-колецію та розпочати її продаж.</li>
                 </ul>
             </div>
         </section>
         <!-- For whom this school -->
-        <section class="section">
+        <section class="section belong">
             <div class="container">
                 <h2 class="section-title">Для кого ця школа</h2>
-                <p>Школа буде корисна, якщо ти</p>
+                <p class="history-text">Школа буде корисна, якщо ти</p>
                 <ul>
                     <li>художник</li>
                     <li>графічний дизайнер</li>
@@ -64,11 +66,11 @@
             </div>
         </section>
         <!-- Courses -->
-        <section class="section">
+        <section class="section courses">
             <div class="container">
                 <h2 class="section-title">Курси</h2>
-                <ul class="list">
-                    <li>
+                <ul class="list courses-list">
+                    <li class="courses-item">
                         <h3 class="courses-text">Дудл у скетчі</h3>
                         <img src="./images/sketch.jpg" alt="довільний малюнок" />
                         <p>1000грн</p>
@@ -90,7 +92,7 @@
             </div>
         </section>
         <!-- format of lessons -->
-        <section class="section">
+        <section class="section format">
             <div class="container">
                 <h2 class="section-title">У якому форматі відбуваються уроки</h2>
                 <ul>
@@ -109,7 +111,7 @@
             </div>
         </section>
         <!-- reviews of our students -->
-        <section class="section">
+        <section class="section reviews">
             <div class="container">
                 <h2 class="section-title">Відгуки студентів які закінчили курси</h2>
                 <p>Тут історії студентів про те, як склалося їх життя після курсів.
@@ -118,7 +120,7 @@
             </div>
         </section>
         <!-- help -->
-        <section class="section">
+        <section class="section help">
             <div class="container">
                 <h2 class="section-title">Якщо знадобиться допомога та є питання</h2>
                 <button type="button" class="btn">Задати питання</button>
@@ -127,23 +129,25 @@
     </main>
     <footer>
         <div class="container">
-            <ul class="list">
-                <li class="footer-text">Про нас</li>
-                <li class="footer-text">Онлайн-курси</li>
-            </ul>
-            <a href="./index.html" class="footer-text"><img src="./images/StarLogo.svg" />Школа
-                Чаклунства</a>
-            <ul class="list">
-                <li>
-                    <a href="https://www.facebook.com/" target="_blank" rel="noreferrer noopener">facebook</a>
-                </li>
-                <li>
-                    <a href="https://www.facebook.com/" target="_blank" rel="noreferrer noopener">telegram</a>
-                </li>
-                <li>
-                    <a href="https://www.facebook.com/" target="_blank" rel="noreferrer noopener">instagram</a>
-                </li>
-            </ul>
+            <div class="flex">
+                <ul class="list">
+                    <li class="footer-text">Про нас</li>
+                    <li class="footer-text">Онлайн-курси</li>
+                </ul>
+                <a href="./index.html" class="footer-text logo"><img src="./images/StarLogo.svg" alt="зірочка-лого" width="110"/>Школа
+                    Чаклунства</a>
+                <ul class="list">
+                    <li>
+                        <a href="https://www.facebook.com/" target="_blank" rel="noreferrer noopener">facebook</a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/" target="_blank" rel="noreferrer noopener">telegram</a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/" target="_blank" rel="noreferrer noopener">instagram</a>
+                    </li>
+                </ul>
+            </div>
             <p class="footer-text">Слідкувати за новинами</p>
         </div>
     </footer>
