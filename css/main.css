@@ -203,7 +203,7 @@ img {
     text-align: center;
 }
 
-/*FORMAR OF LESSONS */
+/*FORMAT OF LESSONS */
 
 .format h2 {
     margin-bottom: 95px;
@@ -265,7 +265,138 @@ img {
     justify-content: space-around;
     margin-bottom: 55px;
 }
+
+/* DOODLE SKETCH */
+
+.hero-sketch {
+    text-align: center;
+}
+
+.hero-sketch h2 {
+    margin-bottom: 44px;
+}
+
+.about-flex {
+    display: flex;
+    align-items: center;
+}
+
+.sketch-about p {
+    margin-left: 30px;
+    margin-bottom: 70px;
+}
+
+.sketch-about li:not(:last-child) {
+    margin-bottom: 60px;
+}
+
+.sketch-examples {
+    display: flex;
+    gap: 24px;
+    margin-top: 81px;
+}
+
+.sketch-title {
+    margin-bottom: 81px;
+}
+
+.sketch-text:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.sketch-works {
+    display: flex;
+    gap: 24px;
+}
+
+.sketch-teacher {
+    display: flex;
+    justify-content: space-between;
+}
+
+.teacher-item {
+    width: 632px;
+}
+
+/* PROCREATE PAGE */
+
+.procreate-hero {
+    text-align: center;
+}
+
+.procreate-hero h2 {
+    margin-bottom: 67px;
+}
+
+.procreate-about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.procreate-about p {
+    margin-bottom: 30px;
+}
+
+.procreate-about li:not(:last-child) {
+    margin-bottom: 35px;
+}
+
+.procreate-examples {
+    display: flex;
+    gap: 24px;
+}
+
+.procreate-works {
+    display: flex;
+    gap: 24px;
+}
+
+.procreate-teacher {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* NFT PAGE */
+
+.nft-about {
+    display: flex;
+}
+
+.nft-about p {
+    margin-bottom: 70px;
+}
+
+.nft-about li:not(:last-child) {
+    margin-bottom: 40px;
+}
+
+.nft-examples {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.nft-works {
+    display: flex;
+    gap: 24px;
+}
+
+.nft-teacher {
+    display: flex;
+    justify-content: space-between;
+}
+
 /* HISTORIES PAGE */
+
+.history-hero {
+    text-align: center;
+}
+
+.histories {
+    align-items: center;
+}
 
 .history-text {
     font-size: 48px;
