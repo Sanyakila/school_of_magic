@@ -394,8 +394,29 @@ img {
     text-align: center;
 }
 
-.histories {
-    align-items: center;
+.histories p,
+.histories img:nth-last-child(n + 3) {
+   margin-bottom: 35px;
+   margin-left: 225px;
+}
+
+.histories .text-history {
+    margin-left: 0;
+    margin-bottom: 100px;
+}
+.histories .text-decoration {
+    margin-left: 260px;
+    margin-bottom: 88px;
+}
+
+.histories-flex {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 79px;
+}
+
+.text-history {
+    margin-left: 0;
 }
 
 .history-text {
