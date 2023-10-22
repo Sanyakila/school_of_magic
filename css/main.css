@@ -138,6 +138,9 @@ img {
 .hero-title {
     font-size: 64px;
 }
+.hero .hero-title {
+    margin-bottom: 80px;
+}
 
 /* OPPORTUNITIES */
 
@@ -223,8 +226,24 @@ img {
     margin-bottom: 85px;
 }
 
-.reviews p {
-    margin-bottom: 150px;
+.reviews-box {
+    height: 466px;
+    margin-bottom: 148px;
+    
+    background-image: url("../images/reviews.png");
+    background-color: #FBDCF9;
+    overflow: hidden;
+}
+
+.reviews-box p {
+    display: inline-block;
+    text-align: left;
+    padding: 45px;
+    margin-top: 71px;
+    width: 890px;
+    height: 324px;
+
+    background-color: #FBDCF9;
 }
 
 /* HELP */
@@ -242,6 +261,11 @@ img {
 }
 
 /* FOOTER */ 
+
+.footer {
+    max-width: 1439px;
+    background-image: url("../images/footer-bck.png");
+}
 
 .footer-text {
     font-family: Amatic SC, sans-serif;
@@ -262,8 +286,12 @@ img {
 
 .flex {
     display: flex;
-    justify-content: space-around;
     margin-bottom: 55px;
+}
+
+.flex > ul {
+    margin-left: 94px;
+    margin-right: 18px;
 }
 
 /* DOODLE SKETCH */
