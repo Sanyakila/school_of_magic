@@ -268,21 +268,20 @@ img {
 }
 
 .footer-text {
+    display: inline-block;
+
     font-family: Amatic SC, sans-serif;
     font-weight: 700;
     font-size: 96px;
-    line-height: 1.21;
+   
     text-decoration: none;
-    text-align: center;
 
     color: var(--title-text-color);
     background-color: #D9D9D9;
+    border-radius: 20px;
 
 }
 
-.logo {
-    width: 360px;
-}
 
 .flex {
     display: flex;
@@ -290,17 +289,42 @@ img {
 }
 
 .flex > ul {
-    margin-left: 94px;
-    margin-right: 18px;
+    width: 420px;
 }
 
+.footer-item {
+    margin-bottom: 11px;
+}
+
+.footer p {
+   margin-left: 253px;
+}
+
+.socials-list {
+    display: flex;
+    gap: 48px;
+    margin-left: auto;
+}
+
+.social-link {
+    color: var(--title-text-color);
+}
+
+.icon {
+    fill: currentColor;
+}
+
+.icon:hover,
+.icon:focus {
+    fill: var(--accent-color);
+}
 /* DOODLE SKETCH */
 
 .hero-sketch {
     text-align: center;
 }
 
-.hero-sketch h2 {
+.hero-sketch h3 {
     margin-bottom: 44px;
 }
 
@@ -352,7 +376,7 @@ img {
     text-align: center;
 }
 
-.procreate-hero h2 {
+.procreate-hero h3 {
     margin-bottom: 67px;
 }
 
