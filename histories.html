@@ -13,19 +13,20 @@
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-<header>
-    <div class="container header">
-        <a href="./index.html"><img src="./images/StarLogo.svg" alt="лого школи" /></a>
-        <nav>
-            <ul class="site-nav list">
-                <li><a href="./doodle_sketch.html">Дудл у скетчі</a></li>
-                <li><a href="./doodle_procreate.html">Дудл у Procreate</a></li>
-                <li><a href="./doodle_nft.html">Дудл NFT</a></li>
-            </ul>
-        </nav>
-        <img class="bucket" src="./images/bucket.svg" alt="кошик" />
-    </div>
-</header>
+<div class="histories-bck">
+    <header>
+        <div class="container header">
+            <a href="./index.html"><img src="./images/StarLogo.svg" alt="лого школи" /></a>
+            <nav>
+                <ul class="site-nav list">
+                    <li><a href="./doodle_sketch.html">Дудл у скетчі</a></li>
+                    <li><a href="./doodle_procreate.html">Дудл у Procreate</a></li>
+                    <li><a href="./doodle_nft.html">Дудл NFT</a></li>
+                </ul>
+            </nav>
+            <img class="bucket" src="./images/bucket.svg" alt="кошик" />
+        </div>
+    </header>
     <main>
         <!-- Hero section -->
         <section class="section history-hero">
@@ -35,7 +36,7 @@
                 <img src="./images/histories/hero.jpg" alt="дизайнерський малюнок" width="1280" />
             </div>
         </section>
-
+    
         <!-- Histories section -->
         <section class="section histories">
             <div class="container">
@@ -45,7 +46,8 @@
                         <img src="./images/histories/kate.jpg" alt="дизайнерський малюнок" width="844" />
                         <p class="history-text">Пройшла курс:</p>
                         <p class="text-decoration">Дудл у скетчі</p>
-                        <p class="text text-history">Навчилася малювати з нуля, вигадую історії, героїв та казкові світи. На курсі познайомилась з
+                        <p class="text text-history">Навчилася малювати з нуля, вигадую історії, героїв та казкові світи. На
+                            курсі познайомилась з
                             цікавими людьми та навіть
                             знайшла друзів, з котрими влаштовуємо творчі Zoom-тусовки.</p>
                     </li>
@@ -54,7 +56,8 @@
                         <img src="./images/histories/dasha.jpg" alt="дизайнерський малюнок" width="844" />
                         <p class="history-text">Пройшла курс:</p>
                         <p class="text-decoration">Дудл у Procreate</p>
-                        <p class="text text-history">Після закінчення курсів відкрила свій онлайн-магазин, в якому продаю свої наклейки, та листівки.
+                        <p class="text text-history">Після закінчення курсів відкрила свій онлайн-магазин, в якому продаю
+                            свої наклейки, та листівки.
                             Також малюю
                             дудл-ілюстрації на замовлення.</p>
                     </li>
@@ -66,32 +69,50 @@
                         </div>
                         <p class="history-text">Пройшов курс:</p>
                         <p class="text-decoration">Дудл NFT</p>
-                        <p class="text text-history">На курсі створив свою першу Дудл NFT колекцію, яку вдало продав. Наразі працюю над створенням
+                        <p class="text text-history">На курсі створив свою першу Дудл NFT колекцію, яку вдало продав. Наразі
+                            працюю над створенням
                             нових Дудл NFT колекцій.</p>
                     </li>
                 </ul>
             </div>
         </section>
     </main>
-    <footer>
+</div>
+    <footer class="section footer">
         <div class="container">
-            <ul class="list">
-                <li class="footer-text">Про нас</li>
-                <li class="footer-text">Онлайн-курси</li>
-            </ul>
-            <a href="./index.html" class="footer-text"><img src="./images/StarLogo.svg" />Школа
-                Чаклунства</a>
-            <ul class="list">
-                <li>
-                    <a href="https://www.facebook.com/" target="_blank" rel="noreferrer noopener">facebook</a>
-                </li>
-                <li>
-                    <a href="https://www.facebook.com/" target="_blank" rel="noreferrer noopener">telegram</a>
-                </li>
-                <li>
-                    <a href="https://www.facebook.com/" target="_blank" rel="noreferrer noopener">instagram</a>
-                </li>
-            </ul>
+            <div class="flex">
+                <ul class="list">
+                    <li class="footer-text footer-item">Про нас</li>
+                    <li class="footer-text">Онлайн-курси</li>
+                </ul>
+                <a href="./index.html"><img src="./images/logo-footer.png" alt="зірочка-лого" width="360" /></a>
+                <ul class="list socials-list">
+                    <li>
+                        <a class="social-link" href="https://www.facebook.com/" target="_blank"
+                            rel="nofollow noreferrer noopener" aria-label="facebook icon">
+                            <svg class="icon" width="100" height="100">
+                                <use href="./images/sprite.svg#facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="social-link" href="https://web.telegram.org/k/" target="_blank"
+                            rel="nofollow noreferrer noopener" aria-label="telegram icon">
+                            <svg class="icon" width="100" height="100">
+                                <use href="./images/sprite.svg#telegram-5"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="social-link" href="https://www.instagram.com/" target="_blank"
+                            rel="nofollow noreferrer noopener" aria-label="instagram icon">
+                            <svg class="icon" width="100" height="100">
+                                <use href="./images/sprite.svg#Instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
             <p class="footer-text">Слідкувати за новинами</p>
         </div>
     </footer>

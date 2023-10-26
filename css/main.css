@@ -85,7 +85,7 @@ img {
 }
 
 .container {
-    width: 1302px;
+    width: 1304px;
     margin: 0 auto;
     padding-left: 12px;
     padding-right: 12px;
@@ -384,6 +384,17 @@ img {
 }
 /* DOODLE SKETCH */
 
+.sketch-bck {
+    width: 1440px;
+    padding-left: 12px;
+    padding-right: 12px;
+
+    background-image: url("../images/doodle_sketch/elipses/Ellipse1-min.png"), url('../images/doodle_sketch/elipses/Ellipse2-min.png'), url("../images/doodle_sketch/elipses/Ellipse3-min.png"), url("../images/doodle_sketch/elipses/Ellipse4-min.png"), url("../images/doodle_sketch/elipses/Ellipse5-min.png"), url("../images/doodle_sketch/elipses/Ellipse6-min.png");
+    background-repeat: no-repeat;
+    background-position: 178px 119px, 1111px 47px, 260px 1100px, 900px 2780px, 265px 3610px, 16px 5300px;
+}
+
+
 .hero-sketch {
     text-align: center;
 }
@@ -436,6 +447,17 @@ img {
 
 /* PROCREATE PAGE */
 
+.procreate-bck {
+    width: 1440px;
+    padding-left: 12px;
+    padding-right: 12px;
+    
+    background-image: url("../images/doodle_procreate/elipses/Ellipse1-min.png"), url("../images/doodle_procreate/elipses/Ellipse2-min.png"), url("../images/doodle_procreate/elipses/Ellipse3-min.png"), url("../images/doodle_procreate/elipses/Ellipse4-min.png"), url("../images/doodle_procreate/elipses/Ellipse5-min.png"), url("../images/doodle_procreate/elipses/Ellipse6-min.png"), url("../images/doodle_procreate/elipses/Ellipse7-min.png");
+    background-repeat: no-repeat;
+    background-position: 153px 170px, 705px 0px, 0px 1300px, 858px 2100px, 115px 3500px, 160px 5430px, 610px 5170px;
+
+}
+
 .procreate-hero {
     text-align: center;
 }
@@ -472,9 +494,31 @@ img {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 100px;
 }
 
 /* NFT PAGE */
+
+.nft-bck {
+    width: 1440px;
+    padding-left: 12px;
+    padding-right: 12px;
+
+    background-image: 
+    url("../images/doodle_nft/elipses/Ellipse1-min.png"), 
+    url("../images/doodle_nft/elipses/Ellipse2-min.png"),
+    url("../images/doodle_nft/elipses/Ellipse3-min.png"), 
+    url("../images/doodle_nft/elipses/Ellipse4-min.png"), 
+    url("../images/doodle_nft/elipses/Ellipse5-min.png"), 
+    url("../images/doodle_nft/elipses/Ellipse6-min.png"), 
+    url("../images/doodle_nft/elipses/Ellipse7-min.png"),
+    url("../images/doodle_nft/elipses/Ellipse8-min.png"),
+    url("../images/doodle_nft/elipses/Ellipse9-min.png");
+
+    background-repeat: no-repeat;
+    background-position: 60px 120px, 1040px 43px, 134px 1200px, 626px 2390px, 115px 3520px, 1000px 4520px, 110px 5290px, 100px 6315px, 750px 6330px;
+
+}
 
 .nft-about {
     display: flex;
@@ -505,6 +549,25 @@ img {
 }
 
 /* HISTORIES PAGE */
+
+.histories-bck {
+    width: 1440px;
+    padding-left: 12px;
+    padding-right: 12px;
+
+    background-image:
+        url("../images/histories/elipses/Ellipse1-min.png"),
+        url("../images/histories/elipses/Ellipse2-min.png"),
+        url("../images/histories/elipses/Ellipse3-min.png"),
+        url("../images/histories/elipses/Ellipse4-min.png"),
+        url("../images/histories/elipses/Ellipse5-min.png"),
+        url("../images/histories/elipses/Ellipse6-min.png");
+        
+
+    background-repeat: no-repeat;
+    background-position: 120px 120px, 1080px 71px, 716px 1039px, 32px 2190px, 670px 3360px, 63px 4420px;
+
+}
 
 .history-hero {
     text-align: center;
