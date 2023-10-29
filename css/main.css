@@ -16,6 +16,11 @@ body {
     background-color: #FBDCF9;
 }
 .index-bck {
+    width: 1440px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin: 0 auto;
+
     background-image: url("../images/elipses/Ellipse\ 24.png"), url('../images/elipses/Ellipse\ 25.png'), url("../images/elipses/Ellipse\ 26.png"), url("../images/elipses/Ellipse\ 27.png"), url("../images/elipses/Ellipse\ 28.png"), url("../images/elipses/Ellipse\ 29.png");
     background-repeat: no-repeat;
     background-position: 923px 22px, 768px 1915px, 124px 2831px, 748px 3870px, 64px 5570px, 963px 5531px;
@@ -39,6 +44,10 @@ img {
     display: block;
 }
 
+a {
+    cursor: url("../images/icomoon/magic-wand_5606317.png"), pointer;
+}
+
 .list {
     padding: 0;
     margin: 0;
@@ -55,10 +64,13 @@ img {
     
     border: none;
     border-radius: 50px;
-    cursor: pointer;
+    cursor: url("../images/icomoon/magic-wand_5606317.png"), pointer;
 
     color: var(--title-text-color);
     background-color: var(--btn-bck-color);
+
+    transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 400ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
 .btn-link {
@@ -70,10 +82,13 @@ img {
     
     border: none;
     border-radius: 50px;
-    cursor: pointer;
+    cursor: url("../images/icomoon/magic-wand_5606317.png"), pointer;
 
     color: var(--title-text-color);
     background-color: var(--btn-bck-color);
+
+    transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1),
+        color 400ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-link:hover,
@@ -98,8 +113,8 @@ img {
 
 .site-nav {
     display: flex;
-    margin-left: 104px;
-    gap: 104px;
+    margin-left: 44px;
+    gap: 44px;
 }
 
 .header .bucket {
@@ -107,25 +122,51 @@ img {
 }
 
 .site-nav a {
-    display:block;
+    display: flex;
+    align-items: center;
     padding-top: 22px;
     padding-bottom: 22px;
 
     font-family: Amatic SC, sans-serif;
     font-weight: 700;
     font-size: 64px;
-    line-height: auto;
     text-decoration: none;
+    overflow: hidden;
 
     color: var(--title-text-color);
+
+    transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .site-nav a:hover,
 .site-nav a:focus {
     color: var(--accent-color);
 }
+
+.nav-link:nth-child(1):hover .nav-icon,
+.nav-link:nth-child(1):focus .nav-icon {
+    opacity: 1;
+    transform: translateX(510%);
+}
+.nav-link:nth-child(2):hover .nav-icon,
+.nav-link:nth-child(2):focus .nav-icon {
+    opacity: 1;
+    transform: translateX(620%);
+}
+.nav-link:nth-child(3):hover .nav-icon,
+.nav-link:nth-child(3):focus .nav-icon {
+    opacity: 1;
+    transform: translateX(380%);
+}
 .site-nav .link.current {
     color: var(--accent-color);
+}
+
+.nav-icon {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 1800ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* section */
@@ -328,6 +369,7 @@ img {
 
 .footer {
     max-width: 1439px;
+    margin: 0 auto;
     background-image: url("../images/footer-bck.png");
 }
 
@@ -372,10 +414,14 @@ img {
 
 .social-link {
     color: var(--title-text-color);
+    cursor: url("../images/icomoon/magic-wand_5606317.png"), pointer;
+    transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon {
     fill: currentColor;
+
+    transition: fill 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon:hover,
@@ -388,6 +434,7 @@ img {
     width: 1440px;
     padding-left: 12px;
     padding-right: 12px;
+    margin: 0 auto;
 
     background-image: url("../images/doodle_sketch/elipses/Ellipse1-min.png"), url('../images/doodle_sketch/elipses/Ellipse2-min.png'), url("../images/doodle_sketch/elipses/Ellipse3-min.png"), url("../images/doodle_sketch/elipses/Ellipse4-min.png"), url("../images/doodle_sketch/elipses/Ellipse5-min.png"), url("../images/doodle_sketch/elipses/Ellipse6-min.png");
     background-repeat: no-repeat;
@@ -399,8 +446,27 @@ img {
     text-align: center;
 }
 
+.hero-sketch h2 {
+    margin-bottom: 98px;
+}
+
+.sketch-thumb {
+    position: relative;
+}
+
 .hero-sketch h3 {
-    margin-bottom: 44px;
+    position: absolute;
+    width: 564px;
+    left: 12%;
+    top: 39%;
+    
+    background-color: rgb(245, 245, 245, 78%);
+}
+
+.hero-sketch button {
+    position: absolute;
+    left: 17%;
+    top: 68%;
 }
 
 .about-flex {
@@ -451,6 +517,7 @@ img {
     width: 1440px;
     padding-left: 12px;
     padding-right: 12px;
+    margin: 0 auto;
     
     background-image: url("../images/doodle_procreate/elipses/Ellipse1-min.png"), url("../images/doodle_procreate/elipses/Ellipse2-min.png"), url("../images/doodle_procreate/elipses/Ellipse3-min.png"), url("../images/doodle_procreate/elipses/Ellipse4-min.png"), url("../images/doodle_procreate/elipses/Ellipse5-min.png"), url("../images/doodle_procreate/elipses/Ellipse6-min.png"), url("../images/doodle_procreate/elipses/Ellipse7-min.png");
     background-repeat: no-repeat;
@@ -458,12 +525,31 @@ img {
 
 }
 
+.procreate-thumb {
+    position: relative;
+}
+
 .procreate-hero {
     text-align: center;
 }
 
+.procreate-hero h2 {
+    margin-bottom: 89px;
+}
+
 .procreate-hero h3 {
-    margin-bottom: 67px;
+    position: absolute;
+    width: 564px;
+    left: 13%;
+    top: 36%;
+
+    background-color: rgb(245, 245, 245, 78%);
+}
+
+.procreate-hero button {
+    position: absolute;
+    left: 17%;
+    top: 67.5%;
 }
 
 .procreate-about {
@@ -499,10 +585,39 @@ img {
 
 /* NFT PAGE */
 
+.nft-thumb {
+    position: relative;
+}
+
+.nft-hero h3 {
+    position: absolute;
+
+    width: 564px;
+    top: 34%;
+    left: 9%;
+
+    background-color: #F1E2DB;
+}
+
+.nft-hero button {
+    position: absolute;
+    bottom: 11.2%;
+    left: 15%;
+}
+
+.nft-hero h2 {
+    margin-bottom: 98px;
+}
+
+.nft-hero img {
+    margin-bottom: 40px;
+}
+
 .nft-bck {
     width: 1440px;
     padding-left: 12px;
     padding-right: 12px;
+    margin: 0 auto;
 
     background-image: 
     url("../images/doodle_nft/elipses/Ellipse1-min.png"), 
@@ -554,6 +669,7 @@ img {
     width: 1440px;
     padding-left: 12px;
     padding-right: 12px;
+    margin: 0 auto;
 
     background-image:
         url("../images/histories/elipses/Ellipse1-min.png"),
@@ -571,6 +687,27 @@ img {
 
 .history-hero {
     text-align: center;
+}
+
+.history-hero .section-title {
+    margin-bottom: 95px;
+}
+
+.history-img {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.history-title {
+    position: absolute;
+    width: 1242px;
+    /* top: 50%;
+    left: 50%; */
+    /* transform: translate(-50%, - 50%); */
+
+    background-color: #F1E2DB;
 }
 
 .histories p,
@@ -615,4 +752,75 @@ img {
         margin-right: 15px;
         margin-bottom: 10px;
         background-color: var(--main-text-color);
+}
+
+/* MODAL WINDOW */
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgb(128, 128, 128, 0.5);
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    min-width: 844px;
+    min-height: 664px;
+    padding: 33px;
+    text-align: center;
+
+    border-radius: 50px;
+    background-image: url("../images/footer-bck.png");
+
+}
+
+
+/* .backdrop.is-hidden .modal {
+    transform: scale(5);
+} */
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 70px;
+    height: 70px;
+    padding: 0;
+    cursor: url("../images/icomoon/magic-wand_5606317.png"), pointer;
+
+    background-color: transparent;
+    color: var(--title-text-color);
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0);
+
+    transition: color 350ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+}
+
+.close-btn-icon {
+    fill: currentColor;
 }
