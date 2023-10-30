@@ -55,6 +55,10 @@ a {
 }
 
 .btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-family: Roboto, sans-serif;
     font-weight: 400;
     font-size: 40px;
@@ -69,8 +73,60 @@ a {
     color: var(--title-text-color);
     background-color: var(--btn-bck-color);
 
+    /* overflow: hidden; */
     transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1),
     color 400ms cubic-bezier(0.4, 0, 0.2, 1); 
+}
+
+.btn::before {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+    top: 30px;
+    left: -50px;
+    opacity: 0;
+
+    background-image: url("../images/hat.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: transform 1700ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+    
+
+.btn:hover::before,
+.btn:focus::before {
+    opacity: 1;
+    transform: translateY(35px);
+
+}
+
+.btn::after {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    left: -54px;
+    bottom: 25px;
+        
+    opacity: 0;
+    
+    background-image: url("../images/rabbit.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    transition: opacity 1500ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn:hover::after,
+.btn:focus::after {
+    opacity: 1;
+    transform: translateY(-10px);
 }
 
 .btn-link {
@@ -158,11 +214,12 @@ a {
     opacity: 1;
     transform: translateX(380%);
 }
-.site-nav .link.current {
+.site-nav .current {
     color: var(--accent-color);
 }
 
 .nav-icon {
+    fill: #14017D;
     opacity: 0;
     transform: translateX(-50px);
     transition: opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -362,6 +419,8 @@ a {
 }
 
 .help button {
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 100px;
 }
 
