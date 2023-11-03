@@ -45,6 +45,11 @@ img {
     display: block;
 }
 
+.img-thumb {
+    overflow: hidden;
+    border-radius: 50px;
+}
+
 a {
     cursor: url("../images/icomoon/magic-wand_5606317.png"), pointer;
 }
@@ -412,7 +417,7 @@ a {
 }
 
 .courses-list h3,
-.courses-list img,
+.courses-list .img-thumb,
 .courses-list p {
     margin-bottom: 60px;
     text-align: center;
@@ -581,11 +586,16 @@ a {
 .about-flex {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .sketch-about p {
     margin-left: 30px;
     margin-bottom: 70px;
+}
+
+.sketch-about ul {
+    max-width: 620px;
 }
 
 .sketch-about li:not(:last-child) {
@@ -671,6 +681,10 @@ a {
     margin-bottom: 30px;
 }
 
+.procreate-about ul {
+    max-width: 627px;
+}
+
 .procreate-about li:not(:last-child) {
     margin-bottom: 35px;
 }
@@ -750,6 +764,10 @@ a {
 
 .nft-about p {
     margin-bottom: 70px;
+}
+
+.nft-about ul {
+    max-width: 628px;
 }
 
 .nft-about li:not(:last-child) {

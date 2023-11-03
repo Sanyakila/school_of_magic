@@ -44,7 +44,9 @@
                     <div class="procreate-thumb">
                         <h3>Дудл у Procreate</h3>
                         <button type="button" class="btn js-open-modal" data-modal="2">Записатися</button>
-                        <img src="./images/doodle_procreate/hero.jpg" alt="дизайнерський малюнок" width="1280" />
+                        <div class="img-thumb">
+                            <img src="./images/doodle_procreate/hero.jpg" alt="дизайнерський малюнок" width="1280" />
+                        </div>
                     </div>
                 </div>
             </section>
@@ -66,7 +68,9 @@
                                 <li>Про створення портфоліо.</li>
                             </ul>
                         </div>
-                        <img src="./images/doodle_procreate/about.jpg" width="623" alt="дизайнерський малюнок" />
+                        <div class="img-thumb">
+                            <img src="./images/doodle_procreate/about.jpg" width="623" alt="дизайнерський малюнок" />
+                        </div>
                     </div>
                 </div>
             </section>
@@ -75,9 +79,24 @@
                 <div class="container">
                     <h2 class="sketch-title">Що ми зробимо</h2>
                     <ul class="list procreate-examples">
-                        <li><img src="./images/doodle_procreate/examples1.jpg" alt="дизайнерський малюнок" width="410" /></li>
-                        <li><img src="./images/doodle_procreate/examples2.jpg" alt="дизайнерський малюнок" width="410" /></li>
-                        <li><img src="./images/doodle_procreate/examples3.jpg" alt="дизайнерський малюнок" width="410" /></li>
+                        <li>
+                            <div class="img-thumb">
+                                <img src="./images/doodle_procreate/examples1.jpg" alt="дизайнерський малюнок" width="410" />
+                            </div>
+                        </li>
+            
+                        <li>
+                            <div class="img-thumb">
+                                <img src="./images/doodle_procreate/examples2.jpg" alt="дизайнерський малюнок" width="410" />
+                            </div>
+                        </li>
+            
+                        <li>
+                            <div class="img-thumb">
+                                <img src="./images/doodle_procreate/examples3.jpg" alt="дизайнерський малюнок" width="410" />
+                            </div>
+                        </li>
+            
                     </ul>
                 </div>
             </section>
@@ -124,10 +143,14 @@
                     <h2 class="sketch-title">Роботи студентів</h2>
                     <ul class="list procreate-works">
                         <li>
-                            <img src="./images/doodle_procreate/students_work1.jpg" alt="дизайнерський малюнок" width="624" />
+                            <div class="img-thumb">
+                                <img src="./images/doodle_procreate/students_work1.jpg" alt="дизайнерський малюнок" width="624" />
+                            </div>
                         </li>
                         <li>
-                            <img src="./images/doodle_procreate/students_work2.jpg" alt="дизайнерський малюнок" width="624" />
+                            <div class="img-thumb">
+                                <img src="./images/doodle_procreate/students_work2.jpg" alt="дизайнерський малюнок" width="624" />
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -142,7 +165,9 @@
                             <li class="sketch-text">Понад 5 років художнього<br> досвіду.</li>
                             <li class="sketch-text">Понад 300 виконаних<br> комерційних дудл-<br>ілюстрацій.</li>
                         </ul>
-                        <img src="./images/doodle_procreate/teacher.jpg" alt="Олександра Чабанова" width="410" />
+                        <div class="img-thumb">
+                            <img src="./images/doodle_procreate/teacher.jpg" alt="Олександра Чабанова" width="410" />
+                        </div>
                     </div>
                 </div>
             </section>
@@ -189,18 +214,24 @@
 <div class="overlay js-overlay-modal" data-modal="2">
     <div class="modal modal-signup" data-modal="2">
         <button class="close-btn js-modal-close" type="button">
-            <svg class="close-btn-icon" width="50" height="50">
+            <svg class="close-btn-icon" width="30" height="30">
                 <use href="./images/sprite.svg#cross"></use>
             </svg></button>
-        <a class="social-link" href="https://web.telegram.org/k/" target="_blank" rel="nofollow noreferrer noopener"
-            aria-label="telegram icon">
-            <svg class="icon" width="170" height="170">
-                <use href="./images/sprite.svg#telegram-5"></use>
-            </svg>
-        </a>
-        <!-- <form>
-                <input>
-            </form> -->
+        <h2>Дізнатися про курс</h2>
+        <form>
+            <div class="form-field">
+                <input class="form-input" type="text" name="text" id="name" placeholder=" " autofocus />
+                <label class="form-label" for="name">
+                    1. Як вас звати?
+                </label>
+            </div>
+            <div class="form-field">
+                <input class="form-input" type="tel" name="tel" id="tel" placeholder=" " required />
+                <label class="form-label" for="tel">
+                    2. Номер телефону
+                </label>
+            </div>
+        </form>
         <button class="btn" type="submit">Відправити</button>
     </div>
 </div>
