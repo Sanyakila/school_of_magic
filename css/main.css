@@ -516,8 +516,13 @@ a {
     margin-bottom: 11px;
 }
 
-.footer p {
-   margin-left: 253px;
+.footer-link {
+    text-align: center;
+    margin-bottom: 31px;
+}
+
+.footer-link .footer-text {
+    display: inline-block;
 }
 
 .socials-list {
@@ -541,6 +546,14 @@ a {
 .icon:hover,
 .icon:focus {
     fill: var(--accent-color);
+}
+
+.footer-input {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 459px;
+    padding: 12px 22px;
 }
 /* DOODLE SKETCH */
 
@@ -837,10 +850,17 @@ a {
     background-color: #F1E2DB;
 }
 
-.histories p,
-.histories img:nth-last-child(n + 3) {
+.histories p
+/* .histories .img-thumb:nth-last-child(n + 3) */ {
    margin-bottom: 35px;
    margin-left: 225px;
+}
+
+.histories .img-thumb {
+    width: 844px;
+    margin-bottom: 28px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .histories .text-history {
