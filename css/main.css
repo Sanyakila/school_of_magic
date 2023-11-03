@@ -637,6 +637,7 @@ a {
 .sketch-teacher {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .teacher-item {
@@ -801,6 +802,7 @@ a {
 .nft-teacher {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 /* HISTORIES PAGE */
