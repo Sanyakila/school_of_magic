@@ -141,7 +141,7 @@
             <section class="section help">
                 <div class="container">
                     <h2 class="section-title">Якщо знадобиться допомога та є питання</h2>
-                    <button type="button" class="btn" data-modal-open>Задати питання</button>
+                    <button type="button" class="btn js-open-modal" data-modal="1">Задати питання</button>
                 </div>
             </section>
         </main>
@@ -184,9 +184,9 @@
             <p><a href="index.html" class="footer-text list">Слідкувати за новинами</a></p>
         </div>
     </footer>
-    <div class="backdrop is-hidden" data-modal>
-        <div class="modal">
-            <button class="close-btn" type="button" data-modal-close>
+    <div class="overlay js-overlay-modal" data-modal="1">
+        <div class="modal" data-modal="1">
+            <button class="close-btn js-modal-close" type="button">
             <svg class="close-btn-icon" width="50" height="50">
                     <use href="./images/sprite.svg#cross"></use>
                 </svg></button>
@@ -196,9 +196,12 @@
                     <use href="./images/sprite.svg#telegram-5"></use>
                 </svg>
             </a>
-            <!-- <form>
-                <input>
-            </form> -->
+            <form class="form">
+                <input class="form-input" type="text" name="text" id="name" placeholder=" " required autofocus />
+                <label class="form-label" for="name">
+                    Якщо знадобиться допомога
+                </label> 
+            </form>
             <button class="btn" type="submit">Відправити</button>
         </div>
     </div>

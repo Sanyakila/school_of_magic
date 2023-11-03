@@ -45,7 +45,7 @@
                 <h2>Школа Чаклунства</h2>
                 <div class="nft-thumb">
                     <h3>Дудл NFT</h3>
-                    <button type="button" class="btn">Записатися</button>
+                    <button type="button" class="btn js-open-modal" data-modal="2">Записатися</button>
                     <img src="./images/doodle_nft/hero.jpg" alt="дизайнерський малюнок" width="1280" />
                 </div>
             </div>
@@ -191,6 +191,25 @@
             <p class="footer-text">Слідкувати за новинами</p>
         </div>
     </footer>
+    <div class="overlay js-overlay-modal" data-modal="2">
+        <div class="modal modal-signup" data-modal="2">
+            <button class="close-btn js-modal-close" type="button">
+                <svg class="close-btn-icon" width="50" height="50">
+                    <use href="./images/sprite.svg#cross"></use>
+                </svg></button>
+            <a class="social-link" href="https://web.telegram.org/k/" target="_blank" rel="nofollow noreferrer noopener"
+                aria-label="telegram icon">
+                <svg class="icon" width="170" height="170">
+                    <use href="./images/sprite.svg#telegram-5"></use>
+                </svg>
+            </a>
+            <!-- <form>
+                    <input>
+                </form> -->
+            <button class="btn" type="submit">Відправити</button>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
