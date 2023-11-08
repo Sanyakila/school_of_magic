@@ -334,7 +334,7 @@ a {
 }
 
 .footer {
-  max-width: 1439px;
+  width: 100%;
   margin: 0 auto;
   background-image: url("../images/footer-bck.png");
 }
