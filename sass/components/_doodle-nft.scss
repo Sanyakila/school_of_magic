@@ -1,0 +1,82 @@
+.nft-thumb {
+    position: relative;
+}
+
+.nft-hero h3 {
+    position: absolute;
+
+    width: 564px;
+    top: 34%;
+    left: 9%;
+
+    background-color: #F1E2DB;
+}
+
+.nft-hero button {
+    position: absolute;
+    bottom: 11.2%;
+    left: 15%;
+}
+
+.nft-hero h2 {
+    margin-bottom: 98px;
+}
+
+.nft-hero .img-thumb {
+    margin-bottom: 40px;
+}
+
+.nft-bck {
+    width: 1440px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin: 0 auto;
+
+    background-image:
+        url("../images/doodle_nft/elipses/Ellipse1-min.png"),
+        url("../images/doodle_nft/elipses/Ellipse2-min.png"),
+        url("../images/doodle_nft/elipses/Ellipse3-min.png"),
+        url("../images/doodle_nft/elipses/Ellipse4-min.png"),
+        url("../images/doodle_nft/elipses/Ellipse5-min.png"),
+        url("../images/doodle_nft/elipses/Ellipse6-min.png"),
+        url("../images/doodle_nft/elipses/Ellipse7-min.png"),
+        url("../images/doodle_nft/elipses/Ellipse8-min.png"),
+        url("../images/doodle_nft/elipses/Ellipse9-min.png");
+
+    background-repeat: no-repeat;
+    background-position: 60px 120px, 1040px 43px, 134px 1200px, 626px 2390px, 115px 3520px, 1000px 4520px, 110px 5290px, 100px 6315px, 750px 6330px;
+
+}
+
+.nft-about {
+    display: flex;
+}
+
+.nft-about p {
+    margin-bottom: 70px;
+}
+
+.nft-about ul {
+    max-width: 628px;
+}
+
+.nft-about li:not(:last-child) {
+    margin-bottom: 40px;
+}
+
+.nft-examples {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.nft-works {
+    display: flex;
+    gap: 24px;
+}
+
+.nft-teacher {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

@@ -1,0 +1,73 @@
+.procreate-bck {
+    width: 1440px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin: 0 auto;
+
+    background-image: url("../images/doodle_procreate/elipses/Ellipse1-min.png"), url("../images/doodle_procreate/elipses/Ellipse2-min.png"), url("../images/doodle_procreate/elipses/Ellipse3-min.png"), url("../images/doodle_procreate/elipses/Ellipse4-min.png"), url("../images/doodle_procreate/elipses/Ellipse5-min.png"), url("../images/doodle_procreate/elipses/Ellipse6-min.png"), url("../images/doodle_procreate/elipses/Ellipse7-min.png");
+    background-repeat: no-repeat;
+    background-position: 153px 170px, 705px 0px, 0px 1300px, 858px 2100px, 115px 3500px, 160px 5430px, 610px 5170px;
+
+}
+
+.procreate-thumb {
+    position: relative;
+}
+
+.procreate-hero {
+    text-align: center;
+}
+
+.procreate-hero h2 {
+    margin-bottom: 89px;
+}
+
+.procreate-hero h3 {
+    position: absolute;
+    width: 564px;
+    left: 13%;
+    top: 36%;
+
+    background-color: rgb(245, 245, 245, 78%);
+}
+
+.procreate-hero button {
+    position: absolute;
+    left: 17%;
+    top: 67.5%;
+}
+
+.procreate-about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.procreate-about p {
+    margin-bottom: 30px;
+}
+
+.procreate-about ul {
+    max-width: 627px;
+}
+
+.procreate-about li:not(:last-child) {
+    margin-bottom: 35px;
+}
+
+.procreate-examples {
+    display: flex;
+    gap: 24px;
+}
+
+.procreate-works {
+    display: flex;
+    gap: 24px;
+}
+
+.procreate-teacher {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}

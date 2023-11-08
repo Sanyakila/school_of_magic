@@ -1,0 +1,22 @@
+// utils styles
+
+@import "./utils/variables";
+
+//base styles
+
+@import "./base/base";
+@import "./base/reset";
+
+//components styles
+
+@import "./components/buttons";
+@import "./components/container";
+@import "./components/header";
+@import "./components/footer";
+@import "./components/modal-window";
+@import "./components/histories-page";
+@import "./components/main-page";
+@import "./components/doodle-scetch";
+@import "./components/doodle-procreate";
+@import "./components/doodle-nft";
+

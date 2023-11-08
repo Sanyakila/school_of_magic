@@ -1,0 +1,100 @@
+.histories-bck {
+    width: 1440px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin: 0 auto;
+
+    background-image:
+        url("../images/histories/elipses/Ellipse1-min.png"),
+        url("../images/histories/elipses/Ellipse2-min.png"),
+        url("../images/histories/elipses/Ellipse3-min.png"),
+        url("../images/histories/elipses/Ellipse4-min.png"),
+        url("../images/histories/elipses/Ellipse5-min.png"),
+        url("../images/histories/elipses/Ellipse6-min.png");
+
+
+    background-repeat: no-repeat;
+    background-position: 120px 120px, 1080px 71px, 716px 1039px, 32px 2190px, 670px 3360px, 63px 4420px;
+
+}
+
+.history-hero {
+    text-align: center;
+}
+
+.history-hero .section-title {
+    margin-bottom: 95px;
+}
+
+.history-img {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.history-title {
+    position: absolute;
+    width: 1242px;
+    /* top: 50%;
+    left: 50%; */
+    /* transform: translate(-50%, - 50%); */
+
+    background-color: #F1E2DB;
+}
+
+.histories p
+
+/* .histories .img-thumb:nth-last-child(n + 3) */
+    {
+    margin-bottom: 35px;
+    margin-left: 225px;
+}
+
+.histories .img-thumb {
+    width: 844px;
+    margin-bottom: 28px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.histories .text-history {
+    margin-left: 0;
+    margin-bottom: 100px;
+}
+
+.histories .text-decoration {
+    margin-left: 260px;
+    margin-bottom: 88px;
+}
+
+.histories-flex {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 79px;
+}
+
+.text-history {
+    margin-left: 0;
+}
+
+.history-text {
+    font-size: 48px;
+
+    color: var(--title-text-color);
+}
+
+.text-decoration {
+    font-size: 48px;
+}
+
+.text-decoration::before {
+    content: '';
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 6px;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    background-color: var(--main-text-color);
+}

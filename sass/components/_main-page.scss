@@ -1,0 +1,200 @@
+.index-bck {
+    width: 1440px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin: 0 auto;
+
+    background-image: url("../images/elipses/Ellipse\ 24.png"), url('../images/elipses/Ellipse\ 25.png'), url("../images/elipses/Ellipse\ 26.png"), url("../images/elipses/Ellipse\ 27.png"), url("../images/elipses/Ellipse\ 28.png"), url("../images/elipses/Ellipse\ 29.png");
+    background-repeat: no-repeat;
+    background-position: 923px 22px, 768px 1915px, 124px 2831px, 748px 3870px, 64px 5570px, 963px 5531px;
+}
+
+/* hero */
+
+.hero {
+    background-image: url(../images/elipses/Ellipse\ 23.png);
+    background-repeat: no-repeat;
+    background-position: 152px 69px;
+}
+
+.hero-title {
+    font-size: 64px;
+}
+
+.hero .hero-title {
+    margin-bottom: 80px;
+}
+
+/* OPPORTUNITIES */
+
+.description h2 {
+    margin-bottom: 100px;
+}
+
+.description-list {
+    display: flex;
+    flex-wrap: wrap;
+
+    /* justify-content: space-around; */
+}
+
+/* .description-list li:nth-child(2n + 1) {
+    margin-right: 200px;
+} */
+
+.description-list li:nth-child(2n) {
+    margin-left: auto;
+    margin-bottom: 30px;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    width: 565px;
+}
+
+.item:nth-child(1):before {
+    content: "";
+    display: inline-block;
+    margin-right: 20px;
+    min-width: 113px;
+    height: 109px;
+    background-image: url("../images/elipses/Ellipse\ 2.png");
+}
+
+.item:nth-child(2):before {
+    content: "";
+    display: inline-block;
+    margin-right: 27px;
+    min-width: 111px;
+    height: 133px;
+    background-image: url("../images/elipses/Ellipse\ 5.png");
+}
+
+.item:nth-child(3):before {
+    content: "";
+    display: inline-block;
+    margin-right: 50px;
+    width: 85px;
+    height: 99px;
+    background-image: url("../images/elipses/Ellipse\ 3.png");
+}
+
+.item:nth-child(4):before {
+    content: "";
+    display: inline-block;
+    margin-right: 27px;
+    min-width: 108px;
+    height: 86px;
+    background-image: url("../images/elipses/Ellipse\ 6.png");
+}
+
+.item:nth-child(5):before {
+    content: "";
+    display: inline-block;
+    margin-right: 27px;
+    min-width: 108px;
+    height: 96px;
+    background-image: url("../images/elipses/Ellipse\ 4.png");
+}
+
+.item:nth-child(6):before {
+    content: "";
+    display: inline-block;
+    margin-right: 27px;
+    min-width: 108px;
+    height: 106px;
+    background-image: url("../images/elipses/Ellipse\ 7.png");
+}
+
+/* FOR WHOM THIS SCHOOL */
+
+.belong h2 {
+    margin-bottom: 46px;
+}
+
+.belong .history-text {
+    margin-bottom: 97px;
+}
+
+/* COURSES */
+.courses-text {
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    font-size: 48px;
+
+    color: var(--main-text-color);
+}
+
+.courses h2 {
+    margin-bottom: 80px;
+}
+
+.courses-list {
+    display: flex;
+    gap: 23px;
+    justify-content: center;
+}
+
+.courses-list h3,
+.courses-list .img-thumb,
+.courses-list p {
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+/*FORMAT OF LESSONS */
+
+.format h2 {
+    margin-bottom: 95px;
+}
+
+.format li:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+/* REVIEWS */
+
+.reviews {
+    text-align: center;
+}
+
+.reviews h2 {
+    margin-bottom: 85px;
+}
+
+.reviews-box {
+    height: 466px;
+    margin-bottom: 148px;
+
+    background-image: url("../images/reviews.png");
+    background-color: #FBDCF9;
+    overflow: hidden;
+}
+
+.reviews-box p {
+    display: inline-block;
+    text-align: left;
+    padding: 45px;
+    margin-top: 71px;
+    width: 890px;
+    height: 324px;
+
+    background-color: #FBDCF9;
+}
+
+/* HELP */
+
+.help {
+    text-align: center;
+}
+
+.help h2 {
+    margin-bottom: 74px;
+}
+
+.help button {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+}

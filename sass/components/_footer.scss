@@ -1,0 +1,78 @@
+.footer {
+    max-width: 1439px;
+    margin: 0 auto;
+    background-image: url("../images/footer-bck.png");
+}
+
+.footer-text {
+    display: inline-block;
+
+    font-family: Amatic SC, sans-serif;
+    font-weight: 700;
+    font-size: 96px;
+
+    text-decoration: none;
+
+    color: var(--title-text-color);
+    background-color: #D9D9D9;
+    border-radius: 20px;
+
+}
+
+
+.flex {
+    display: flex;
+    margin-bottom: 55px;
+}
+
+.flex > ul:not(:last-child) {
+    width: 420px;
+}
+
+.footer-item {
+    margin-bottom: 11px;
+}
+
+.footer-link {
+    text-align: center;
+    margin-bottom: 31px;
+}
+
+.footer-link .footer-text {
+    display: inline-block;
+}
+
+.socials-list {
+    display: flex;
+    // gap: 48px;
+    margin-left: auto;
+}
+
+.socials-list li:not(:last-child) {
+    margin-right: 48px;
+}
+
+.social-link {
+    color: var(--title-text-color);
+    cursor: url("../images/icomoon/magic-wand_5606317.png"), pointer;
+    transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon {
+    fill: currentColor;
+
+    transition: fill 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon:hover,
+.icon:focus {
+    fill: var(--accent-color);
+}
+
+.footer-input {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 459px;
+    padding: 12px 22px;
+}

@@ -1,0 +1,86 @@
+.sketch-bck {
+    width: 1440px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin: 0 auto;
+
+    background-image: url("../images/doodle_sketch/elipses/Ellipse1-min.png"), url('../images/doodle_sketch/elipses/Ellipse2-min.png'), url("../images/doodle_sketch/elipses/Ellipse3-min.png"), url("../images/doodle_sketch/elipses/Ellipse4-min.png"), url("../images/doodle_sketch/elipses/Ellipse5-min.png"), url("../images/doodle_sketch/elipses/Ellipse6-min.png");
+    background-repeat: no-repeat;
+    background-position: 178px 119px, 1111px 47px, 260px 1100px, 900px 2780px, 265px 3610px, 16px 5300px;
+}
+
+
+.hero-sketch {
+    text-align: center;
+}
+
+.hero-sketch h2 {
+    margin-bottom: 98px;
+}
+
+.sketch-thumb {
+    position: relative;
+}
+
+.hero-sketch h3 {
+    position: absolute;
+    width: 564px;
+    left: 12%;
+    top: 39%;
+
+    background-color: rgb(245, 245, 245, 78%);
+}
+
+.hero-sketch button {
+    position: absolute;
+    left: 17%;
+    top: 68%;
+}
+
+.about-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sketch-about p {
+    margin-left: 30px;
+    margin-bottom: 70px;
+}
+
+.sketch-about ul {
+    max-width: 620px;
+}
+
+.sketch-about li:not(:last-child) {
+    margin-bottom: 60px;
+}
+
+.sketch-examples {
+    display: flex;
+    gap: 24px;
+    margin-top: 81px;
+}
+
+.sketch-title {
+    margin-bottom: 81px;
+}
+
+.sketch-text:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.sketch-works {
+    display: flex;
+    gap: 24px;
+}
+
+.sketch-teacher {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.teacher-item {
+    width: 632px;
+}

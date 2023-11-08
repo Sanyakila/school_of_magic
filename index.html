@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
         integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
 <body>
@@ -189,10 +189,11 @@
                     </li>
                 </ul>
             </div>
-                <p class="footer-link">
-                    <a href="index.html" class="footer-text list">Слідкувати за новинами</a>
-                </p>
-            <input class="footer-input" type="email" placeholder="username@gmail.com" required/>
+            <p class="footer-link">
+                <a href="index.html" class="footer-text list">Слідкувати за новинами</a>
+            </p>
+            <input class="footer-input" name="email" type="email" placeholder="username@gmail.com" autocomplete="on"
+                required />
         </div>
     </footer>
     <div class="overlay js-overlay-modal" data-modal="1">
@@ -208,7 +209,7 @@
                 </svg>
             </a>
             <form class="form">
-                <input class="form-input" type="text" name="text" id="name" placeholder=" " required autofocus />
+                <input class="form-input" type="text" name="text" id="name" placeholder=" " autocomplete="on" autofocus />
                 <label class="form-label" for="name">
                     Якщо знадобиться допомога
                 </label> 

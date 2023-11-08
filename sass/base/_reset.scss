@@ -1,0 +1,50 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Amatic SC, sans-serif;
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 1.21;
+    text-align: center;
+    margin: 0;
+
+    color: var(--title-text-color);
+}
+
+p,
+ul {
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.img-thumb {
+    overflow: hidden;
+    border-radius: 50px;
+}
+
+a {
+    cursor: url("../images/icomoon/magic-wand_5606317.png"), pointer;
+}
+
+.list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.section {
+    padding-top: 52px;
+    padding-bottom: 52px;
+}
+
+.text {
+    font-size: 48px;
+}
