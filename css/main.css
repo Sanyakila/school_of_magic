@@ -64,6 +64,20 @@ a {
   font-size: 48px;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .btn {
   position: relative;
   display: -webkit-box;
@@ -297,25 +311,11 @@ a {
   color: var(--accent-color);
 }
 
-.nav-link:nth-child(1):hover .nav-icon,
-.nav-link:nth-child(1):focus .nav-icon {
-  opacity: 1;
-  -webkit-transform: translateX(510%);
-          transform: translateX(510%);
-}
-
-.nav-link:nth-child(2):hover .nav-icon,
-.nav-link:nth-child(2):focus .nav-icon {
+.nav-link:hover .nav-icon,
+.nav-link:focus .nav-icon {
   opacity: 1;
   -webkit-transform: translateX(620%);
           transform: translateX(620%);
-}
-
-.nav-link:nth-child(3):hover .nav-icon,
-.nav-link:nth-child(3):focus .nav-icon {
-  opacity: 1;
-  -webkit-transform: translateX(380%);
-          transform: translateX(380%);
 }
 
 .site-nav .current {
@@ -325,12 +325,12 @@ a {
 .nav-icon {
   fill: #14017D;
   opacity: 0;
-  -webkit-transform: translateX(-50px);
-          transform: translateX(-50px);
-  -webkit-transition: opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 1800ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 1800ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1), transform 1800ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1), transform 1800ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 1800ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transform: translateX(-5px);
+          transform: translateX(-5px);
+  -webkit-transition: opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 2000ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 2000ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1), transform 2000ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1), transform 2000ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 2000ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer {
@@ -398,8 +398,8 @@ a {
   transition: fill 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.icon:hover,
-.icon:focus {
+.social-link:hover .icon,
+.social-link:focus .icon {
   fill: var(--accent-color);
 }
 
@@ -553,7 +553,7 @@ a {
   margin: 0 auto;
   background-image: url("../images/histories/elipses/Ellipse1-min.png"), url("../images/histories/elipses/Ellipse2-min.png"), url("../images/histories/elipses/Ellipse3-min.png"), url("../images/histories/elipses/Ellipse4-min.png"), url("../images/histories/elipses/Ellipse5-min.png"), url("../images/histories/elipses/Ellipse6-min.png");
   background-repeat: no-repeat;
-  background-position: 120px 120px, 1080px 71px, 716px 1039px, 32px 2190px, 670px 3360px, 63px 4420px;
+  background-position: 120px 120px, 1080px 71px, 716px 1000px, 32px 2200px, 723px 3300px, 63px 4450px;
 }
 
 .history-hero {
@@ -575,6 +575,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 50px;
 }
 
 .history-title {
@@ -647,7 +648,7 @@ a {
   margin: 0 auto;
   background-image: url("../images/elipses/Ellipse 24.png"), url("../images/elipses/Ellipse 25.png"), url("../images/elipses/Ellipse 26.png"), url("../images/elipses/Ellipse 27.png"), url("../images/elipses/Ellipse 28.png"), url("../images/elipses/Ellipse 29.png");
   background-repeat: no-repeat;
-  background-position: 923px 22px, 768px 1915px, 124px 2831px, 748px 3870px, 64px 5570px, 963px 5531px;
+  background-position: 923px 22px, 768px 1970px, 124px 2861px, 748px 3940px, 64px 5600px, 963px 5531px;
 }
 
 /* hero */
@@ -847,7 +848,7 @@ a {
   margin: 0 auto;
   background-image: url("../images/doodle_sketch/elipses/Ellipse1-min.png"), url("../images/doodle_sketch/elipses/Ellipse2-min.png"), url("../images/doodle_sketch/elipses/Ellipse3-min.png"), url("../images/doodle_sketch/elipses/Ellipse4-min.png"), url("../images/doodle_sketch/elipses/Ellipse5-min.png"), url("../images/doodle_sketch/elipses/Ellipse6-min.png");
   background-repeat: no-repeat;
-  background-position: 178px 119px, 1111px 47px, 260px 1100px, 900px 2780px, 265px 3610px, 16px 5300px;
+  background-position: 178px 100px, 1111px 47px, 260px 920px, 890px 2595px, 265px 3435px, 16px 5140px;
 }
 
 .hero-sketch {
@@ -860,6 +861,7 @@ a {
 
 .sketch-thumb {
   position: relative;
+  margin-bottom: 91px;
 }
 
 .hero-sketch h3 {
@@ -947,11 +949,12 @@ a {
   margin: 0 auto;
   background-image: url("../images/doodle_procreate/elipses/Ellipse1-min.png"), url("../images/doodle_procreate/elipses/Ellipse2-min.png"), url("../images/doodle_procreate/elipses/Ellipse3-min.png"), url("../images/doodle_procreate/elipses/Ellipse4-min.png"), url("../images/doodle_procreate/elipses/Ellipse5-min.png"), url("../images/doodle_procreate/elipses/Ellipse6-min.png"), url("../images/doodle_procreate/elipses/Ellipse7-min.png");
   background-repeat: no-repeat;
-  background-position: 153px 170px, 705px 0px, 0px 1300px, 858px 2100px, 115px 3500px, 160px 5430px, 610px 5170px;
+  background-position: 153px 170px, 705px 0px, 0px 1100px, 858px 1880px, 115px 3280px, 160px 5220px, 610px 4950px;
 }
 
 .procreate-thumb {
   position: relative;
+  margin-bottom: 90px;
 }
 
 .procreate-hero {
@@ -1046,6 +1049,7 @@ a {
 }
 
 .nft-hero h2 {
+  margin-top: 25px;
   margin-bottom: 98px;
 }
 
@@ -1060,7 +1064,7 @@ a {
   margin: 0 auto;
   background-image: url("../images/doodle_nft/elipses/Ellipse1-min.png"), url("../images/doodle_nft/elipses/Ellipse2-min.png"), url("../images/doodle_nft/elipses/Ellipse3-min.png"), url("../images/doodle_nft/elipses/Ellipse4-min.png"), url("../images/doodle_nft/elipses/Ellipse5-min.png"), url("../images/doodle_nft/elipses/Ellipse6-min.png"), url("../images/doodle_nft/elipses/Ellipse7-min.png"), url("../images/doodle_nft/elipses/Ellipse8-min.png"), url("../images/doodle_nft/elipses/Ellipse9-min.png");
   background-repeat: no-repeat;
-  background-position: 60px 120px, 1040px 43px, 134px 1200px, 626px 2390px, 115px 3520px, 1000px 4520px, 110px 5290px, 100px 6315px, 750px 6330px;
+  background-position: 60px 95px, 1040px 43px, 134px 1180px, 600px 2450px, 115px 3590px, 1000px 4600px, 110px 5350px, 100px 6400px, 750px 6400px;
 }
 
 .nft-about {
