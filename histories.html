@@ -1,147 +1,332 @@
 <!DOCTYPE html>
 <html lang="uk">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Histories of students</title>
     <link
-        href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Montserrat:wght@400;700&family=Roboto&display=swap"
-        rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-            integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-            crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/main.min.css">
-</head>
-<body>
-<div class="histories-bck">
-    <header>
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Montserrat:wght@400;700&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <div class="histories-bck">
+      <header>
         <div class="container header">
-            <a href="./index.html"><img src="./images/StarLogo.svg" alt="лого школи" /></a>
-            <nav>
-                <ul class="site-nav list">
-                    <li><a class="nav-link" href="./doodle_sketch.html">
-                            <svg class="nav-icon" width="60" height="60">
-                                <use href="./images/sprite.svg#witch"></use>
-                            </svg>Дудл у скетчі</a></li>
-                    <li><a class="nav-link" href="./doodle_procreate.html">
-                            <svg class="nav-icon" width="60" height="60">
-                                <use href="./images/sprite.svg#witch"></use>
-                            </svg>Дудл у Procreate</a></li>
-                    <li><a class="nav-link" href="./doodle_nft.html">
-                            <svg class="nav-icon" width="60" height="60">
-                                <use href="./images/sprite.svg#witch"></use>
-                            </svg>Дудл NFT</a></li>
-                </ul>
-            </nav>
-            <img class="bucket" src="./images/bucket.svg" alt="кошик" />
+          <a href="./index.html"><img src="./images/StarLogo.svg" alt="лого школи" /></a>
+          <nav>
+            <ul class="site-nav list">
+              <li>
+                <a class="nav-link" href="./doodle_sketch.html">
+                  <svg class="nav-icon" width="60" height="60">
+                    <use href="./images/sprite.svg#witch"></use></svg>Дудл у скетчі</a
+                >
+              </li>
+              <li>
+                <a class="nav-link" href="./doodle_procreate.html">
+                  <svg class="nav-icon" width="60" height="60">
+                    <use href="./images/sprite.svg#witch"></use></svg>Дудл у Procreate</a
+                >
+              </li>
+              <li>
+                <a class="nav-link" href="./doodle_nft.html">
+                  <svg class="nav-icon" width="60" height="60">
+                    <use href="./images/sprite.svg#witch"></use></svg>Дудл NFT</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <img class="bucket" src="./images/bucket.svg" alt="кошик" />
         </div>
-    </header>
-    <main>
+      </header>
+      <main>
         <!-- Hero section -->
         <section class="section history-hero">
-            <div class="container">
-                <h2 class="section-title">Школа Чаклунства</h2>
-                <div class="history-img">
-                    <div class="img-thumb">
-                        <img src="./images/histories/hero.jpg" alt="дизайнерський малюнок" width="1280" />
-                    </div>
-                    <h3 class="history-title">Історії студентів, які закінчили курси</h3>
-                </div>
-                
+          <div class="container">
+            <h2 class="section-title">Школа Чаклунства</h2>
+            <div class="history-img">
+              <div class="img-thumb">
+                <picture>
+                  <source
+                    srcset="
+                    ./images/histories/hero_@1x.jpg 1x, 
+                    ./images/histories/hero_@2x.jpg 2x
+                    "
+                    media="(min-width: 1304px)"
+                    type="image/jpeg"
+                  />
+                  <source
+                    srcset="
+                      ./images/histories/hero_@0.5x.jpg 1x,
+                      ./images/histories/hero_@1x.jpg 2x
+                    "
+                    media="(min-width: 768x)"
+                    type="image/jpeg"
+                  />
+                  <source
+                    srcset="
+                      ./images/histories/hero_@0.5x.jpg 1x,
+                      ./images/histories/hero_@1x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                    type="image/jpeg"
+                  />
+                  <img
+                    src="./images/histories/hero_@1x.jpg"
+                    alt="дизайнерський малюнок"
+                    width="1280"
+                  />
+                </picture>
+              </div>
+              <h3 class="history-title">Історії студентів, які закінчили курси</h3>
             </div>
+          </div>
         </section>
-    
+
         <!-- Histories section -->
         <section class="section histories">
-            <div class="container">
-                <h2 class="visually-hidden">Історії студентів</h2>
-                <ul class="list">
-                    <li>
-                        <p class="history-text">Студентка Катя</p>
-                        <div class="img-thumb">
-                            <img src="./images/histories/kate.jpg" alt="дизайнерський малюнок" width="844" />
-                        </div>
-                        <p class="history-text">Пройшла курс:</p>
-                        <p class="text-decoration">Дудл у скетчі</p>
-                        <p class="text text-history">Навчилася малювати з нуля, вигадую історії, героїв та казкові світи. На
-                            курсі познайомилась з
-                            цікавими людьми та навіть
-                            знайшла друзів, з котрими влаштовуємо творчі Zoom-тусовки.</p>
-                    </li>
-                    <li>
-                        <p class="history-text">Студентка Даша</p>
-                        <div class="img-thumb">
-                            <img src="./images/histories/dasha.jpg" alt="дизайнерський малюнок" width="844" />
-                        </div>
-                        <p class="history-text">Пройшла курс:</p>
-                        <p class="text-decoration">Дудл у Procreate</p>
-                        <p class="text text-history">Після закінчення курсів відкрила свій онлайн-магазин, в якому продаю
-                            свої наклейки, та листівки.
-                            Також малюю
-                            дудл-ілюстрації на замовлення.</p>
-                    </li>
-                    <li>
-                        <p class="history-text">Студент Дмитро</p>
-                        <div class="histories-flex">
-                            <div class="img-thumb">
-                                <img src="./images/histories/dmytro1.jpg" alt="дизайнерський малюнок" width="627" />
-                            </div>
-                            <div class="img-thumb">
-                                <img src="./images/histories/dmytro2.jpg" alt="дизайнерський малюнок" width="627" />
-                            </div>
-                        </div>
-                        <p class="history-text">Пройшов курс:</p>
-                        <p class="text-decoration">Дудл NFT</p>
-                        <p class="text text-history">На курсі створив свою першу Дудл NFT колекцію, яку вдало продав. Наразі
-                            працюю над створенням
-                            нових Дудл NFT колекцій.</p>
-                    </li>
-                </ul>
-            </div>
+          <div class="container">
+            <h2 class="visually-hidden">Історії студентів</h2>
+            <ul class="list">
+              <li>
+                <p class="history-text">Студентка Катя</p>
+                <div class="img-thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/histories/katya_@1x.jpg 1x,
+                        ./images/histories/katya_@2x.jpg 2x
+                      "
+                      media="(min-width: 1304px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/histories/katya_@0.5x.jpg 1x,
+                        ./images/histories/katya_@1x.jpg   2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/histories/katya_@0.5x.jpg 1x,
+                        ./images/histories/katya_@1x.jpg   2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/jpeg"
+                    />
+                    <img
+                      src="./images/histories/katya_@1x.jpg"
+                      alt="дизайнерський малюнок"
+                      width="844"
+                    />
+                  </picture>
+                </div>
+                <p class="history-text">Пройшла курс:</p>
+                <p class="text-decoration">Дудл у скетчі</p>
+                <p class="text text-history">
+                  Навчилася малювати з нуля, вигадую історії, героїв та казкові світи. На курсі
+                  познайомилась з цікавими людьми та навіть знайшла друзів, з котрими влаштовуємо
+                  творчі Zoom-тусовки.
+                </p>
+              </li>
+              <li>
+                <p class="history-text">Студентка Даша</p>
+                <div class="img-thumb">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/histories/dasha_@1x.jpg 1x,
+                        ./images/histories/dasha_@2x.jpg 2x
+                      "
+                      media="(min-width: 1304px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/histories/dasha_@0.5x.jpg 1x,
+                        ./images/histories/dasha_@1x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/histories/dasha_@0.5x.jpg 1x,
+                        ./images/histories/dasha_@1x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/jpeg"
+                    />
+                    <img
+                      src="./images/histories/dasha_@1x.jpg"
+                      alt="дизайнерський малюнок"
+                      width="844"
+                    />
+                  </picture>
+                </div>
+                <p class="history-text">Пройшла курс:</p>
+                <p class="text-decoration">Дудл у Procreate</p>
+                <p class="text text-history">
+                  Після закінчення курсів відкрила свій онлайн-магазин, в якому продаю свої
+                  наклейки, та листівки. Також малюю дудл-ілюстрації на замовлення.
+                </p>
+              </li>
+              <li>
+                <p class="history-text">Студент Дмитро</p>
+                <div class="histories-flex">
+                  <div class="img-thumb">
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/histories/dmytro1_@1x.jpg 1x,
+                          ./images/histories/dmytro1_@2x.jpg 2x
+                        "
+                        media="(min-width: 1304px)"
+                        type="image/jpeg"
+                      />
+                      <source
+                        srcset="
+                          ./images/histories/dmytro1_@0.5x.jpg 1x,
+                          ./images/histories/dmytro1_@1x.jpg 2x
+                        "
+                        media="(min-width: 768px)"
+                        type="image/jpeg"
+                      />
+                      <source
+                        srcset="
+                          ./images/histories/dmytro1_@0.5x.jpg 1x,
+                          ./images/histories/dmytro1_@1x.jpg 2x
+                        "
+                        media="(max-width: 767px)"
+                        type="image/jpeg"
+                      />
+                      <img
+                        src="./images/histories/dmytro1_@1x.jpg"
+                        alt="дизайнерський малюнок"
+                        width="627"
+                      />
+                    </picture>
+                  </div>
+                  <div class="img-thumb">
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/histories/dmytro2_@1x.jpg 1x,
+                          ./images/histories/dmytro2_@2x.jpg 2x
+                        "
+                        media="(min-width: 1304px)"
+                        type="image/jpeg"
+                      />
+                      <source
+                        srcset="
+                          ./images/histories/dmytro2_@0.5x.jpg 1x,
+                          ./images/histories/dmytro2_@1x.jpg 2x
+                        "
+                        media="(min-width: 768px)"
+                        type="image/jpeg"
+                      />
+                      <source
+                        srcset="
+                          ./images/histories/dmytro2_@0.5x.jpg 1x,
+                          ./images/histories/dmytro2_@1x.jpg 2x
+                        "
+                        media="(max-width: 767px)"
+                        type="image/jpeg"
+                      />
+                      <img
+                        src="./images/histories/dmytro2_@1x.jpg"
+                        alt="дизайнерський малюнок"
+                        width="627"
+                      />
+                    </picture>
+                  </div>
+                </div>
+                <p class="history-text">Пройшов курс:</p>
+                <p class="text-decoration">Дудл NFT</p>
+                <p class="text text-history">
+                  На курсі створив свою першу Дудл NFT колекцію, яку вдало продав. Наразі працюю над
+                  створенням нових Дудл NFT колекцій.
+                </p>
+              </li>
+            </ul>
+          </div>
         </section>
-    </main>
-</div>
+      </main>
+    </div>
     <footer class="section footer">
-        <div class="container">
-            <div class="flex">
-                <ul class="list">
-                    <li><a href="/index.html" class="footer-text footer-item list">Про нас</a></li>
-                    <li><a href="/index.html" class="footer-text list">Онлайн-курси</a></li>
-                </ul>
-                <a href="./index.html"><img src="./images/logo-footer.png" alt="зірочка-лого" width="360" /></a>
-                <ul class="list socials-list">
-                    <li>
-                        <a class="social-link" href="https://www.facebook.com/" target="_blank"
-                            rel="nofollow noreferrer noopener" aria-label="facebook icon">
-                            <svg class="icon" width="100" height="100">
-                                <use href="./images/sprite.svg#facebook"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="social-link" href="https://web.telegram.org/k/" target="_blank"
-                            rel="nofollow noreferrer noopener" aria-label="telegram icon">
-                            <svg class="icon" width="100" height="100">
-                                <use href="./images/sprite.svg#telegram-5"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="social-link" href="https://www.instagram.com/" target="_blank"
-                            rel="nofollow noreferrer noopener" aria-label="instagram icon">
-                            <svg class="icon" width="100" height="100">
-                                <use href="./images/sprite.svg#Instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <p class="footer-link">
-                <a href="index.html" class="footer-text list">Слідкувати за новинами</a>
-            </p>
-            <input class="footer-input" name="email" type="email" placeholder="username@gmail.com" autocomplete="on"
-                required />
+      <div class="container">
+        <div class="flex">
+          <ul class="list">
+            <li><a href="/index.html" class="footer-text footer-item list">Про нас</a></li>
+            <li><a href="/index.html" class="footer-text list">Онлайн-курси</a></li>
+          </ul>
+          <a href="./index.html"
+            ><img src="./images/logo-footer.png" alt="зірочка-лого" width="360"
+          /></a>
+          <ul class="list socials-list">
+            <li>
+              <a
+                class="social-link"
+                href="https://www.facebook.com/"
+                target="_blank"
+                rel="nofollow noreferrer noopener"
+                aria-label="facebook icon"
+              >
+                <svg class="icon" width="100" height="100">
+                  <use href="./images/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                class="social-link"
+                href="https://web.telegram.org/k/"
+                target="_blank"
+                rel="nofollow noreferrer noopener"
+                aria-label="telegram icon"
+              >
+                <svg class="icon" width="100" height="100">
+                  <use href="./images/sprite.svg#telegram-5"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                class="social-link"
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="nofollow noreferrer noopener"
+                aria-label="instagram icon"
+              >
+                <svg class="icon" width="100" height="100">
+                  <use href="./images/sprite.svg#Instagram"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
         </div>
+        <p class="footer-link">
+          <a href="index.html" class="footer-text list">Слідкувати за новинами</a>
+        </p>
+        <input
+          class="footer-input"
+          name="email"
+          type="email"
+          placeholder="username@gmail.com"
+          autocomplete="on"
+          required
+        />
+      </div>
     </footer>
-</body>
+  </body>
 </html>

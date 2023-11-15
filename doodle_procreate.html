@@ -1,244 +1,362 @@
 <!DOCTYPE html>
 <html lang="uk">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Doodle in procreate</title>
     <link
-        href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Montserrat:wght@400;700&family=Roboto&display=swap"
-        rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-            integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-            crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/main.min.css">
-</head>
-<body>
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Montserrat:wght@400;700&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
     <div class="procreate-bck">
-        <header>
-            <div class="container header">
-                <a href="./index.html"><img src="./images/StarLogo.svg" alt="лого школи" /></a>
-                <nav>
-                    <ul class="site-nav list">
-                        <li><a class="nav-link" href="./doodle_sketch.html">
-                                <svg class="nav-icon" width="60" height="60">
-                                    <use href="./images/sprite.svg#witch"></use>
-                                </svg>Дудл у скетчі</a></li>
-                        <li><a class="nav-link current" href="./doodle_procreate.html">
-                                <svg class="nav-icon" width="60" height="60">
-                                    <use href="./images/sprite.svg#witch"></use>
-                                </svg>Дудл у Procreate</a></li>
-                        <li><a class="nav-link" href="./doodle_nft.html">
-                                <svg class="nav-icon" width="60" height="60">
-                                    <use href="./images/sprite.svg#witch"></use>
-                                </svg>Дудл NFT</a></li>
-                    </ul>
-                </nav>
-                <img class="bucket" src="./images/bucket.svg" alt="кошик" />
+      <header>
+        <div class="container header">
+          <a href="./index.html"><img src="./images/StarLogo.svg" alt="лого школи" /></a>
+          <nav>
+            <ul class="site-nav list">
+              <li>
+                <a class="nav-link" href="./doodle_sketch.html">
+                  <svg class="nav-icon" width="60" height="60">
+                    <use href="./images/sprite.svg#witch"></use></svg>Дудл у скетчі</a
+                >
+              </li>
+              <li>
+                <a class="nav-link current" href="./doodle_procreate.html">
+                  <svg class="nav-icon" width="60" height="60">
+                    <use href="./images/sprite.svg#witch"></use></svg>Дудл у Procreate</a
+                >
+              </li>
+              <li>
+                <a class="nav-link" href="./doodle_nft.html">
+                  <svg class="nav-icon" width="60" height="60">
+                    <use href="./images/sprite.svg#witch"></use></svg>Дудл NFT</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <img class="bucket" src="./images/bucket.svg" alt="кошик" />
+        </div>
+      </header>
+      <main>
+        <!-- Hero section -->
+        <section class="section procreate-hero">
+          <div class="container">
+            <h2>Школа Чаклунства</h2>
+            <div class="procreate-thumb">
+              <h3>Дудл у Procreate</h3>
+              <button type="button" class="btn js-open-modal" data-modal="2">Записатися</button>
+              <div class="img-thumb">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/doodle_procreate/hero_@1x.jpg 1x,
+                      ./images/doodle_procreate/hero_@2x.jpg 2x
+                    "
+                    media="(min-width: 1304px)"
+                    type="image/jpeg"
+                  />
+                  <source
+                    srcset="
+                      ./images/doodle_procreate/hero_@0.5x.jpg 1x,
+                      ./images/doodle_procreate/hero_@1x.jpg 2x
+                    "
+                    media="(min-width: 768x)"
+                    type="image/jpeg"
+                  />
+                  <source
+                    srcset="
+                      ./images/doodle_procreate/hero_@0.5x.jpg 1x,
+                      ./images/doodle_procreate/hero_@1x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                    type="image/jpeg"
+                  />
+                  <img
+                    src="./images/doodle_procreate/hero_@1x.jpg"
+                    alt="дизайнерський малюнок"
+                    width="1280"
+                  />
+                </picture>
+              </div>
             </div>
-        </header>
-        <main>
-            <!-- Hero section -->
-            <section class="section procreate-hero">
-                <div class="container">
-                    <h2>Школа Чаклунства</h2>
-                    <div class="procreate-thumb">
-                        <h3>Дудл у Procreate</h3>
-                        <button type="button" class="btn js-open-modal" data-modal="2">Записатися</button>
-                        <div class="img-thumb">
-                            <img src="./images/doodle_procreate/hero.jpg" alt="дизайнерський малюнок" width="1280" />
-                        </div>
-                    </div>
+          </div>
+        </section>
+        <!-- About section-->
+
+        <section class="section">
+          <div class="container">
+            <h2 class="visually-hidden">Зміст курсу</h2>
+            <div class="procreate-about">
+              <div>
+                <p class="history-text">На цьому курсі ти</p>
+                <ul>
+                  <li>
+                    Ознайомишься з <br />інтерфейсом Procreate. Дізнаєшься все, що потрібно для
+                    впевненого володіння програмою.
+                  </li>
+                  <li>Створиш свої листівки, наклейки, стікери в телеграм.</li>
+                  <li>
+                    Також поговоримо про те, де можна продавати свої дудл-ілюстрації, не виходячи
+                    із<br />
+                    дому.
+                  </li>
+                  <li>Про тонкощі роботи з <br />клієнтом.</li>
+                  <li>Про створення портфоліо.</li>
+                </ul>
+              </div>
+              <div class="img-thumb">
+                <img
+                srcset="./images/doodle_procreate/about_@1x.jpg 1x, ./images/doodle_procreate/about_@1x.jpg 2x"
+                  src="./images/doodle_procreate/about_@1x.jpg"
+                  width="623"
+                  alt="дизайнерський малюнок"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- examples-->
+        <section class="section">
+          <div class="container">
+            <h2 class="sketch-title">Що ми зробимо</h2>
+            <ul class="list procreate-examples">
+              <li>
+                <div class="img-thumb">
+                  <img
+                    srcset="./images/doodle_procreate/example1_@1x.jpg 1x, ./images/doodle_procreate/example1_@1x.jpg 2x"
+                    src="./images/doodle_procreate/example1_@1x.jpg"
+                    alt="дизайнерський малюнок"
+                    width="410"
+                  />
                 </div>
-            </section>
-            <!-- About section-->
-        
-            <section class="section">
-                <div class="container">
-                    <h2 class="visually-hidden">Зміст курсу</h2>
-                    <div class="procreate-about">
-                        <div>
-                            <p class="history-text"> На цьому курсі ти</p>
-                            <ul>
-                                <li>Ознайомишься з <br>інтерфейсом Procreate. Дізнаєшься все, що потрібно для впевненого
-                                    володіння програмою.</li>
-                                <li>Створиш свої листівки, наклейки, стікери в телеграм.</li>
-                                <li>Також поговоримо про те, де можна продавати свої дудл-ілюстрації, не виходячи із<br>
-                                    дому.</li>
-                                <li>Про тонкощі роботи з <br>клієнтом.</li>
-                                <li>Про створення портфоліо.</li>
-                            </ul>
-                        </div>
-                        <div class="img-thumb">
-                            <img src="./images/doodle_procreate/about.jpg" width="623" alt="дизайнерський малюнок" />
-                        </div>
-                    </div>
+              </li>
+
+              <li>
+                <div class="img-thumb">
+                  <img
+                    srcset="./images/doodle_procreate/example2_@1x.jpg 1x, ./images/doodle_procreate/example2_@1x.jpg 2x"
+                    src="./images/doodle_procreate/example2_@1x.jpg"
+                    alt="дизайнерський малюнок"
+                    width="410"
+                  />
                 </div>
-            </section>
-            <!-- examples-->
-            <section class="section">
-                <div class="container">
-                    <h2 class="sketch-title">Що ми зробимо</h2>
-                    <ul class="list procreate-examples">
-                        <li>
-                            <div class="img-thumb">
-                                <img src="./images/doodle_procreate/examples1.jpg" alt="дизайнерський малюнок" width="410" />
-                            </div>
-                        </li>
-            
-                        <li>
-                            <div class="img-thumb">
-                                <img src="./images/doodle_procreate/examples2.jpg" alt="дизайнерський малюнок" width="410" />
-                            </div>
-                        </li>
-            
-                        <li>
-                            <div class="img-thumb">
-                                <img src="./images/doodle_procreate/examples3.jpg" alt="дизайнерський малюнок" width="410" />
-                            </div>
-                        </li>
-            
-                    </ul>
+              </li>
+
+              <li>
+                <div class="img-thumb">
+                  <img
+                    srcset="./images/doodle_procreate/example3_@1x.jpg 1x, ./images/doodle_procreate/example3_@1x.jpg 2x"
+                    src="./images/doodle_procreate/example3_@1x.jpg"
+                    alt="дизайнерський малюнок"
+                    width="410"
+                  />
                 </div>
-            </section>
-            <!-- for whom this course -->
-            <section class="section">
-                <div class="container">
-                    <h2 class="sketch-title">Кому підійде курс</h2>
-                    <ul>
-                        <li class="text sketch-text">Новачкам, так і людям із художнім досвідом, хто хоче освоїти
-                            дудл-ілюстрацію.</li>
-                        <li class="text sketch-text">Ілюстраторам, які хочуть освоїти новий напрямок та працювати на замовлення.
-                        </li>
-                        <li class="text sketch-text">Усім, хто закоханий у творчість - для нового хобі, яке може перерости у
-                            професію.</li>
-                    </ul>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <!-- for whom this course -->
+        <section class="section">
+          <div class="container">
+            <h2 class="sketch-title">Кому підійде курс</h2>
+            <ul>
+              <li class="text sketch-text">
+                Новачкам, так і людям із художнім досвідом, хто хоче освоїти дудл-ілюстрацію.
+              </li>
+              <li class="text sketch-text">
+                Ілюстраторам, які хочуть освоїти новий напрямок та працювати на замовлення.
+              </li>
+              <li class="text sketch-text">
+                Усім, хто закоханий у творчість - для нового хобі, яке може перерости у професію.
+              </li>
+            </ul>
+          </div>
+        </section>
+        <!-- equipment for work -->
+        <section class="section">
+          <div class="container">
+            <h2 class="sketch-title">Матеріали для роботи на курсі</h2>
+            <ul>
+              <li class="text sketch-text">IPad Pro або IPad з підтримкою Apple Pencil</li>
+              <li class="text sketch-text">Apple Pencil</li>
+              <li class="text sketch-text">Встановити програму Procreate для IPad</li>
+            </ul>
+          </div>
+        </section>
+        <!-- What you'll have -->
+        <section class="section">
+          <div class="container">
+            <h2 class="sketch-title">Також у вас буде</h2>
+            <ul>
+              <li class="text sketch-text">Підтримка викладача</li>
+              <li class="text sketch-text">Навчання у зручний для вас час</li>
+              <li class="text sketch-text">Доступ до матеріалів на 1 рік</li>
+              <li class="text sketch-text">Диплом після закінчення курсу</li>
+            </ul>
+          </div>
+        </section>
+        <!--  works of our students -->
+        <section class="section">
+          <div class="container">
+            <h2 class="sketch-title">Роботи студентів</h2>
+            <ul class="list procreate-works">
+              <li>
+                <div class="img-thumb">
+                  <img
+                  srcset="./images/doodle_procreate/work1_@1x.jpg 1x, ./images/doodle_procreate/work1_@2x.jpg 2x"
+                    src="./images/doodle_procreate/work1_@1x.jpg"
+                    alt="дизайнерський малюнок"
+                    width="624"
+                  />
                 </div>
-            </section>
-            <!-- equipment for work -->
-            <section class="section">
-                <div class="container">
-                    <h2 class="sketch-title">Матеріали для роботи на курсі</h2>
-                    <ul>
-                        <li class="text sketch-text">IPad Pro або IPad з підтримкою Apple Pencil</li>
-                        <li class="text sketch-text">Apple Pencil</li>
-                        <li class="text sketch-text">Встановити програму Procreate для IPad</li>
-                    </ul>
+              </li>
+              <li>
+                <div class="img-thumb">
+                  <img
+                  srcset="./images/doodle_procreate/work2_@1x.jpg 1x, ./images/doodle_procreate/work2_@2x.jpg 2x"
+                    src="./images/doodle_procreate/work2_@1x.jpg"
+                    alt="дизайнерський малюнок"
+                    width="624"
+                  />
                 </div>
-            </section>
-            <!-- What you'll have -->
-            <section class="section">
-                <div class="container">
-                    <h2 class="sketch-title">Також у вас буде</h2>
-                    <ul>
-                        <li class="text sketch-text">Підтримка викладача</li>
-                        <li class="text sketch-text">Навчання у зручний для вас час</li>
-                        <li class="text sketch-text">Доступ до матеріалів на 1 рік</li>
-                        <li class="text sketch-text">Диплом після закінчення курсу</li>
-                    </ul>
-                </div>
-            </section>
-            <!--  works of our students -->
-            <section class="section">
-                <div class="container">
-                    <h2 class="sketch-title">Роботи студентів</h2>
-                    <ul class="list procreate-works">
-                        <li>
-                            <div class="img-thumb">
-                                <img src="./images/doodle_procreate/students_work1.jpg" alt="дизайнерський малюнок" width="624" />
-                            </div>
-                        </li>
-                        <li>
-                            <div class="img-thumb">
-                                <img src="./images/doodle_procreate/students_work2.jpg" alt="дизайнерський малюнок" width="624" />
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-            <!--  a teacher -->
-            <section class="section">
-                <div class="container">
-                    <h2 class="sketch-title">Хто вестиме курс</h2>
-                    <div class="procreate-teacher">
-                        <ul>
-                            <li class="sketch-text">Олександра Чабанова - <br>професійна дудл-<br>ілюстраторка.</li>
-                            <li class="sketch-text">Понад 5 років художнього<br> досвіду.</li>
-                            <li class="sketch-text">Понад 300 виконаних<br> комерційних дудл-<br>ілюстрацій.</li>
-                        </ul>
-                        <div class="img-thumb">
-                            <img src="./images/doodle_procreate/teacher.jpg" alt="Олександра Чабанова" width="410" />
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <!--  a teacher -->
+        <section class="section">
+          <div class="container">
+            <h2 class="sketch-title">Хто вестиме курс</h2>
+            <div class="procreate-teacher">
+              <ul>
+                <li class="sketch-text">
+                  Олександра Чабанова - <br />професійна дудл-<br />ілюстраторка.
+                </li>
+                <li class="sketch-text">
+                  Понад 5 років художнього<br />
+                  досвіду.
+                </li>
+                <li class="sketch-text">
+                  Понад 300 виконаних<br />
+                  комерційних дудл-<br />ілюстрацій.
+                </li>
+              </ul>
+              <div class="img-thumb">
+                <picture>
+                    <source srcset="./images/doodle_procreate/teacher_@1x.jpg 1x, ./images/doodle_procreate/teacher_@2x.jpg 2x"
+                        media="(min-width: 1304px)" type="image/jpeg" />
+                    <source srcset="./images/doodle_procreate/teacher_@0.5x.jpg 1x, ./images/doodle_procreate/teacher_@1x.jpg 2x"
+                        media="(min-width: 768x)" type="image/jpeg" />
+                    <source srcset="./images/doodle_procreate/teacher_@0.5x.jpg 1x, ./images/doodle_procreate/teacher_@1x.jpg 2x"
+                        media="(max-width: 767px)" type="image/jpeg" />
+                <img
+                  src="./images/doodle_procreate/teacher_@1x.jpg"
+                  alt="Олександра Чабанова"
+                  width="410"
+                />
+                </picture>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
     </div>
-<footer class="section footer">
-    <div class="container">
+    <footer class="section footer">
+      <div class="container">
         <div class="flex">
-            <ul class="list">
-                <li><a href="/index.html" class="footer-text footer-item list">Про нас</a></li>
-                <li><a href="/index.html" class="footer-text list">Онлайн-курси</a></li>
-            </ul>
-            <a href="./index.html"><img src="./images/logo-footer.png" alt="зірочка-лого" width="360" /></a>
-            <ul class="list socials-list">
-                <li>
-                    <a class="social-link" href="https://www.facebook.com/" target="_blank"
-                        rel="nofollow noreferrer noopener" aria-label="facebook icon">
-                        <svg class="icon" width="100" height="100">
-                            <use href="./images/sprite.svg#facebook"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li>
-                    <a class="social-link" href="https://web.telegram.org/k/" target="_blank"
-                        rel="nofollow noreferrer noopener" aria-label="telegram icon">
-                        <svg class="icon" width="100" height="100">
-                            <use href="./images/sprite.svg#telegram-5"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li>
-                    <a class="social-link" href="https://www.instagram.com/" target="_blank"
-                        rel="nofollow noreferrer noopener" aria-label="instagram icon">
-                        <svg class="icon" width="100" height="100">
-                            <use href="./images/sprite.svg#Instagram"></use>
-                        </svg>
-                    </a>
-                </li>
-            </ul>
+          <ul class="list">
+            <li><a href="/index.html" class="footer-text footer-item list">Про нас</a></li>
+            <li><a href="/index.html" class="footer-text list">Онлайн-курси</a></li>
+          </ul>
+          <a href="./index.html"
+            ><img src="./images/logo-footer.png" alt="зірочка-лого" width="360"
+          /></a>
+          <ul class="list socials-list">
+            <li>
+              <a
+                class="social-link"
+                href="https://www.facebook.com/"
+                target="_blank"
+                rel="nofollow noreferrer noopener"
+                aria-label="facebook icon"
+              >
+                <svg class="icon" width="100" height="100">
+                  <use href="./images/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                class="social-link"
+                href="https://web.telegram.org/k/"
+                target="_blank"
+                rel="nofollow noreferrer noopener"
+                aria-label="telegram icon"
+              >
+                <svg class="icon" width="100" height="100">
+                  <use href="./images/sprite.svg#telegram-5"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                class="social-link"
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="nofollow noreferrer noopener"
+                aria-label="instagram icon"
+              >
+                <svg class="icon" width="100" height="100">
+                  <use href="./images/sprite.svg#Instagram"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
         </div>
         <p class="footer-link">
-            <a href="index.html" class="footer-text list">Слідкувати за новинами</a>
+          <a href="index.html" class="footer-text list">Слідкувати за новинами</a>
         </p>
-        <input class="footer-input" name="email" type="email" placeholder="username@gmail.com" autocomplete="on"
-            required />
-    </div>
-</footer>
-<div class="overlay js-overlay-modal" data-modal="2">
-    <div class="modal modal-signup" data-modal="2">
+        <input
+          class="footer-input"
+          name="email"
+          type="email"
+          placeholder="username@gmail.com"
+          autocomplete="on"
+          required
+        />
+      </div>
+    </footer>
+    <div class="overlay js-overlay-modal" data-modal="2">
+      <div class="modal modal-signup" data-modal="2">
         <button class="close-btn js-modal-close" type="button">
-            <svg class="close-btn-icon" width="30" height="30">
-                <use href="./images/sprite.svg#cross"></use>
-            </svg></button>
+          <svg class="close-btn-icon" width="30" height="30">
+            <use href="./images/sprite.svg#cross"></use>
+          </svg>
+        </button>
         <h2>Дізнатися про курс</h2>
         <form>
-            <div class="form-field">
-                <input class="form-input" type="text" name="text" id="name" placeholder=" " autofocus />
-                <label class="form-label" for="name">
-                    1. Як вас звати?
-                </label>
-            </div>
-            <div class="form-field">
-                <input class="form-input" type="tel" name="tel" id="tel" placeholder=" " required />
-                <label class="form-label" for="tel">
-                    2. Номер телефону
-                </label>
-            </div>
+          <div class="form-field">
+            <input class="form-input" type="text" name="text" id="name" placeholder=" " autofocus />
+            <label class="form-label" for="name"> 1. Як вас звати? </label>
+          </div>
+          <div class="form-field">
+            <input class="form-input" type="tel" name="tel" id="tel" placeholder=" " required />
+            <label class="form-label" for="tel"> 2. Номер телефону </label>
+          </div>
         </form>
         <button class="btn" type="submit">Відправити</button>
+      </div>
     </div>
-</div>
-<script src="./js/modal.js"></script>
-</body>
+    <script src="./js/modal.js"></script>
+  </body>
 </html>
