@@ -7,6 +7,10 @@ body {
     background-color: #FBDCF9;
 
     @media screen and (min-width: $tablet) {
-        font-size: 40px;
+        font-size: 30px;
     }
+
+     @media screen and (min-width: $desktop) {
+         font-size: 40px;
+     }
 }

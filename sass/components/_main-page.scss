@@ -234,6 +234,14 @@
         }
 }
 
+.courses-item {
+    @media screen and (min-width: 457px) and (max-width: 1303px) {
+        width: 410px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
 .courses-list h3,
 .courses-list .img-thumb,
 .courses-list p,
@@ -247,13 +255,21 @@
 }
 
 .courses-list .btn-link {
-    margin-left: 30px;
+    @media screen and (max-width: 767px) {
+        width: 100%;
+    }
+    
 }
 
 /*FORMAT OF LESSONS */
 
 .format h2 {
-    margin-bottom: 95px;
+    margin-bottom: 40px;
+
+    @media screen and (min-width: $desktop) {
+            margin-bottom: 95px;
+        }
+    
 }
 
 .format li:not(:last-child) {
@@ -267,12 +283,17 @@
 }
 
 .reviews h2 {
-    margin-bottom: 85px;
+    margin-bottom: 40px;
+
+    @media screen and (min-width: $desktop) {
+            margin-bottom: 85px;
+        }
+    
 }
 
 .reviews-box {
-    height: 466px;
-    margin-bottom: 148px;
+    margin-bottom: 30px;
+    width: 100%;
     
     background-color: #FBDCF9;
     background-repeat: no-repeat;
@@ -332,16 +353,34 @@
                 background-position: center;
             }
         }
+
+        @media screen and (min-width: $desktop) {
+            height: 466px;
+            margin-bottom: 148px;
+        }
     }
 .reviews-box p {
     display: inline-block;
-    text-align: left;
-    padding: 45px;
-    margin-top: 71px;
-    width: 890px;
-    height: 324px;
+    text-align: center;
 
     background-color: #FBDCF9;
+
+    @media screen and (min-width: $tablet) {
+        padding: 10px;
+        margin-top: 25px;
+        margin-bottom: 25px;            
+        width: 600px;
+        height: auto;
+        text-align: left;
+    }
+
+    @media screen and (min-width: $desktop) {
+        padding: 45px;
+        margin-top: 71px;
+        width: 890px;
+        height: 324px;
+        
+    }
 }
 
 /* HELP */
@@ -351,7 +390,11 @@
 }
 
 .help h2 {
-    margin-bottom: 74px;
+    margin-bottom: 40px;
+@media screen and (min-width: $desktop) {
+    margin-bottom: 74px;    
+}
+    
 }
 
 .help button {

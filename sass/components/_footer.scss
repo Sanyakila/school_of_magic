@@ -4,6 +4,10 @@
     background-image: url("../../images/footer-bck.png");
     background-position: center;
     background-size: cover;
+
+    @media screen and (max-width: 1303px) {
+            text-align: center;
+    }
 }
 
 .footer-text {
@@ -11,7 +15,7 @@
 
     font-family: Amatic SC, sans-serif;
     font-weight: 700;
-    font-size: 96px;
+    font-size: 50px;
 
     text-decoration: none;
 
@@ -19,20 +23,38 @@
     background-color: #D9D9D9;
     border-radius: 20px;
 
+    @media screen and (min-width: $tablet) {
+        font-size: 70px;
+    }
+
+    @media screen and (min-width: $desktop) {
+            font-size: 96px;
+    }
 }
 
 
 .flex {
-    display: flex;
-    margin-bottom: 55px;
+    @media screen and (min-width: $desktop) {
+        display: flex;
+        margin-bottom: 55px;
+    }
 }
 
 .flex > ul:not(:last-child) {
-    width: 420px;
+    @media screen and (min-width: $desktop) {
+        width: 420px;
+    }    
 }
+    
 
 .footer-item {
     margin-bottom: 11px;
+}
+
+.footer img {
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .footer-link {
@@ -46,12 +68,21 @@
 
 .socials-list {
     display: flex;
+    
     // gap: 48px;
     margin-left: auto;
+
+    @media screen and (max-width: 1303px) {
+        justify-content: center;
+        margin-bottom: 30px;
+    }
 }
 
 .socials-list li:not(:last-child) {
-    margin-right: 48px;
+    margin-right: 35px;
+    @media screen and (min-width: $desktop) {
+        margin-right: 48px;
+    }
 }
 
 .social-link {
@@ -62,8 +93,12 @@
 
 .icon {
     fill: currentColor;
-
+    
     transition: fill 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    @media screen and (max-width: 767px) {
+        height: 50px;
+        width: 50px;
+    }
 }
 
 .social-link:hover .icon,
@@ -76,11 +111,20 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
-    width: 459px;
+    width: 280px;
     padding: 12px 22px;
+
+    @media screen and (min-width: $tablet) {
+        width: 459px;
+    }
 }
 
 .footer .btn {
+    
     margin-left: auto;
     margin-right: auto;
+
+    @media screen and (max-width: 767px) {
+        min-width: 191px;
+    }
 }

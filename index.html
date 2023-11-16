@@ -20,7 +20,7 @@
 
   <body>
     <div class="index-bck">
-      <!-- <header>
+      <header>
             <div class="container header">
                 <a href="./index.html"><img src="./images/StarLogo.svg" alt="лого школи" /></a>
                 <nav>
@@ -40,8 +40,13 @@
                     </ul>
                 </nav>
                 <img class="bucket" src="./images/bucket.svg" alt="кошик" />
+                <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                    <svg class="menu-icon" width="40" height="40">
+                        <use href="./images/sprite.svg#menu"></use>
+                    </svg>
+                </button>
             </div>
-        </header> -->
+        </header>
       <main>
         <!-- Hero section-->
         <!-- <section class="section hero">
@@ -93,119 +98,49 @@
                 </div>
             </section> -->
         <!-- Courses -->
-        <section class="section courses">
+        <!-- <section class="section courses">
           <div class="container">
             <h2 class="section-title">Курси</h2>
             <ul class="list courses-list">
               <li class="courses-item">
                 <h3 class="courses-text">Дудл у скетчі</h3>
                 <div class="img-thumb">
-                  <picture>
-                    <source
-                      srcset="
-                        ./images/main_page/sketch_@1x.jpg 1x,
-                        ./images/main_page/sketch_@2x.jpg 2x
-                      "
-                      media="(min-width: 1304px)"
-                      type="image/jpeg"
-                    />
-                    <source
-                      srcset="
-                        ./images/main_page/sketch_@1x.jpg 1x,
-                        ./images/main_page/sketch_@2x.jpg 2x
-                      "
-                      media="(min-width: 768x)"
-                      type="image/jpeg"
-                    />
-                    <source
-                      srcset="
-                        ./images/main_page/sketch_@1x.jpg 1x,
-                        ./images/main_page/sketch_@2x.jpg 2x
-                      "
-                      media="(max-width: 767px)"
-                      type="image/jpeg"
-                    />
-                    <img src="./images/main_page/sketch_@1x.jpg" 
+                    <img
+                    srcset="./images/main_page/sketch_@1x.jpg 1x, ./images/main_page/sketch_@2x.jpg 2x" 
+                    src="./images/main_page/sketch_@1x.jpg" 
                         alt="довільний малюнок"
                     />
-                  </picture>
                 </div>
                 <p>1000грн</p>
                 <a href="./doodle_sketch.html" class="btn-link">Дізнатися про курс</a>
               </li>
-              <li>
+              <li class="courses-item">
                 <h3 class="courses-text">Дудл у Procreate</h3>
                 <div class="img-thumb">
-                  <picture>
-                    <source
-                      srcset="
-                        ./images/main_page/procreate_@1x.jpg 1x,
-                        ./images/main_page/procreate_@2x.jpg 2x
-                      "
-                      media="(min-width: 1304px)"
-                      type="image/jpeg"
-                    />
-                    <source
-                      srcset="
-                        ./images/main_page/procreate_@1x.jpg 1x,
-                        ./images/main_page/procreate_@2x.jpg 2x
-                      "
-                      media="(min-width: 768x)"
-                      type="image/jpeg"
-                    />
-                    <source
-                      srcset="
-                        ./images/main_page/procreate_@1x.jpg 1x,
-                        ./images/main_page/procreate_@2x.jpg 2x
-                      "
-                      media="(max-width: 767px)"
-                      type="image/jpeg"
-                    />
-                    <img src="./images/main_page/procreate_@1x.jpg" alt="довільний малюнок" />
-                  </picture>
+                    <img
+                    srcset="./images/main_page/procreate_@1x.jpg 1x, ./images/main_page/procreate_@2x.jpg 2x" 
+                    src="./images/main_page/procreate_@1x.jpg" alt="довільний малюнок" />
                 </div>
                 <p>2000грн</p>
                 <a href="./doodle_procreate.html" class="btn-link">Дізнатися про курс</a>
               </li>
-              <li>
+              <li class="courses-item">
                 <h3 class="courses-text">Дудл NFT</h3>
                 <div class="img-thumb">
-                  <picture>
-                    <source
-                      srcset="./images/main_page/nft_@1x.jpg 1x, 
-                      ./images/main_page/nft_@2x.jpg 2x"
-                      media="(min-width: 1304px)"
-                      type="image/jpeg"
-                    />
-                    <source
-                      srcset="
-                        ./images/main_page/nft_@1x.jpg 1x,
-                        ./images/main_page/nft_@2x.jpg 2x
-                      "
-                      media="(min-width: 768x)"
-                      type="image/jpeg"
-                    />
-                    <source
-                      srcset="
-                        ./images/main_page/nft_@1x.jpg 1x,
-                        ./images/main_page/nft_@2x.jpg 2x
-                      "
-                      media="(max-width: 767px)"
-                      type="image/jpeg"
-                    />
-                    <img src="./images/main_page/nft_@1x.jpg" alt="довільний малюнок" />
-                  </picture>
+                    <img
+                    srcset="./images/main_page/nft_@1x.jpg 1x, ./images/main_page/nft_@2x.jpg 2x"
+                     src="./images/main_page/nft_@1x.jpg" alt="довільний малюнок" />
                 </div>
                 <p>3000грн</p>
                 <a href="./doodle_nft.html" class="btn-link">Дізнатися про курс</a>
               </li>
             </ul>
           </div>
-        </section>
+        </section> -->
         <!-- format of lessons -->
         <!-- <section class="section format">
                 <div class="container">
-                    <h2 class="section-title">У якому форматі відбуваються уроки</h2>
+                    <h2>У якому форматі відбуваються уроки</h2>
                     <ul>
                         <li>Відео уроки - ми створюємо цікаві та максимально корисні онлайн курси з малювання дудлів, з нами
                             ви самі
@@ -226,9 +161,9 @@
         <!-- reviews of our students -->
         <!-- <section class="section reviews">
                 <div class="container">
-                    <h2 class="section-title">Відгуки студентів які закінчили курси</h2>
+                    <h2>Відгуки студентів які закінчили курси</h2>
                     <div class="reviews-box">
-                        <p>Тут історії студентів про те, як склалося їх <br>життя після курсів.<br>
+                        <p>Тут історії студентів про те, як склалося їхнє життя після курсів.<br>
                             Ми ніжно зберігаємо історії та роботи<br> студентів із дудлів, щоб ділитися ними зі<br> світом.
                         </p>
                     </div>
@@ -249,7 +184,7 @@
             <div class="flex">
                 <ul class="list">
                     <li><a href="/index.html" class="footer-text footer-item list">Про нас</a></li>
-                    <li><a href="/index.html" class="footer-text list">Онлайн-курси</a></li>
+                    <li><a href="/index.html" class="footer-text footer-item">Онлайн-курси</a></li>
                 </ul>
                 <a href="./index.html"><img src="./images/logo-footer.png" alt="зірочка-лого" width="360" /></a>
                 <ul class="list socials-list">
@@ -320,6 +255,25 @@
         <button class="btn" type="submit">Відправити</button>
       </div>
     </div>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+            <svg class="" width="40" height="40">
+                <use href="./images/sprite.svg#cross"></use>
+            </svg>
+        </button>
+        <ul class="mobile-nav list">
+            <li class="mobile-nav__list">
+                <a class="mobile-nav__link current" href="doodle_sketch.html">Дудл у скетчі</a>
+            </li>
+            <li class="mobile-nav__list">
+                <a class="mobile-nav__link" href="doodle_procreate.html">Дудл у Procreate</a>
+            </li>
+            <li class="mobile-nav__list">
+                <a class="mobile-nav__link" href="doodle_nft.html">Дудл NFT</a>
+            </li>
+        </ul>
+    </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
