@@ -1,5 +1,5 @@
 .index-bck {
-    width: 1440px;
+    width: 100%;
     padding-left: 12px;
     padding-right: 12px;
     margin: 0 auto;
@@ -7,6 +7,21 @@
     background-image: url("../images/elipses/Ellipse\ 24.png"), url('../images/elipses/Ellipse\ 25.png'), url("../images/elipses/Ellipse\ 26.png"), url("../images/elipses/Ellipse\ 27.png"), url("../images/elipses/Ellipse\ 28.png"), url("../images/elipses/Ellipse\ 29.png");
     background-repeat: no-repeat;
     background-position: 923px 22px, 768px 1970px, 124px 2861px, 748px 3940px, 64px 5600px, 963px 5531px;
+
+    // mobile screen
+        @media screen and (min-width: $mobile) {
+            width: $mobile;
+        }
+    
+        // tablet screen
+        @media screen and (min-width: $tablet) {
+            width: $tablet;
+        }
+    
+        // desktop screen
+        @media screen and (min-width: $desktop) {
+            width: 1440px;
+        }
 }
 
 /* hero */
@@ -14,28 +29,64 @@
 .hero {
     background-image: url(../images/elipses/Ellipse\ 23.png);
     background-repeat: no-repeat;
-    background-position: 152px 69px;
+    background-position: 20px 60px;
+
+    @media screen and (min-width: $desktop) {
+        background-position: 152px 69px;
+    }
 }
 
 .hero-title {
-    font-size: 64px;
+    font-size: 26px;
+    @media screen and (min-width: $tablet){
+        font-size: 44px;
+    }
+        @media screen and (min-width: $desktop) {
+        font-size: 64px;
+        }
 }
 
 .hero .hero-title {
-    margin-bottom: 80px;
+    margin-bottom: 20px;
+
+    @media screen and (min-width: $tablet) {
+        margin-bottom: 40px;
+        }
+        @media screen and (min-width: $desktop) {
+            margin-bottom: 80px;
+        }
+   
 }
 
 /* OPPORTUNITIES */
 
 .description h2 {
-    margin-bottom: 100px;
+    margin-bottom: 20px;
+
+    @media screen and (min-width: $tablet) {
+            margin-bottom: 40px;
+        }
+    
+        @media screen and (min-width: $desktop) {
+            margin-bottom: 80px;
+        }
 }
 
 .description-list {
-    display: flex;
-    flex-wrap: wrap;
+    @media screen and (min-width: $desktop) {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    
 
     /* justify-content: space-around; */
+}
+
+.description-list li:not(:last-child) {
+    margin-bottom: 20px;
+    @media screen and (min-width: $tablet) {
+            margin-bottom: 40px;
+        }
 }
 
 /* .description-list li:nth-child(2n + 1) {
@@ -43,104 +94,160 @@
 } */
 
 .description-list li:nth-child(2n) {
-    margin-left: auto;
-    margin-bottom: 30px;
+    @media screen and (min-width: $desktop) {
+            margin-left: auto;
+            margin-bottom: 30px;
+        }
+    
 }
 
 .item {
-    display: flex;
-    align-items: center;
-    width: 565px;
+    text-align: center;
+
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        align-items: center;
+        text-align: left;
+        width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    @media screen and (min-width: $desktop) {
+            display: flex;
+            align-items: center;
+            width: 565px;
+        }
 }
 
-.item:nth-child(1):before {
-    content: "";
-    display: inline-block;
-    margin-right: 20px;
-    min-width: 113px;
-    height: 109px;
-    background-image: url("../images/elipses/Ellipse\ 2.png");
-}
+    @media screen and (min-width: $tablet) {
+        .item:nth-child(1):before {
+                content: "";
+                display: inline-block;
+                margin-right: 20px;
+                min-width: 113px;
+                height: 109px;
+                background-image: url("../images/elipses/Ellipse\ 2.png");
+            }
+        
+            .item:nth-child(2):before {
+                content: "";
+                display: inline-block;
+                margin-right: 27px;
+                min-width: 111px;
+                height: 133px;
+                background-image: url("../images/elipses/Ellipse\ 5.png");
+            }
+        
+            .item:nth-child(3):before {
+                content: "";
+                display: inline-block;
+                margin-right: 50px;
+                width: 85px;
+                height: 99px;
+                background-image: url("../images/elipses/Ellipse\ 3.png");
+            }
+        
+            .item:nth-child(4):before {
+                content: "";
+                display: inline-block;
+                margin-right: 27px;
+                min-width: 108px;
+                height: 86px;
+                background-image: url("../images/elipses/Ellipse\ 6.png");
+            }
+        
+            .item:nth-child(5):before {
+                content: "";
+                display: inline-block;
+                margin-right: 27px;
+                min-width: 108px;
+                height: 96px;
+                background-image: url("../images/elipses/Ellipse\ 4.png");
+            }
+        
+            .item:nth-child(6):before {
+                content: "";
+                display: inline-block;
+                margin-right: 27px;
+                min-width: 108px;
+                height: 106px;
+                background-image: url("../images/elipses/Ellipse\ 7.png");
+            }
+    }
 
-.item:nth-child(2):before {
-    content: "";
-    display: inline-block;
-    margin-right: 27px;
-    min-width: 111px;
-    height: 133px;
-    background-image: url("../images/elipses/Ellipse\ 5.png");
-}
 
-.item:nth-child(3):before {
-    content: "";
-    display: inline-block;
-    margin-right: 50px;
-    width: 85px;
-    height: 99px;
-    background-image: url("../images/elipses/Ellipse\ 3.png");
-}
-
-.item:nth-child(4):before {
-    content: "";
-    display: inline-block;
-    margin-right: 27px;
-    min-width: 108px;
-    height: 86px;
-    background-image: url("../images/elipses/Ellipse\ 6.png");
-}
-
-.item:nth-child(5):before {
-    content: "";
-    display: inline-block;
-    margin-right: 27px;
-    min-width: 108px;
-    height: 96px;
-    background-image: url("../images/elipses/Ellipse\ 4.png");
-}
-
-.item:nth-child(6):before {
-    content: "";
-    display: inline-block;
-    margin-right: 27px;
-    min-width: 108px;
-    height: 106px;
-    background-image: url("../images/elipses/Ellipse\ 7.png");
-}
 
 /* FOR WHOM THIS SCHOOL */
 
 .belong h2 {
-    margin-bottom: 46px;
+    margin-bottom: 30px;
+
+    @media screen and (min-width: $desktop) {
+        margin-bottom: 46px;
+    }
 }
 
 .belong .history-text {
-    margin-bottom: 97px;
+    text-align: center;
+    margin-bottom: 40px;
+
+    @media screen and (min-width: $desktop) {
+        text-align: left;
+            margin-bottom: 97px;
+        }
+}
+
+.belong li:not(:last-child) {
+    @media screen and (max-width: 1303px) {
+            margin-bottom: 10px;
+        }
 }
 
 /* COURSES */
+
 .courses-text {
     font-family: Roboto, sans-serif;
     font-weight: 400;
-    font-size: 48px;
+    font-size: 24px;
 
     color: var(--main-text-color);
+
+    @media screen and (min-width: $desktop) {
+            font-size: 48px;
+        }
 }
 
 .courses h2 {
-    margin-bottom: 80px;
+    margin-bottom: 20px;
+
+    @media screen and (min-width: $desktop) {
+            margin-bottom: 80px;
+        }
 }
 
 .courses-list {
-    display: flex;
-    gap: 23px;
-    justify-content: center;
+    @media screen and (min-width: $desktop) {
+            display: flex;
+            gap: 23px;
+            justify-content: center;
+        }
 }
 
 .courses-list h3,
 .courses-list .img-thumb,
-.courses-list p {
-    margin-bottom: 60px;
+.courses-list p,
+.courses-list a {
+    margin-bottom: 20px;
     text-align: center;
+
+    @media screen and (min-width: $desktop) {
+            margin-bottom: 60px;
+        }
+}
+
+.courses-list .btn-link {
+    margin-left: 30px;
 }
 
 /*FORMAT OF LESSONS */

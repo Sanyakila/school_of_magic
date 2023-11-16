@@ -6,12 +6,19 @@ h5,
 h6 {
     font-family: Amatic SC, sans-serif;
     font-weight: 700;
-    font-size: 96px;
+    font-size: 40px;
     line-height: 1.21;
     text-align: center;
     margin: 0;
 
     color: var(--title-text-color);
+
+    @media screen and (min-width: $tablet) {
+        font-size: 72px;
+    }
+     @media screen and (min-width: $desktop) {
+         font-size: 96px;
+    }
 }
 
 p,
@@ -26,8 +33,11 @@ img {
 }
 
 .img-thumb {
+    min-width: 272px;
+    max-width: 1278px;
     overflow: hidden;
     border-radius: 50px;
+    margin: 0 auto;
 }
 
 a {
@@ -43,6 +53,12 @@ a {
 .section {
     padding-top: 52px;
     padding-bottom: 52px;
+}
+
+.main-title {
+    font-size: 40px;
+
+    
 }
 
 .text {

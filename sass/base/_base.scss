@@ -1,8 +1,12 @@
 body {
     font-family: Roboto, sans-serif;
     font-weight: 400;
-    font-size: 40px;
+    font-size: 20px;
 
     color: var(--main-text-color);
     background-color: #FBDCF9;
+
+    @media screen and (min-width: $tablet) {
+        font-size: 40px;
+    }
 }

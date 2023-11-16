@@ -80,9 +80,16 @@
 }
 
 .history-text {
-    font-size: 48px;
+    font-size: 26px;
 
     color: var(--title-text-color);
+
+    @media screen and (min-width: $tablet) {
+        font-size: 36px;
+    }
+        @media screen and (min-width: $desktop) {
+            font-size: 48px;
+        }
 }
 
 .text-decoration {
