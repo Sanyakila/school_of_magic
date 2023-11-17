@@ -1,5 +1,5 @@
 .sketch-bck {
-    width: 1440px;
+    width: 100%;
     padding-left: 12px;
     padding-right: 12px;
     margin: 0 auto;
@@ -7,6 +7,21 @@
     background-image: url("../images/doodle_sketch/elipses/Ellipse1-min.png"), url('../images/doodle_sketch/elipses/Ellipse2-min.png'), url("../images/doodle_sketch/elipses/Ellipse3-min.png"), url("../images/doodle_sketch/elipses/Ellipse4-min.png"), url("../images/doodle_sketch/elipses/Ellipse5-min.png"), url("../images/doodle_sketch/elipses/Ellipse6-min.png");
     background-repeat: no-repeat;
     background-position: 178px 100px, 1111px 47px, 260px 920px, 890px 2595px, 265px 3435px, 16px 5140px;
+
+    // mobile screen
+        @media screen and (min-width: $mobile) {
+            width: $mobile;
+        }
+    
+        // tablet screen
+        @media screen and (min-width: $tablet) {
+            width: $tablet;
+        }
+    
+        // desktop screen
+        @media screen and (min-width: $desktop) {
+            width: 1440px;
+        }
 }
 
 
@@ -15,46 +30,112 @@
 }
 
 .hero-sketch h2 {
-    margin-bottom: 98px;
+    margin-bottom: 30px;
+
+    @media screen and (min-width: $desktop) {
+        margin-bottom: 98px;
+    }
 }
 
 .sketch-thumb {
     position: relative;
-    margin-bottom: 91px;
+
+    @media screen and (max-width: 767px) {
+        margin-bottom: 60px;
+    }
+   
+    @media screen and (min-width: $desktop) {
+        margin-bottom: 91px;
+    }
 }
 
 .hero-sketch h3 {
     position: absolute;
-    width: 564px;
-    left: 12%;
-    top: 39%;
+    width: 200px;
+    left: 14%;
+    top: 33%;
+
 
     background-color: rgb(245, 245, 245, 78%);
+
+    @media screen and (min-width: $tablet) {
+        width: 410px;
+        left: 6%;
+        top: 33%;
+    }
+
+    @media screen and (min-width: $desktop) {
+        width: 564px;
+        left: 12%;
+        top: 39%;
+    }
 }
 
 .hero-sketch button {
     position: absolute;
-    left: 17%;
-    top: 68%;
+    left: 0%;
+    top: 110%;
+
+    @media screen and (min-width: $tablet) {    
+        left: 6%;
+        top: 66%;
+    }
+
+    @media screen and (min-width: $desktop) {
+        left: 17%;
+        top: 68%;
+    }
 }
+/* About section */
 
 .about-flex {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 }
 
 .sketch-about p {
-    margin-left: 30px;
-    margin-bottom: 70px;
+    text-align: center;
+    margin-bottom: 30px;
+
+    @media screen and (min-width: $desktop) {
+        margin-bottom: 70px;
+    }
 }
 
 .sketch-about ul {
-    max-width: 620px;
+    @media screen and (min-width: $tablet) {
+            max-width: 654px;
+        }
+    @media screen and (min-width: $desktop) {
+        max-width: 620px;
+    }
 }
 
 .sketch-about li:not(:last-child) {
-    margin-bottom: 60px;
+    margin-bottom: 20px;
+
+    @media screen and (min-width: $desktop) {
+        margin-bottom: 60px;
+    }
+}
+
+.sketch-about .img-thumb {
+    @media screen and (max-width: 767px) {
+        margin-top: 20px;
+    }
+    
+}
+
+/* Examples section */
+
+.example-section {
+    @media screen and (max-width: 1303px) {
+        display: none;
+    }
 }
 
 .sketch-examples {
@@ -63,12 +144,26 @@
     margin-top: 81px;
 }
 
+/* For whom this course */
+
 .sketch-title {
-    margin-bottom: 81px;
+    margin-bottom: 40px;
+
+    @media screen and (min-width: $desktop) {
+        margin-bottom: 81px;
+    }
 }
 
 .sketch-text:not(:last-child) {
     margin-bottom: 20px;
+}
+
+/* Works of our students  */
+
+.work-section {
+    @media screen and (max-width: 1303px) {
+        display: none;
+    }
 }
 
 .sketch-works {
@@ -76,12 +171,28 @@
     gap: 24px;
 }
 
+/* teacher section */
+
 .sketch-teacher {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
 
 .teacher-item {
-    width: 632px;
+    @media screen and (max-width: 767px) {
+        margin-bottom: 20px;
+    }
+    
+    @media screen and (min-width: $tablet) {
+        width: 415px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        width: 632px;
+    }
+   
 }

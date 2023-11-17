@@ -36,7 +36,7 @@
     padding: 32px;
 
     background-color: #c6c4c4;
-    z-index: 999;
+    z-index: 9;
 
     transform: translateX(100%);
 
@@ -54,6 +54,8 @@
     right: 16px;
     color: var(--color-secondary);
 }
+
+
 
 .mobile-nav {
     margin-top: 30px;
@@ -75,6 +77,11 @@
     &:focus {
         color: var(--accent-color);
     }
+}
+
+.current {
+    color: var(--accent-color);
+    cursor: pointer;
 }
 
 .mobile__social-list {

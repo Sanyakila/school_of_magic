@@ -48,7 +48,7 @@
     @media screen and (max-width: 1303px) {
         width: 95%;
         max-width: 450px;
-        height: 95%;
+        height: 50%;
         max-height: 609px;
         overflow: scroll;
     }
@@ -68,6 +68,8 @@
 
 
 .modal .icon {
+    width: 100px;
+    height: 100px;
     margin-top: 63px;
 }
 
@@ -136,7 +138,7 @@
 
 .modal .btn {
     @media screen and (max-width: 767px) {
-        min-width: 191px;
+        min-width: 272px;
     }
     
 }
@@ -149,31 +151,60 @@
     left: 50%;
     transform: translate(-50%, -50%);
 
-    min-width: 844px;
-    min-height: 783px;
-    padding: 50px;
     text-align: center;
 
     border-radius: 50px;
     background-image: url("../images/footer-bck.png");
+
+    @media screen and (max-width: 1303px) {
+            width: 95%;
+            max-width: 450px;
+            height: 70%;
+            max-height: 609px;
+            overflow: scroll;
+        }
+    
+        @media screen and (min-width: $desktop) {
+            min-width: 844px;
+            min-height: 783px;
+            padding: 50px;
+        }
 }
 
 .modal-signup h2 {
-    margin-top: 30px;
-    margin-bottom: 89px;
+    margin-top: 60px;
+    margin-bottom: 70px;
     background-color: var(--input-bck);
+
+    @media screen and (min-width: $desktop) {
+        margin-top: 30px;
+        margin-bottom: 89px;
+    }
 }
 
 .modal-signup .close-btn {
-    top: 2px;
-    right: 2px;
+    top: 15px;
+    right: 10px;
+
+    @media screen and (min-width: $tablet) {
+        top: 2px;
+        right: 4px;
+    }
 }
 
 .form-field {
     position: relative;
-    margin-bottom: 50px;
+    margin-bottom: 35px;
+
+    @media screen and (min-width: $desktop) {
+        margin-bottom: 50px;
+    }
 }
 
 .form-field:nth-child(2) {
-    margin-bottom: 89px;
+    margin-bottom: 50px;
+
+    @media screen and (min-width: $desktop) {
+        margin-bottom: 89px;
+    }
 }

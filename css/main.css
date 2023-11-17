@@ -101,7 +101,17 @@ a {
 }
 
 .text {
-  font-size: 48px;
+  font-size: 20px;
+}
+@media screen and (min-width: 768px) {
+  .text {
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 1304px) {
+  .text {
+    font-size: 48px;
+  }
 }
 
 .visually-hidden {
@@ -134,6 +144,7 @@ a {
   font-size: 20px;
   text-align: center;
   padding: 24px 24px;
+  min-width: 272px;
   border: none;
   border-radius: 50px;
   cursor: url("../images/icomoon/magic-wand_5606317.png"), pointer;
@@ -179,7 +190,7 @@ a {
   width: 40px;
   height: 40px;
   top: 30px;
-  left: 82px;
+  left: 120px;
   opacity: 0;
   background-image: url("../images/hat.png");
   background-repeat: no-repeat;
@@ -230,6 +241,7 @@ a {
   padding: 24px 24px;
   text-decoration: none;
   text-align: center;
+  min-width: 272px;
   border: none;
   border-radius: 50px;
   cursor: url("../images/icomoon/magic-wand_5606317.png"), pointer;
@@ -251,7 +263,7 @@ a {
   width: 40px;
   height: 40px;
   top: 30px;
-  left: 97px;
+  left: 117px;
   opacity: 0;
   background-image: url("../images/hat.png");
   background-repeat: no-repeat;
@@ -291,7 +303,7 @@ a {
   width: 40px;
   height: 40px;
   bottom: 40px;
-  left: 92px;
+  left: 113px;
   opacity: 0;
   background-image: url("../images/rabbit.png");
   background-repeat: no-repeat;
@@ -616,7 +628,7 @@ a {
 }
 @media screen and (max-width: 767px) {
   .footer .btn {
-    min-width: 191px;
+    min-width: 272px;
   }
 }
 
@@ -663,7 +675,7 @@ a {
   .modal {
     width: 95%;
     max-width: 450px;
-    height: 95%;
+    height: 50%;
     max-height: 609px;
     overflow: scroll;
   }
@@ -680,6 +692,8 @@ a {
     transform: scale(5);
 } */
 .modal .icon {
+  width: 100px;
+  height: 100px;
   margin-top: 63px;
 }
 
@@ -773,7 +787,7 @@ a {
 
 @media screen and (max-width: 767px) {
   .modal .btn {
-    min-width: 191px;
+    min-width: 272px;
   }
 }
 
@@ -784,32 +798,67 @@ a {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  min-width: 844px;
-  min-height: 783px;
-  padding: 50px;
   text-align: center;
   border-radius: 50px;
   background-image: url("../images/footer-bck.png");
 }
+@media screen and (max-width: 1303px) {
+  .modal-signup {
+    width: 95%;
+    max-width: 450px;
+    height: 70%;
+    max-height: 609px;
+    overflow: scroll;
+  }
+}
+@media screen and (min-width: 1304px) {
+  .modal-signup {
+    min-width: 844px;
+    min-height: 783px;
+    padding: 50px;
+  }
+}
 
 .modal-signup h2 {
-  margin-top: 30px;
-  margin-bottom: 89px;
+  margin-top: 60px;
+  margin-bottom: 70px;
   background-color: var(--input-bck);
+}
+@media screen and (min-width: 1304px) {
+  .modal-signup h2 {
+    margin-top: 30px;
+    margin-bottom: 89px;
+  }
 }
 
 .modal-signup .close-btn {
-  top: 2px;
-  right: 2px;
+  top: 15px;
+  right: 10px;
+}
+@media screen and (min-width: 768px) {
+  .modal-signup .close-btn {
+    top: 2px;
+    right: 4px;
+  }
 }
 
 .form-field {
   position: relative;
-  margin-bottom: 50px;
+  margin-bottom: 35px;
+}
+@media screen and (min-width: 1304px) {
+  .form-field {
+    margin-bottom: 50px;
+  }
 }
 
 .form-field:nth-child(2) {
-  margin-bottom: 89px;
+  margin-bottom: 50px;
+}
+@media screen and (min-width: 1304px) {
+  .form-field:nth-child(2) {
+    margin-bottom: 89px;
+  }
 }
 
 .histories-bck {
@@ -1329,7 +1378,7 @@ a {
 }
 
 .sketch-bck {
-  width: 1440px;
+  width: 100%;
   padding-left: 12px;
   padding-right: 12px;
   margin: 0 auto;
@@ -1337,57 +1386,145 @@ a {
   background-repeat: no-repeat;
   background-position: 178px 100px, 1111px 47px, 260px 920px, 890px 2595px, 265px 3435px, 16px 5140px;
 }
+@media screen and (min-width: 480px) {
+  .sketch-bck {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .sketch-bck {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1304px) {
+  .sketch-bck {
+    width: 1440px;
+  }
+}
 
 .hero-sketch {
   text-align: center;
 }
 
 .hero-sketch h2 {
-  margin-bottom: 98px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1304px) {
+  .hero-sketch h2 {
+    margin-bottom: 98px;
+  }
 }
 
 .sketch-thumb {
   position: relative;
-  margin-bottom: 91px;
+}
+@media screen and (max-width: 767px) {
+  .sketch-thumb {
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1304px) {
+  .sketch-thumb {
+    margin-bottom: 91px;
+  }
 }
 
 .hero-sketch h3 {
   position: absolute;
-  width: 564px;
-  left: 12%;
-  top: 39%;
+  width: 200px;
+  left: 14%;
+  top: 33%;
   background-color: rgba(245, 245, 245, 0.78);
+}
+@media screen and (min-width: 768px) {
+  .hero-sketch h3 {
+    width: 410px;
+    left: 6%;
+    top: 33%;
+  }
+}
+@media screen and (min-width: 1304px) {
+  .hero-sketch h3 {
+    width: 564px;
+    left: 12%;
+    top: 39%;
+  }
 }
 
 .hero-sketch button {
   position: absolute;
-  left: 17%;
-  top: 68%;
+  left: 0%;
+  top: 110%;
+}
+@media screen and (min-width: 768px) {
+  .hero-sketch button {
+    left: 6%;
+    top: 66%;
+  }
+}
+@media screen and (min-width: 1304px) {
+  .hero-sketch button {
+    left: 17%;
+    top: 68%;
+  }
 }
 
-.about-flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+/* About section */
+@media screen and (min-width: 768px) {
+  .about-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
 .sketch-about p {
-  margin-left: 30px;
-  margin-bottom: 70px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1304px) {
+  .sketch-about p {
+    margin-bottom: 70px;
+  }
 }
 
-.sketch-about ul {
-  max-width: 620px;
+@media screen and (min-width: 768px) {
+  .sketch-about ul {
+    max-width: 654px;
+  }
+}
+@media screen and (min-width: 1304px) {
+  .sketch-about ul {
+    max-width: 620px;
+  }
 }
 
 .sketch-about li:not(:last-child) {
-  margin-bottom: 60px;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 1304px) {
+  .sketch-about li:not(:last-child) {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .sketch-about .img-thumb {
+    margin-top: 20px;
+  }
+}
+
+/* Examples section */
+@media screen and (max-width: 1303px) {
+  .example-section {
+    display: none;
+  }
 }
 
 .sketch-examples {
@@ -1398,12 +1535,25 @@ a {
   margin-top: 81px;
 }
 
+/* For whom this course */
 .sketch-title {
-  margin-bottom: 81px;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 1304px) {
+  .sketch-title {
+    margin-bottom: 81px;
+  }
 }
 
 .sketch-text:not(:last-child) {
   margin-bottom: 20px;
+}
+
+/* Works of our students  */
+@media screen and (max-width: 1303px) {
+  .work-section {
+    display: none;
+  }
 }
 
 .sketch-works {
@@ -1413,20 +1563,35 @@ a {
   gap: 24px;
 }
 
-.sketch-teacher {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+/* teacher section */
+@media screen and (min-width: 768px) {
+  .sketch-teacher {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
-.teacher-item {
-  width: 632px;
+@media screen and (max-width: 767px) {
+  .teacher-item {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .teacher-item {
+    width: 415px;
+  }
+}
+@media screen and (min-width: 1304px) {
+  .teacher-item {
+    width: 632px;
+  }
 }
 
 .procreate-bck {
@@ -1644,7 +1809,7 @@ a {
   height: 500px;
   padding: 32px;
   background-color: #c6c4c4;
-  z-index: 999;
+  z-index: 9;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
   -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1683,6 +1848,11 @@ a {
 }
 .mobile-nav__link:hover, .mobile-nav__link:focus {
   color: var(--accent-color);
+}
+
+.current {
+  color: var(--accent-color);
+  cursor: pointer;
 }
 
 .mobile__social-list {

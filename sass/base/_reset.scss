@@ -51,7 +51,7 @@ a {
     padding-top: 30px;
     padding-bottom: 30px;
 
-    @media screen and (min-width:$desktop) {
+    @media screen and (min-width: $desktop) {
         padding-top: 52px;
         padding-bottom: 52px;
     }
@@ -64,7 +64,15 @@ a {
 }
 
 .text {
-    font-size: 48px;
+    font-size: 20px;
+
+    @media screen and (min-width: $tablet) {
+        font-size: 30px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        font-size: 48px;
+    }
 }
 
 .visually-hidden {
