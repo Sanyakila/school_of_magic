@@ -1,5 +1,5 @@
 .procreate-bck {
-    width: 1440px;
+    width: 100%px;
     padding-left: 12px;
     padding-right: 12px;
     margin: 0 auto;
@@ -8,67 +8,148 @@
     background-repeat: no-repeat;
     background-position: 153px 170px, 705px 0px, 0px 1100px, 858px 1880px, 115px 3280px, 160px 5220px, 610px 4950px;
 
+    // mobile screen
+        @media screen and (min-width: $mobile) {
+            width: $mobile;
+        }
+    
+        // tablet screen
+        @media screen and (min-width: $tablet) {
+            width: $tablet;
+        }
+    
+        // desktop screen
+        @media screen and (min-width: $desktop) {
+            width: 1440px;
+        }
 }
 
-.procreate-thumb {
-    position: relative;
-    margin-bottom: 90px;
-}
+/* hero section */
 
 .procreate-hero {
     text-align: center;
 }
 
+.procreate-thumb {
+    position: relative;
+
+    @media screen and (max-width: 767px) {
+            margin-bottom: 60px;
+        }
+    
+        @media screen and (min-width: $desktop) {
+            margin-bottom: 90px;
+        }
+}
+
 .procreate-hero h2 {
-    margin-bottom: 89px;
+    margin-bottom: 30px;
+    
+        @media screen and (min-width: $desktop) {
+            margin-bottom: 89px;
+        }
 }
 
 .procreate-hero h3 {
     position: absolute;
-    width: 564px;
+    width: 200px;
     left: 13%;
     top: 36%;
 
     background-color: rgb(245, 245, 245, 78%);
+
+    @media screen and (min-width: $tablet) {
+            width: 410px;
+            left: 6%;
+            top: 33%;
+        }
+    
+        @media screen and (min-width: $desktop) {
+            width: 564px;
+            left: 12%;
+            top: 39%;
+        }
 }
 
 .procreate-hero button {
     position: absolute;
-    left: 17%;
-    top: 67.5%;
+    left: 0%;
+    top: 110%;
+
+    @media screen and (min-width: $tablet) {
+            left: 6%;
+            top: 66%;
+        }
+    
+        @media screen and (min-width: $desktop) {
+            left: 17%;
+            top: 68%;
+        }
 }
 
+/* About */
+
 .procreate-about {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+
+    @media screen and (min-width: $tablet) {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+    }
 }
 
 .procreate-about p {
+    text-align: center;
     margin-bottom: 30px;
 }
 
 .procreate-about ul {
-    max-width: 627px;
+    @media screen and (min-width: $tablet) {
+            max-width: 654px;
+        }
+    
+        @media screen and (min-width: $desktop) {
+            max-width: 620px;
+        }
 }
 
 .procreate-about li:not(:last-child) {
-    margin-bottom: 35px;
+    margin-bottom: 20px;
+    
+        @media screen and (min-width: $desktop) {
+            margin-bottom: 35px;
+        }
 }
+
+.procreate-about .img-thumb {
+    @media screen and (max-width: 767px) {
+        margin-top: 20px;
+    }
+}
+
+/* Examples */
 
 .procreate-examples {
     display: flex;
     gap: 24px;
 }
 
+/* works */
+
 .procreate-works {
     display: flex;
     gap: 24px;
 }
 
+/*teacher */
+
 .procreate-teacher {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 100px;
+    
+    @media screen and (min-width: $tablet) {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 100px;
+        }
+   
 }

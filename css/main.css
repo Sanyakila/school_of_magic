@@ -1595,7 +1595,7 @@ a {
 }
 
 .procreate-bck {
-  width: 1440px;
+  width: 100% px;
   padding-left: 12px;
   padding-right: 12px;
   margin: 0 auto;
@@ -1603,58 +1603,137 @@ a {
   background-repeat: no-repeat;
   background-position: 153px 170px, 705px 0px, 0px 1100px, 858px 1880px, 115px 3280px, 160px 5220px, 610px 4950px;
 }
-
-.procreate-thumb {
-  position: relative;
-  margin-bottom: 90px;
+@media screen and (min-width: 480px) {
+  .procreate-bck {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .procreate-bck {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1304px) {
+  .procreate-bck {
+    width: 1440px;
+  }
 }
 
+/* hero section */
 .procreate-hero {
   text-align: center;
 }
 
+.procreate-thumb {
+  position: relative;
+}
+@media screen and (max-width: 767px) {
+  .procreate-thumb {
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1304px) {
+  .procreate-thumb {
+    margin-bottom: 90px;
+  }
+}
+
 .procreate-hero h2 {
-  margin-bottom: 89px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1304px) {
+  .procreate-hero h2 {
+    margin-bottom: 89px;
+  }
 }
 
 .procreate-hero h3 {
   position: absolute;
-  width: 564px;
+  width: 200px;
   left: 13%;
   top: 36%;
   background-color: rgba(245, 245, 245, 0.78);
 }
+@media screen and (min-width: 768px) {
+  .procreate-hero h3 {
+    width: 410px;
+    left: 6%;
+    top: 33%;
+  }
+}
+@media screen and (min-width: 1304px) {
+  .procreate-hero h3 {
+    width: 564px;
+    left: 12%;
+    top: 39%;
+  }
+}
 
 .procreate-hero button {
   position: absolute;
-  left: 17%;
-  top: 67.5%;
+  left: 0%;
+  top: 110%;
+}
+@media screen and (min-width: 768px) {
+  .procreate-hero button {
+    left: 6%;
+    top: 66%;
+  }
+}
+@media screen and (min-width: 1304px) {
+  .procreate-hero button {
+    left: 17%;
+    top: 68%;
+  }
 }
 
-.procreate-about {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+/* About */
+@media screen and (min-width: 768px) {
+  .procreate-about {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
 .procreate-about p {
+  text-align: center;
   margin-bottom: 30px;
 }
 
-.procreate-about ul {
-  max-width: 627px;
+@media screen and (min-width: 768px) {
+  .procreate-about ul {
+    max-width: 654px;
+  }
+}
+@media screen and (min-width: 1304px) {
+  .procreate-about ul {
+    max-width: 620px;
+  }
 }
 
 .procreate-about li:not(:last-child) {
-  margin-bottom: 35px;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 1304px) {
+  .procreate-about li:not(:last-child) {
+    margin-bottom: 35px;
+  }
 }
 
+@media screen and (max-width: 767px) {
+  .procreate-about .img-thumb {
+    margin-top: 20px;
+  }
+}
+
+/* Examples */
 .procreate-examples {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1662,6 +1741,7 @@ a {
   gap: 24px;
 }
 
+/* works */
 .procreate-works {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1669,48 +1749,24 @@ a {
   gap: 24px;
 }
 
-.procreate-teacher {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-bottom: 100px;
-}
-
-.nft-thumb {
-  position: relative;
-}
-
-.nft-hero h3 {
-  position: absolute;
-  width: 564px;
-  top: 34%;
-  left: 9%;
-  background-color: #F1E2DB;
-}
-
-.nft-hero button {
-  position: absolute;
-  bottom: 11.2%;
-  left: 15%;
-}
-
-.nft-hero h2 {
-  margin-top: 25px;
-  margin-bottom: 98px;
-}
-
-.nft-hero .img-thumb {
-  margin-bottom: 40px;
+/*teacher */
+@media screen and (min-width: 768px) {
+  .procreate-teacher {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 100px;
+  }
 }
 
 .nft-bck {
-  width: 1440px;
+  width: 100%;
   padding-left: 12px;
   padding-right: 12px;
   margin: 0 auto;
@@ -1718,25 +1774,144 @@ a {
   background-repeat: no-repeat;
   background-position: 60px 95px, 1040px 43px, 134px 1180px, 600px 2450px, 115px 3590px, 1000px 4600px, 110px 5350px, 100px 6400px, 750px 6400px;
 }
+@media screen and (min-width: 480px) {
+  .nft-bck {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .nft-bck {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1304px) {
+  .nft-bck {
+    width: 1440px;
+  }
+}
 
-.nft-about {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.nft-thumb {
+  position: relative;
+}
+@media screen and (max-width: 767px) {
+  .nft-thumb {
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1304px) {
+  .nft-thumb {
+    margin-bottom: 90px;
+  }
+}
+
+.nft-hero h2 {
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1304px) {
+  .nft-hero h2 {
+    margin-top: 25px;
+    margin-bottom: 98px;
+  }
+}
+
+.nft-hero h3 {
+  position: absolute;
+  width: 200px;
+  top: 36%;
+  left: 13%;
+  background-color: #F1E2DB;
+}
+@media screen and (min-width: 768px) {
+  .nft-hero h3 {
+    width: 410px;
+    left: 6%;
+    top: 33%;
+  }
+}
+@media screen and (min-width: 1304px) {
+  .nft-hero h3 {
+    width: 564px;
+    left: 12%;
+    top: 39%;
+  }
+}
+
+.nft-hero button {
+  position: absolute;
+  top: 110%;
+  left: 0%;
+}
+@media screen and (min-width: 768px) {
+  .nft-hero button {
+    left: 6%;
+    top: 66%;
+  }
+}
+@media screen and (min-width: 1304px) {
+  .nft-hero button {
+    bottom: 11.2%;
+    left: 15%;
+  }
+}
+
+.nft-hero .img-thumb {
+  margin-bottom: 40px;
+}
+
+/* about */
+@media screen and (min-width: 768px) {
+  .nft-about {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+@media screen and (min-width: 1304px) {
+  .nft-about {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
 }
 
 .nft-about p {
-  margin-bottom: 70px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1304px) {
+  .nft-about p {
+    margin-bottom: 70px;
+  }
 }
 
-.nft-about ul {
-  max-width: 628px;
+@media screen and (min-width: 768px) {
+  .nft-about ul {
+    max-width: 654px;
+  }
+}
+@media screen and (min-width: 1304px) {
+  .nft-about ul {
+    max-width: 628px;
+  }
 }
 
 .nft-about li:not(:last-child) {
   margin-bottom: 40px;
 }
 
+@media screen and (max-width: 767px) {
+  .nft-about .img-thumb {
+    margin-top: 20px;
+  }
+}
+
+/* Examples */
 .nft-examples {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1746,6 +1921,7 @@ a {
   gap: 24px;
 }
 
+/* Works */
 .nft-works {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1753,16 +1929,19 @@ a {
   gap: 24px;
 }
 
-.nft-teacher {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+/* teacher */
+@media screen and (min-width: 768px) {
+  .nft-teacher {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .menu-toggle {
@@ -1828,6 +2007,10 @@ a {
   top: 16px;
   right: 16px;
   color: var(--color-secondary);
+}
+
+.menu-icon {
+  fill: var(--title-text-color);
 }
 
 .mobile-nav {

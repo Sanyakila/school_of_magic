@@ -126,16 +126,17 @@
               </div>
               <div class="img-thumb">
                 <img
-                srcset="./images/doodle_nft/about_@1x.jpg 1x, ./images/doodle_nft/about_@1x.jpg 2x"
+                srcset="./images/doodle_nft/about_@1x.jpg 1x, ./images/doodle_nft/about_@2x.jpg 2x"
                 src="./images/doodle_nft/about_@1x.jpg" 
                 width="631" 
-                alt="дизайнерський малюнок" />
+                alt="дизайнерський малюнок"
+                loading="lazy" />
               </div>
             </div>
           </div>
         </section>
         <!-- examples-->
-        <section class="section">
+        <section class="section example-section">
           <div class="container">
             <h2 class="sketch-title">Що ми зробимо</h2>
             <ul class="list nft-examples">
@@ -239,7 +240,7 @@
           </div>
         </section>
         <!--  works of our students -->
-        <section class="section">
+        <section class="section work-section">
           <div class="container">
             <h2 class="sketch-title">Роботи студентів</h2>
             <ul class="list nft-works">
@@ -272,9 +273,9 @@
             <h2 class="sketch-title">Хто вестиме курс</h2>
             <div class="nft-teacher">
               <ul>
-                <li class="sketch-text">Олена Голуб - сучасна художниця.</li>
-                <li class="sketch-text">Створила лімітовану NFT-<br />колекцію.</li>
-                <li class="sketch-text">
+                <li class="teacher-item">Олена Голуб - сучасна художниця.</li>
+                <li class="teacher-item">Створила лімітовану NFT-<br />колекцію.</li>
+                <li class="teacher-item">
                   Вартість одного файлу наразі<br />
                   стратує від двох тисяч<br />
                   доларів.
@@ -288,7 +289,7 @@
                         media="(min-width: 768x)" type="image/jpeg" />
                     <source srcset="./images/doodle_nft/teacher_@0.5x.jpg 1x, ./images/doodle_nft/teacher_@1x.jpg 2x"
                         media="(max-width: 767px)" type="image/jpeg" />
-                    <img src="./images/doodle_nft/teacher_@1x.jpg" alt="Олена Голуб" width="410" />
+                    <img src="./images/doodle_nft/teacher_@1x.jpg" alt="Олена Голуб" width="410" loading="lazy" />
                 </picture>
               </div>
             </div>
@@ -378,19 +379,19 @@
     </div>
     <div class="menu-container js-menu-container" id="mobile-menu">
         <button class="menu-toggle js-close-menu">
-            <svg class="" width="30" height="30">
+            <svg class="menu-icon" width="30" height="30">
                 <use href="./images/sprite.svg#cross"></use>
             </svg>
         </button>
         <ul class="mobile-nav list">
             <li class="mobile-nav__list">
-                <a class="mobile-nav__link current" href="doodle_sketch.html">Дудл у скетчі</a>
+                <a class="mobile-nav__link" href="doodle_sketch.html">Дудл у скетчі</a>
             </li>
             <li class="mobile-nav__list">
                 <a class="mobile-nav__link" href="doodle_procreate.html">Дудл у Procreate</a>
             </li>
             <li class="mobile-nav__list">
-                <a class="mobile-nav__link" href="doodle_nft.html">Дудл NFT</a>
+                <a class="mobile-nav__link current" href="doodle_nft.html">Дудл NFT</a>
             </li>
         </ul>
         <ul class="mobile__social-list list">

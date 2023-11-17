@@ -1,34 +1,5 @@
-.nft-thumb {
-    position: relative;
-}
-
-.nft-hero h3 {
-    position: absolute;
-
-    width: 564px;
-    top: 34%;
-    left: 9%;
-
-    background-color: #F1E2DB;
-}
-
-.nft-hero button {
-    position: absolute;
-    bottom: 11.2%;
-    left: 15%;
-}
-
-.nft-hero h2 {
-    margin-top: 25px;
-    margin-bottom: 98px;
-}
-
-.nft-hero .img-thumb {
-    margin-bottom: 40px;
-}
-
 .nft-bck {
-    width: 1440px;
+    width: 100%;
     padding-left: 12px;
     padding-right: 12px;
     margin: 0 auto;
@@ -47,23 +18,129 @@
     background-repeat: no-repeat;
     background-position: 60px 95px, 1040px 43px, 134px 1180px, 600px 2450px, 115px 3590px, 1000px 4600px, 110px 5350px, 100px 6400px, 750px 6400px;
 
+    // mobile screen
+        @media screen and (min-width: $mobile) {
+            width: $mobile;
+        }
+    
+        // tablet screen
+        @media screen and (min-width: $tablet) {
+            width: $tablet;
+        }
+    
+        // desktop screen
+        @media screen and (min-width: $desktop) {
+            width: 1440px;
+        }
 }
 
+.nft-thumb {
+    position: relative;
+
+    @media screen and (max-width: 767px) {
+            margin-bottom: 60px;
+        }
+    
+        @media screen and (min-width: $desktop) {
+            margin-bottom: 90px;
+        }
+}
+
+.nft-hero h2 {
+    margin-bottom: 30px;
+
+    @media screen and (min-width: $desktop) {
+        margin-top: 25px;
+        margin-bottom: 98px;
+    }
+}
+
+.nft-hero h3 {
+    position: absolute;
+
+    width: 200px;
+    top: 36%;
+    left: 13%;
+
+    background-color: #F1E2DB;
+
+    @media screen and (min-width: $tablet) {
+            width: 410px;
+            left: 6%;
+            top: 33%;
+        }
+    
+        @media screen and (min-width: $desktop) {
+            width: 564px;
+            left: 12%;
+            top: 39%;
+        }
+}
+
+.nft-hero button {
+    position: absolute;
+    top: 110%;
+    left: 0%;
+
+    @media screen and (min-width: $tablet) {
+            left: 6%;
+            top: 66%;
+        }
+    
+        @media screen and (min-width: $desktop) {
+            bottom: 11.2%;
+            left: 15%;
+        }
+}
+
+.nft-hero .img-thumb {
+    margin-bottom: 40px;
+}
+
+/* about */
+
 .nft-about {
-    display: flex;
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+        @media screen and (min-width: $desktop) {
+            align-items: start;
+        }
 }
 
 .nft-about p {
-    margin-bottom: 70px;
+    text-align: center;
+    margin-bottom: 30px;
+    
+        @media screen and (min-width: $desktop) {
+            margin-bottom: 70px;
+        }
 }
 
 .nft-about ul {
-    max-width: 628px;
+    @media screen and (min-width: $tablet) {
+            max-width: 654px;
+        }
+    
+        @media screen and (min-width: $desktop) {
+            max-width: 628px;
+        }
 }
 
 .nft-about li:not(:last-child) {
     margin-bottom: 40px;
 }
+
+.nft-about .img-thumb {
+    @media screen and (max-width: 767px) {
+        margin-top: 20px;
+    }
+}
+
+/* Examples */
 
 .nft-examples {
     display: flex;
@@ -71,13 +148,19 @@
     gap: 24px;
 }
 
+/* Works */
+
 .nft-works {
     display: flex;
     gap: 24px;
 }
 
+/* teacher */
+
 .nft-teacher {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @media screen and (min-width: $tablet) {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
 }
