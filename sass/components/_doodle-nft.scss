@@ -63,6 +63,7 @@
     left: 13%;
 
     background-color: #F1E2DB;
+    z-index: 10;
 
     @media screen and (min-width: $tablet) {
             width: 410px;
@@ -81,6 +82,7 @@
     position: absolute;
     top: 110%;
     left: 0%;
+    z-index: 10;
 
     @media screen and (min-width: $tablet) {
             left: 6%;
@@ -88,7 +90,6 @@
         }
     
         @media screen and (min-width: $desktop) {
-            bottom: 11.2%;
             left: 15%;
         }
 }

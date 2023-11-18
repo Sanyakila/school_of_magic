@@ -20,7 +20,7 @@
 
   <body>
     <div class="index-bck">
-      <header>
+      <header id="header">
             <div class="container header">
                 <a href="./index.html"><img src="./images/StarLogo.svg" alt="лого школи" /></a>
                 <nav>
@@ -177,6 +177,12 @@
                     <button type="button" class="btn js-open-modal" data-modal="1">Задати питання</button>
                 </div>
             </section>
+            <a href="#header" class="return">
+                <svg class="return-arrow" widht="25" height="25">
+                    <use href="./images/sprite.svg#arrow-up">
+                    </use>
+                </svg>
+            </a>
       </main>
     </div>
     <footer class="section footer">
@@ -245,14 +251,15 @@
             class="form-input"
             type="text"
             name="text"
-            id="name"
+            id="user-text"
             placeholder=" "
             autocomplete="on"
             autofocus
+            required
           />
-          <label class="form-label" for="name"> Якщо знадобиться допомога </label>
-        </form>
+          <label class="form-label" for="user-text"> Якщо знадобиться допомога </label>
         <button class="btn" type="submit">Відправити</button>
+        </form>
       </div>
     </div>
     <div class="menu-container js-menu-container" id="mobile-menu">
@@ -307,5 +314,7 @@
         integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
         crossorigin="anonymous"></script>
     <script src="./js/mobile-menu.js"></script>
+    <!-- <script type="text/javascript" src="./index.js"></script> -->
+    <script src="./js/arrow.js"></script>
   </body>
 </html>

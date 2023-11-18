@@ -19,7 +19,7 @@
   </head>
   <body>
     <div class="procreate-bck">
-      <header>
+      <header id="header">
         <div class="container header">
           <a href="./index.html"><img src="./images/StarLogo.svg" alt="лого школи" /></a>
           <nav>
@@ -281,6 +281,12 @@
             </div>
           </div>
         </section>
+        <a href="#header" class="return">
+            <svg class="return-arrow" widht="25" height="25">
+                <use href="./images/sprite.svg#arrow-up">
+                </use>
+            </svg>
+        </a>
       </main>
     </div>
     <footer class="section footer">
@@ -327,25 +333,26 @@
         </div>
     </footer>
     <div class="overlay js-overlay-modal" data-modal="2">
-      <div class="modal modal-signup" data-modal="2">
-        <button class="close-btn js-modal-close" type="button">
-          <svg class="close-btn-icon" width="30" height="30">
-            <use href="./images/sprite.svg#cross"></use>
-          </svg>
-        </button>
-        <h2>Дізнатися про курс</h2>
-        <form>
-          <div class="form-field">
-            <input class="form-input" type="text" name="text" id="name" placeholder=" " autofocus />
-            <label class="form-label" for="name"> 1. Як вас звати? </label>
-          </div>
-          <div class="form-field">
-            <input class="form-input" type="tel" name="tel" id="tel" placeholder=" " required />
-            <label class="form-label" for="tel"> 2. Номер телефону </label>
-          </div>
-        </form>
-        <button class="btn" type="submit">Відправити</button>
-      </div>
+        <div class="modal modal-signup" data-modal="2">
+            <button class="close-btn js-modal-close" type="button">
+                <svg class="close-btn-icon" width="30" height="30">
+                    <use href="./images/sprite.svg#cross"></use>
+                </svg>
+            </button>
+            <h2>Дізнатися про курс</h2>
+            <form>
+                <div class="form-field">
+                    <input class="form-input" type="text" name="text" id="name" placeholder=" " autocomplete="on" required
+                        autofocus />
+                    <label class="form-label" for="name"> 1. Як вас звати? </label>
+                </div>
+                <div class="form-field">
+                    <input class="form-input" type="tel" name="tel" id="tel" placeholder=" " autocomplete="on" required />
+                    <label class="form-label" for="tel"> 2. Номер телефону </label>
+                </div>
+                <button class="btn" type="submit">Відправити</button>
+            </form>
+        </div>
     </div>
     <div class="menu-container js-menu-container" id="mobile-menu">
         <button class="menu-toggle js-close-menu">
@@ -399,5 +406,6 @@
         integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
         crossorigin="anonymous"></script>
     <script src="./js/mobile-menu.js"></script>
+    <script src="./js/arrow.js"></script>
   </body>
 </html>

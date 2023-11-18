@@ -39,7 +39,7 @@
 
 .sketch-thumb {
     position: relative;
-
+    
     @media screen and (max-width: 767px) {
         margin-bottom: 60px;
     }
@@ -54,6 +54,7 @@
     width: 200px;
     left: 14%;
     top: 33%;
+    z-index: 10;
 
 
     background-color: rgb(245, 245, 245, 78%);
@@ -75,6 +76,7 @@
     position: absolute;
     left: 0%;
     top: 110%;
+    z-index: 10;
 
     @media screen and (min-width: $tablet) {    
         left: 6%;

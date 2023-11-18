@@ -1,0 +1,32 @@
+.return {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    color: rgb(0, 0, 0);
+    background-color: var(--btn-bck-color);
+    // border: 1px solid #000000;
+    border-radius: 50%;
+    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.3);
+    z-index: 12;
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+        background-color: rgb(118, 21, 177);
+    }    
+    
+    @media screen and (min-width: 1304px) {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+.return-arrow {
+    fill: currentColor;
+}

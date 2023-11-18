@@ -73,6 +73,17 @@ img {
 .img-thumb {
   overflow: hidden;
   border-radius: 50px;
+  -webkit-transition: -webkit-box-shadow 300ms linear, -webkit-transform 300ms ease-in;
+  transition: -webkit-box-shadow 300ms linear, -webkit-transform 300ms ease-in;
+  transition: box-shadow 300ms linear, transform 300ms ease-in;
+  transition: box-shadow 300ms linear, transform 300ms ease-in, -webkit-box-shadow 300ms linear, -webkit-transform 300ms ease-in;
+}
+.img-thumb:hover, .img-thumb:focus {
+  cursor: pointer;
+  -webkit-box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.3);
+  -webkit-transform: scale(105%);
+          transform: scale(105%);
 }
 
 a {
@@ -151,8 +162,10 @@ a {
   color: var(--title-text-color);
   background-color: var(--btn-bck-color);
   /* overflow: hidden; */
-  -webkit-transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1), color 400ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1), color 400ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1), color 400ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 300ms linear;
+  transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1), color 400ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 300ms linear;
+  transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1), color 400ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 300ms linear;
+  transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1), color 400ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 300ms linear, -webkit-box-shadow 300ms linear;
 }
 .btn:hover::before, .btn:focus::before {
   opacity: 1;
@@ -195,10 +208,10 @@ a {
   background-image: url("../images/hat.png");
   background-repeat: no-repeat;
   background-size: contain;
-  -webkit-transition: opacity 700ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 800ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: opacity 700ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 800ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 800ms cubic-bezier(0.4, 0, 0.2, 1), opacity 700ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 800ms cubic-bezier(0.4, 0, 0.2, 1), opacity 700ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 800ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: opacity 300ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 300ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1), opacity 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1), opacity 300ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 768px) {
   .btn::before {
@@ -221,10 +234,10 @@ a {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  -webkit-transition: opacity 700ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 800ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: opacity 700ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 800ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: opacity 700ms cubic-bezier(0.4, 0, 0.2, 1), transform 800ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: opacity 700ms cubic-bezier(0.4, 0, 0.2, 1), transform 800ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 800ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: opacity 300ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 300ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 300ms cubic-bezier(0.4, 0, 0.2, 1), transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 300ms cubic-bezier(0.4, 0, 0.2, 1), transform 300ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 768px) {
   .btn::after {
@@ -247,8 +260,10 @@ a {
   cursor: url("../images/icomoon/magic-wand_5606317.png"), pointer;
   color: var(--title-text-color);
   background-color: var(--btn-bck-color);
-  -webkit-transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1), color 400ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1), color 400ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1), color 400ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 300ms linear;
+  transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1), color 400ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 300ms linear;
+  transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1), color 400ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 300ms linear;
+  transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1), color 400ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 300ms linear, -webkit-box-shadow 300ms linear;
 }
 @media screen and (min-width: 768px) {
   .btn-link {
@@ -268,10 +283,10 @@ a {
   background-image: url("../images/hat.png");
   background-repeat: no-repeat;
   background-size: contain;
-  -webkit-transition: opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 1700ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 1700ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 1700ms cubic-bezier(0.4, 0, 0.2, 1), opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 1700ms cubic-bezier(0.4, 0, 0.2, 1), opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 1700ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: opacity 300ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 300ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1), opacity 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1), opacity 300ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 768px) {
   .btn-link::before {
@@ -309,10 +324,10 @@ a {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  -webkit-transition: opacity 700ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 800ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: opacity 700ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 800ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: opacity 700ms cubic-bezier(0.4, 0, 0.2, 1), transform 800ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: opacity 700ms cubic-bezier(0.4, 0, 0.2, 1), transform 800ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 800ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: opacity 300ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 300ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 300ms cubic-bezier(0.4, 0, 0.2, 1), transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 300ms cubic-bezier(0.4, 0, 0.2, 1), transform 300ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 768px) {
   .btn-link::after {
@@ -343,6 +358,8 @@ a {
 .btn:focus {
   color: var(--accent-color);
   background-color: rgb(118, 21, 177);
+  -webkit-box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.3);
 }
 
 .close-btn {
@@ -372,7 +389,7 @@ a {
 .close-btn:hover, .close-btn:focus {
   color: var(--accent-color);
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1304px) {
   .close-btn {
     width: 70px;
     height: 70px;
@@ -664,12 +681,20 @@ a {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -webkit-transform: translate(-80%, -50%) scale(120%);
+          transform: translate(-80%, -50%) scale(120%);
   padding: 5px;
   text-align: center;
   border-radius: 50px;
   background-image: url("../images/footer-bck.png");
+  -webkit-transition: -webkit-transform 250ms linear;
+  transition: -webkit-transform 250ms linear;
+  transition: transform 250ms linear;
+  transition: transform 250ms linear, -webkit-transform 250ms linear;
+}
+.overlay.active .modal {
+  -webkit-transform: translate(-50%, -50%) scale(100%);
+          transform: translate(-50%, -50%) scale(100%);
 }
 @media screen and (max-width: 1303px) {
   .modal {
@@ -695,6 +720,12 @@ a {
   width: 100px;
   height: 100px;
   margin-top: 63px;
+}
+@media screen and (min-width: 1304px) {
+  .modal .icon {
+    width: 170px;
+    height: 170px;
+  }
 }
 
 .modal button {
@@ -764,7 +795,7 @@ a {
 .form-label {
   position: absolute;
   left: 23px;
-  top: 50%;
+  top: 14%;
   font-size: 15px;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
@@ -782,12 +813,24 @@ a {
 @media screen and (min-width: 1304px) {
   .form-label {
     font-size: 40px;
+    top: 19%;
   }
 }
 
 @media screen and (max-width: 767px) {
   .modal .btn {
+    margin-top: 40px;
     min-width: 272px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .modal .btn {
+    margin-top: 40px;
+  }
+}
+@media screen and (min-width: 1304px) {
+  .modal .btn {
+    margin-top: 76px;
   }
 }
 
@@ -796,11 +839,19 @@ a {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -webkit-transform: translate(-80%, -50%) scale3d(120%);
+          transform: translate(-80%, -50%) scale3d(120%);
   text-align: center;
   border-radius: 50px;
   background-image: url("../images/footer-bck.png");
+  -webkit-transition: -webkit-transform 300ms ease-out;
+  transition: -webkit-transform 300ms ease-out;
+  transition: transform 300ms ease-out;
+  transition: transform 300ms ease-out, -webkit-transform 300ms ease-out;
+}
+.overlay.active .modal-signup {
+  -webkit-transform: translate(-50%, -50%) scale(100%);
+          transform: translate(-50%, -50%) scale(100%);
 }
 @media screen and (max-width: 1303px) {
   .modal-signup {
@@ -835,12 +886,6 @@ a {
   top: 15px;
   right: 10px;
 }
-@media screen and (min-width: 768px) {
-  .modal-signup .close-btn {
-    top: 2px;
-    right: 4px;
-  }
-}
 
 .form-field {
   position: relative;
@@ -850,6 +895,10 @@ a {
   .form-field {
     margin-bottom: 50px;
   }
+}
+
+.form-field .form-label {
+  top: 51%;
 }
 
 .form-field:nth-child(2) {
@@ -1530,6 +1579,7 @@ a {
   width: 200px;
   left: 14%;
   top: 33%;
+  z-index: 10;
   background-color: rgba(245, 245, 245, 0.78);
 }
 @media screen and (min-width: 768px) {
@@ -1551,6 +1601,7 @@ a {
   position: absolute;
   left: 0%;
   top: 110%;
+  z-index: 10;
 }
 @media screen and (min-width: 768px) {
   .hero-sketch button {
@@ -1749,6 +1800,7 @@ a {
   left: 13%;
   top: 36%;
   background-color: rgba(245, 245, 245, 0.78);
+  z-index: 10;
 }
 @media screen and (min-width: 768px) {
   .procreate-hero h3 {
@@ -1769,6 +1821,7 @@ a {
   position: absolute;
   left: 0%;
   top: 110%;
+  z-index: 10;
 }
 @media screen and (min-width: 768px) {
   .procreate-hero button {
@@ -1916,6 +1969,7 @@ a {
   top: 36%;
   left: 13%;
   background-color: #F1E2DB;
+  z-index: 10;
 }
 @media screen and (min-width: 768px) {
   .nft-hero h3 {
@@ -1936,6 +1990,7 @@ a {
   position: absolute;
   top: 110%;
   left: 0%;
+  z-index: 10;
 }
 @media screen and (min-width: 768px) {
   .nft-hero button {
@@ -1945,7 +2000,6 @@ a {
 }
 @media screen and (min-width: 1304px) {
   .nft-hero button {
-    bottom: 11.2%;
     left: 15%;
   }
 }
@@ -2081,10 +2135,10 @@ a {
   top: 0;
   left: 0;
   width: 100vw;
-  height: 500px;
+  height: 550px;
   padding: 32px;
   background-color: #c6c4c4;
-  z-index: 9;
+  z-index: 11;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
   -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -2149,4 +2203,41 @@ a {
 }
 .mobile__social-link:hover, .mobile__social-link:focus {
   color: var(--accent-color);
+}
+
+.return {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40px;
+  height: 40px;
+  color: rgb(0, 0, 0);
+  background-color: var(--btn-bck-color);
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.3);
+  z-index: 12;
+}
+.return:hover, .return:focus {
+  color: var(--accent-color);
+  background-color: rgb(118, 21, 177);
+}
+@media screen and (min-width: 1304px) {
+  .return {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+.return-arrow {
+  fill: currentColor;
 }/*# sourceMappingURL=main.css.map */

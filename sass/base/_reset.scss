@@ -35,6 +35,15 @@ img {
 .img-thumb {
     overflow: hidden;
     border-radius: 50px;
+    transition: box-shadow 300ms linear,
+    transform 300ms ease-in;
+
+    &:hover,
+    &:focus {
+        cursor: pointer;
+        box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.3);
+        transform: scale(105%);
+    }
 }
 
 a {
