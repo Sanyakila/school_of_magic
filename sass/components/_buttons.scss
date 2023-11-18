@@ -96,11 +96,11 @@
 
 .btn-link {
     position: relative;
-    display: inline-block;
+    display: block;
     padding: 24px 24px;
     text-decoration: none;
     text-align: center;
-    min-width: 272px;
+    width: 272px;
     border: none;
     border-radius: 50px;
     cursor: url("../images/icomoon/magic-wand_5606317.png"), pointer;

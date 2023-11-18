@@ -1,12 +1,12 @@
 .footer {
     width: 100%;
     margin: 0 auto;
-    background-image: url("./images/footer-bck.png");
+    background-image: url("../images/footer-bck.png");
     background-position: center;
     background-size: cover;
 
     @media screen and (max-width: 1303px) {
-            text-align: center;
+        text-align: center;
     }
 }
 

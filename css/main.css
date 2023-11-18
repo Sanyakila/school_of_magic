@@ -237,11 +237,11 @@ a {
 
 .btn-link {
   position: relative;
-  display: inline-block;
+  display: block;
   padding: 24px 24px;
   text-decoration: none;
   text-align: center;
-  min-width: 272px;
+  width: 272px;
   border: none;
   border-radius: 50px;
   cursor: url("../images/icomoon/magic-wand_5606317.png"), pointer;
@@ -495,7 +495,7 @@ a {
 .footer {
   width: 100%;
   margin: 0 auto;
-  background-image: url("../../images/footer-bck.png");
+  background-image: url("../images/footer-bck.png");
   background-position: center;
   background-size: cover;
 }
@@ -862,21 +862,42 @@ a {
 }
 
 .histories-bck {
-  width: 1440px;
+  width: 100%;
   padding-left: 12px;
   padding-right: 12px;
   margin: 0 auto;
-  background-image: url("../images/histories/elipses/Ellipse1-min.png"), url("../images/histories/elipses/Ellipse2-min.png"), url("../images/histories/elipses/Ellipse3-min.png"), url("../images/histories/elipses/Ellipse4-min.png"), url("../images/histories/elipses/Ellipse5-min.png"), url("../images/histories/elipses/Ellipse6-min.png");
-  background-repeat: no-repeat;
-  background-position: 120px 120px, 1080px 71px, 716px 1000px, 32px 2200px, 723px 3300px, 63px 4450px;
+}
+@media screen and (min-width: 480px) {
+  .histories-bck {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .histories-bck {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1304px) {
+  .histories-bck {
+    width: 1440px;
+    background-image: url("../images/histories/elipses/Ellipse1-min.png"), url("../images/histories/elipses/Ellipse2-min.png"), url("../images/histories/elipses/Ellipse3-min.png"), url("../images/histories/elipses/Ellipse4-min.png"), url("../images/histories/elipses/Ellipse5-min.png"), url("../images/histories/elipses/Ellipse6-min.png");
+    background-repeat: no-repeat;
+    background-position: 120px 120px, 1080px 71px, 716px 1000px, 32px 2200px, 723px 3300px, 63px 4450px;
+  }
 }
 
+/* Hero Section */
 .history-hero {
   text-align: center;
 }
 
-.history-hero .section-title {
-  margin-bottom: 95px;
+.history-hero h2 {
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1304px) {
+  .history-hero h2 {
+    margin-bottom: 95px;
+  }
 }
 
 .history-img {
@@ -890,46 +911,96 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 50px;
+}
+@media screen and (min-width: 1304px) {
+  .history-img {
+    margin-bottom: 50px;
+  }
 }
 
 .history-title {
   position: absolute;
-  width: 1242px;
+  width: 272px;
   /* top: 50%;
   left: 50%; */
   /* transform: translate(-50%, - 50%); */
   background-color: #F1E2DB;
 }
+@media screen and (max-width: 767px) {
+  .history-title {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1303px) {
+  .history-title {
+    font-size: 63px;
+    width: 700px;
+  }
+}
+@media screen and (min-width: 1304px) {
+  .history-title {
+    width: 1242px;
+  }
+}
 
+/* histories section  */
 .histories p {
-  margin-bottom: 35px;
-  margin-left: 225px;
+  margin-bottom: 28px;
+}
+@media screen and (min-width: 1304px) {
+  .histories p {
+    margin-bottom: 35px;
+    margin-left: 225px;
+  }
 }
 
 .histories .img-thumb {
-  width: 844px;
   margin-bottom: 28px;
-  margin-left: auto;
-  margin-right: auto;
+}
+@media screen and (min-width: 1304px) {
+  .histories .img-thumb {
+    width: 844px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .histories .text-history {
   margin-left: 0;
-  margin-bottom: 100px;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 1304px) {
+  .histories .text-history {
+    margin-bottom: 100px;
+  }
 }
 
 .histories .text-decoration {
-  margin-left: 260px;
-  margin-bottom: 88px;
+  margin-left: 30px;
+}
+@media screen and (min-width: 1304px) {
+  .histories .text-decoration {
+    margin-left: 260px;
+    margin-bottom: 88px;
+  }
 }
 
-.histories-flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 24px;
-  margin-bottom: 79px;
+@media screen and (min-width: 1304px) {
+  .histories-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 24px;
+    margin-bottom: 79px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1303px) {
+  .histories-flex .img-thumb {
+    width: 627px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .text-history {
@@ -952,18 +1023,40 @@ a {
 }
 
 .text-decoration {
-  font-size: 48px;
+  font-size: 26px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .text-decoration {
+    font-size: 36px;
+  }
+}
+@media screen and (min-width: 1304px) {
+  .text-decoration {
+    font-size: 48px;
+  }
 }
 
 .text-decoration::before {
   content: "";
   display: inline-block;
-  width: 12px;
-  height: 12px;
+  width: 7px;
+  height: 7px;
   border-radius: 6px;
-  margin-right: 15px;
-  margin-bottom: 10px;
+  margin-right: 8px;
   background-color: var(--main-text-color);
+}
+@media screen and (min-width: 1304px) {
+  .text-decoration::before {
+    width: 12px;
+    height: 12px;
+    margin-right: 15px;
+  }
 }
 
 .index-bck {
@@ -971,9 +1064,6 @@ a {
   padding-left: 12px;
   padding-right: 12px;
   margin: 0 auto;
-  background-image: url("../images/elipses/Ellipse 24.png"), url("../images/elipses/Ellipse 25.png"), url("../images/elipses/Ellipse 26.png"), url("../images/elipses/Ellipse 27.png"), url("../images/elipses/Ellipse 28.png"), url("../images/elipses/Ellipse 29.png");
-  background-repeat: no-repeat;
-  background-position: 923px 22px, 768px 1970px, 124px 2861px, 748px 3940px, 64px 5600px, 963px 5531px;
 }
 @media screen and (min-width: 480px) {
   .index-bck {
@@ -988,17 +1078,17 @@ a {
 @media screen and (min-width: 1304px) {
   .index-bck {
     width: 1440px;
+    background-image: url("../images/elipses/Ellipse 24.png"), url("../images/elipses/Ellipse 25.png"), url("../images/elipses/Ellipse 26.png"), url("../images/elipses/Ellipse 27.png"), url("../images/elipses/Ellipse 28.png"), url("../images/elipses/Ellipse 29.png");
+    background-repeat: no-repeat;
+    background-position: 923px 22px, 768px 1970px, 124px 2861px, 748px 3940px, 64px 5600px, 963px 5531px;
   }
 }
 
 /* hero */
-.hero {
-  background-image: url(../images/elipses/Ellipse\ 23.png);
-  background-repeat: no-repeat;
-  background-position: 20px 60px;
-}
 @media screen and (min-width: 1304px) {
   .hero {
+    background-image: url(../images/elipses/Ellipse\ 23.png);
+    background-repeat: no-repeat;
     background-position: 152px 69px;
   }
 }
@@ -1244,7 +1334,8 @@ a {
 
 @media screen and (max-width: 767px) {
   .courses-list .btn-link {
-    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -1357,6 +1448,11 @@ a {
   }
 }
 
+.reviews a {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* HELP */
 .help {
   text-align: center;
@@ -1382,9 +1478,6 @@ a {
   padding-left: 12px;
   padding-right: 12px;
   margin: 0 auto;
-  background-image: url("../images/doodle_sketch/elipses/Ellipse1-min.png"), url("../images/doodle_sketch/elipses/Ellipse2-min.png"), url("../images/doodle_sketch/elipses/Ellipse3-min.png"), url("../images/doodle_sketch/elipses/Ellipse4-min.png"), url("../images/doodle_sketch/elipses/Ellipse5-min.png"), url("../images/doodle_sketch/elipses/Ellipse6-min.png");
-  background-repeat: no-repeat;
-  background-position: 178px 100px, 1111px 47px, 260px 920px, 890px 2595px, 265px 3435px, 16px 5140px;
 }
 @media screen and (min-width: 480px) {
   .sketch-bck {
@@ -1399,6 +1492,9 @@ a {
 @media screen and (min-width: 1304px) {
   .sketch-bck {
     width: 1440px;
+    background-image: url("../images/doodle_sketch/elipses/Ellipse1-min.png"), url("../images/doodle_sketch/elipses/Ellipse2-min.png"), url("../images/doodle_sketch/elipses/Ellipse3-min.png"), url("../images/doodle_sketch/elipses/Ellipse4-min.png"), url("../images/doodle_sketch/elipses/Ellipse5-min.png"), url("../images/doodle_sketch/elipses/Ellipse6-min.png");
+    background-repeat: no-repeat;
+    background-position: 178px 100px, 1111px 47px, 260px 920px, 890px 2595px, 265px 3435px, 16px 5140px;
   }
 }
 
@@ -1599,9 +1695,6 @@ a {
   padding-left: 12px;
   padding-right: 12px;
   margin: 0 auto;
-  background-image: url("../images/doodle_procreate/elipses/Ellipse1-min.png"), url("../images/doodle_procreate/elipses/Ellipse2-min.png"), url("../images/doodle_procreate/elipses/Ellipse3-min.png"), url("../images/doodle_procreate/elipses/Ellipse4-min.png"), url("../images/doodle_procreate/elipses/Ellipse5-min.png"), url("../images/doodle_procreate/elipses/Ellipse6-min.png"), url("../images/doodle_procreate/elipses/Ellipse7-min.png");
-  background-repeat: no-repeat;
-  background-position: 153px 170px, 705px 0px, 0px 1100px, 858px 1880px, 115px 3280px, 160px 5220px, 610px 4950px;
 }
 @media screen and (min-width: 480px) {
   .procreate-bck {
@@ -1616,6 +1709,9 @@ a {
 @media screen and (min-width: 1304px) {
   .procreate-bck {
     width: 1440px;
+    background-image: url("../images/doodle_procreate/elipses/Ellipse1-min.png"), url("../images/doodle_procreate/elipses/Ellipse2-min.png"), url("../images/doodle_procreate/elipses/Ellipse3-min.png"), url("../images/doodle_procreate/elipses/Ellipse4-min.png"), url("../images/doodle_procreate/elipses/Ellipse5-min.png"), url("../images/doodle_procreate/elipses/Ellipse6-min.png"), url("../images/doodle_procreate/elipses/Ellipse7-min.png");
+    background-repeat: no-repeat;
+    background-position: 153px 170px, 705px 0px, 0px 1100px, 858px 1880px, 115px 3280px, 160px 5220px, 610px 4950px;
   }
 }
 
@@ -1770,9 +1866,6 @@ a {
   padding-left: 12px;
   padding-right: 12px;
   margin: 0 auto;
-  background-image: url("../images/doodle_nft/elipses/Ellipse1-min.png"), url("../images/doodle_nft/elipses/Ellipse2-min.png"), url("../images/doodle_nft/elipses/Ellipse3-min.png"), url("../images/doodle_nft/elipses/Ellipse4-min.png"), url("../images/doodle_nft/elipses/Ellipse5-min.png"), url("../images/doodle_nft/elipses/Ellipse6-min.png"), url("../images/doodle_nft/elipses/Ellipse7-min.png"), url("../images/doodle_nft/elipses/Ellipse8-min.png"), url("../images/doodle_nft/elipses/Ellipse9-min.png");
-  background-repeat: no-repeat;
-  background-position: 60px 95px, 1040px 43px, 134px 1180px, 600px 2450px, 115px 3590px, 1000px 4600px, 110px 5350px, 100px 6400px, 750px 6400px;
 }
 @media screen and (min-width: 480px) {
   .nft-bck {
@@ -1787,6 +1880,9 @@ a {
 @media screen and (min-width: 1304px) {
   .nft-bck {
     width: 1440px;
+    background-image: url("../images/doodle_nft/elipses/Ellipse1-min.png"), url("../images/doodle_nft/elipses/Ellipse2-min.png"), url("../images/doodle_nft/elipses/Ellipse3-min.png"), url("../images/doodle_nft/elipses/Ellipse4-min.png"), url("../images/doodle_nft/elipses/Ellipse5-min.png"), url("../images/doodle_nft/elipses/Ellipse6-min.png"), url("../images/doodle_nft/elipses/Ellipse7-min.png"), url("../images/doodle_nft/elipses/Ellipse8-min.png"), url("../images/doodle_nft/elipses/Ellipse9-min.png");
+    background-repeat: no-repeat;
+    background-position: 60px 95px, 1040px 43px, 134px 1180px, 600px 2450px, 115px 3590px, 1000px 4600px, 110px 5350px, 100px 6400px, 750px 6400px;
   }
 }
 

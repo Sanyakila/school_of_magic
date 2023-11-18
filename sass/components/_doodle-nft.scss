@@ -4,20 +4,7 @@
     padding-right: 12px;
     margin: 0 auto;
 
-    background-image:
-        url("../images/doodle_nft/elipses/Ellipse1-min.png"),
-        url("../images/doodle_nft/elipses/Ellipse2-min.png"),
-        url("../images/doodle_nft/elipses/Ellipse3-min.png"),
-        url("../images/doodle_nft/elipses/Ellipse4-min.png"),
-        url("../images/doodle_nft/elipses/Ellipse5-min.png"),
-        url("../images/doodle_nft/elipses/Ellipse6-min.png"),
-        url("../images/doodle_nft/elipses/Ellipse7-min.png"),
-        url("../images/doodle_nft/elipses/Ellipse8-min.png"),
-        url("../images/doodle_nft/elipses/Ellipse9-min.png");
-
-    background-repeat: no-repeat;
-    background-position: 60px 95px, 1040px 43px, 134px 1180px, 600px 2450px, 115px 3590px, 1000px 4600px, 110px 5350px, 100px 6400px, 750px 6400px;
-
+   
     // mobile screen
         @media screen and (min-width: $mobile) {
             width: $mobile;
@@ -31,6 +18,19 @@
         // desktop screen
         @media screen and (min-width: $desktop) {
             width: 1440px;
+            background-image:
+                    url("../images/doodle_nft/elipses/Ellipse1-min.png"),
+                    url("../images/doodle_nft/elipses/Ellipse2-min.png"),
+                    url("../images/doodle_nft/elipses/Ellipse3-min.png"),
+                    url("../images/doodle_nft/elipses/Ellipse4-min.png"),
+                    url("../images/doodle_nft/elipses/Ellipse5-min.png"),
+                    url("../images/doodle_nft/elipses/Ellipse6-min.png"),
+                    url("../images/doodle_nft/elipses/Ellipse7-min.png"),
+                    url("../images/doodle_nft/elipses/Ellipse8-min.png"),
+                    url("../images/doodle_nft/elipses/Ellipse9-min.png");
+            
+            background-repeat: no-repeat;
+            background-position: 60px 95px, 1040px 43px, 134px 1180px, 600px 2450px, 115px 3590px, 1000px 4600px, 110px 5350px, 100px 6400px, 750px 6400px;
         }
 }
 

@@ -3,11 +3,7 @@
     padding-left: 12px;
     padding-right: 12px;
     margin: 0 auto;
-
-    background-image: url("../images/doodle_sketch/elipses/Ellipse1-min.png"), url('../images/doodle_sketch/elipses/Ellipse2-min.png'), url("../images/doodle_sketch/elipses/Ellipse3-min.png"), url("../images/doodle_sketch/elipses/Ellipse4-min.png"), url("../images/doodle_sketch/elipses/Ellipse5-min.png"), url("../images/doodle_sketch/elipses/Ellipse6-min.png");
-    background-repeat: no-repeat;
-    background-position: 178px 100px, 1111px 47px, 260px 920px, 890px 2595px, 265px 3435px, 16px 5140px;
-
+    
     // mobile screen
         @media screen and (min-width: $mobile) {
             width: $mobile;
@@ -21,6 +17,10 @@
         // desktop screen
         @media screen and (min-width: $desktop) {
             width: 1440px;
+
+            background-image: url("../images/doodle_sketch/elipses/Ellipse1-min.png"), url('../images/doodle_sketch/elipses/Ellipse2-min.png'), url("../images/doodle_sketch/elipses/Ellipse3-min.png"), url("../images/doodle_sketch/elipses/Ellipse4-min.png"), url("../images/doodle_sketch/elipses/Ellipse5-min.png"), url("../images/doodle_sketch/elipses/Ellipse6-min.png");
+            background-repeat: no-repeat;
+            background-position: 178px 100px, 1111px 47px, 260px 920px, 890px 2595px, 265px 3435px, 16px 5140px;
         }
 }
 

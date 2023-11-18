@@ -4,10 +4,7 @@
     padding-right: 12px;
     margin: 0 auto;
 
-    background-image: url("../images/elipses/Ellipse\ 24.png"), url('../images/elipses/Ellipse\ 25.png'), url("../images/elipses/Ellipse\ 26.png"), url("../images/elipses/Ellipse\ 27.png"), url("../images/elipses/Ellipse\ 28.png"), url("../images/elipses/Ellipse\ 29.png");
-    background-repeat: no-repeat;
-    background-position: 923px 22px, 768px 1970px, 124px 2861px, 748px 3940px, 64px 5600px, 963px 5531px;
-
+    
     // mobile screen
         @media screen and (min-width: $mobile) {
             width: $mobile;
@@ -21,17 +18,19 @@
         // desktop screen
         @media screen and (min-width: $desktop) {
             width: 1440px;
+            background-image: url("../images/elipses/Ellipse\ 24.png"), url('../images/elipses/Ellipse\ 25.png'), url("../images/elipses/Ellipse\ 26.png"), url("../images/elipses/Ellipse\ 27.png"), url("../images/elipses/Ellipse\ 28.png"), url("../images/elipses/Ellipse\ 29.png");
+            background-repeat: no-repeat;
+            background-position: 923px 22px, 768px 1970px, 124px 2861px, 748px 3940px, 64px 5600px, 963px 5531px;
         }
 }
 
 /* hero */
 
 .hero {
-    background-image: url(../images/elipses/Ellipse\ 23.png);
-    background-repeat: no-repeat;
-    background-position: 20px 60px;
-
+    
     @media screen and (min-width: $desktop) {
+        background-image: url(../images/elipses/Ellipse\ 23.png);
+        background-repeat: no-repeat;
         background-position: 152px 69px;
     }
 }
@@ -256,7 +255,8 @@
 
 .courses-list .btn-link {
     @media screen and (max-width: 767px) {
-        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
     }
     
 }
@@ -381,6 +381,11 @@
         height: 324px;
         
     }
+}
+
+.reviews a {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* HELP */
