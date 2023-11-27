@@ -683,6 +683,8 @@ a {
   left: 50%;
   -webkit-transform: translate(-80%, -50%) scale(120%);
           transform: translate(-80%, -50%) scale(120%);
+  width: 450px;
+  height: 664px;
   padding: 5px;
   text-align: center;
   border-radius: 50px;
@@ -700,8 +702,8 @@ a {
   .modal {
     width: 95%;
     max-width: 450px;
-    height: 50%;
-    max-height: 609px;
+    height: 80%;
+    max-height: 450px;
     overflow: scroll;
   }
 }
@@ -841,6 +843,8 @@ a {
   left: 50%;
   -webkit-transform: translate(-80%, -50%) scale3d(120%);
           transform: translate(-80%, -50%) scale3d(120%);
+  width: 844px;
+  height: 783px;
   text-align: center;
   border-radius: 50px;
   background-image: url("../images/footer-bck.png");
@@ -858,7 +862,7 @@ a {
     width: 95%;
     max-width: 450px;
     height: 70%;
-    max-height: 609px;
+    max-height: 560px;
     overflow: scroll;
   }
 }
