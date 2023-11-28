@@ -24,6 +24,9 @@
     border-radius: 20px;
     transition: background-color 300ms linear;
 
+    &:not(:hover):focus {
+        background-color: #D9D9D9;
+    }
     &:hover,
     &:focus {
         background-color: var(--accent-color);
@@ -103,6 +106,10 @@
     color: var(--title-text-color);
     cursor: url("../images/icomoon/magic-wand_5606317.png"), pointer;
     transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:not(:hover):focus {
+        color: var(--title-text-color);
+    }
 
     &:hover,
     &:focus {

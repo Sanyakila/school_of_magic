@@ -272,6 +272,10 @@ a {
   transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1), color 300ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 300ms linear;
   transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1), color 300ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 300ms linear, -webkit-box-shadow 300ms linear;
 }
+.btn-link:not(:hover):focus {
+  background-color: var(--btn-bck-color);
+  color: var(--title-text-color);
+}
 .btn-link:hover, .btn-link:focus {
   color: var(--accent-color);
   background-color: rgb(118, 21, 177);
@@ -534,6 +538,9 @@ a {
   -webkit-transition: background-color 300ms linear;
   transition: background-color 300ms linear;
 }
+.footer-text:not(:hover):focus {
+  background-color: #D9D9D9;
+}
 .footer-text:hover, .footer-text:focus {
   background-color: var(--accent-color);
 }
@@ -622,6 +629,9 @@ a {
   cursor: url("../images/icomoon/magic-wand_5606317.png"), pointer;
   -webkit-transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.social-link:not(:hover):focus {
+  color: var(--title-text-color);
 }
 .social-link:hover, .social-link:focus {
   color: var(--accent-color);
@@ -731,11 +741,24 @@ a {
 /* .backdrop.is-hidden .modal {
     transform: scale(5);
 } */
-.modal .icon {
+.modal .social-link {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   width: 100px;
   height: 100px;
   margin-top: 63px;
 }
+.modal .social-link:not(:hover):focus {
+  color: var(--title-text-color);
+}
+@media screen and (min-width: 1304px) {
+  .modal .social-link {
+    width: 170px;
+    height: 170px;
+  }
+}
+
 @media screen and (min-width: 1304px) {
   .modal .icon {
     width: 170px;
@@ -2243,6 +2266,9 @@ a {
   -webkit-box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.3);
           box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.3);
   z-index: 12;
+}
+.return:not(:hover):focus {
+  color: var(--title-text-color);
 }
 .return:hover, .return:focus {
   color: var(--accent-color);
