@@ -165,6 +165,10 @@ a {
   transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1), color 300ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1), color 300ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.btn:not(:hover):focus {
+  background-color: var(--btn-bck-color);
+  color: var(--title-text-color);
+}
 .btn:hover, .btn:focus {
   color: var(--accent-color);
   background-color: rgb(118, 21, 177);
@@ -198,8 +202,13 @@ a {
 }
 @media screen and (min-width: 768px) {
   .btn {
-    font-size: 40px;
+    font-size: 30px;
     min-width: 410px;
+  }
+}
+@media screen and (min-width: 1304px) {
+  .btn {
+    font-size: 40px;
   }
 }
 
@@ -212,7 +221,7 @@ a {
   top: 30px;
   left: 120px;
   opacity: 0;
-  background-image: url("../images/hat.png");
+  background-image: url("../images/hat.avif");
   background-repeat: no-repeat;
   background-size: contain;
   -webkit-transition: opacity 300ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -322,7 +331,7 @@ a {
   top: 30px;
   left: 117px;
   opacity: 0;
-  background-image: url("../images/hat.png");
+  background-image: url("../images/hat.avif");
   background-repeat: no-repeat;
   background-size: contain;
   -webkit-transition: opacity 300ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -516,7 +525,7 @@ a {
 .footer {
   width: 100%;
   margin: 0 auto;
-  background-image: url("../images/footer-bck.png");
+  background-image: url("../images/footer-bck.webp");
   background-position: center;
   background-size: cover;
 }
@@ -857,16 +866,11 @@ a {
 
 @media screen and (max-width: 767px) {
   .modal .btn {
-    margin-top: 40px;
+    margin-top: 55px;
     min-width: 272px;
   }
 }
 @media screen and (min-width: 768px) {
-  .modal .btn {
-    margin-top: 40px;
-  }
-}
-@media screen and (min-width: 1304px) {
   .modal .btn {
     margin-top: 76px;
   }
@@ -2178,7 +2182,7 @@ a {
   height: 100vh;
   padding: 32px;
   background-color: #c6c4c4;
-  z-index: 11;
+  z-index: 999;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
   -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -2205,7 +2209,6 @@ a {
 
 .mobile-nav {
   margin-top: 30px;
-  margin-bottom: auto;
 }
 
 .mobile-nav__list:not(:last-child) {
@@ -2236,6 +2239,7 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 40px;
+  margin-top: auto;
 }
 
 .mobile__social-link {

@@ -165,18 +165,13 @@
 
 .modal .btn {
     @media screen and (max-width: 767px) {
-        margin-top: 40px;
+        margin-top: 55px;
         min-width: 272px;
     }
 
         @media screen and (min-width: $tablet) {
-            margin-top: 40px;
-        }
-
-        @media screen and (min-width: $desktop) {
             margin-top: 76px;
         }
-    
 }
 
 /* Second modal window */
