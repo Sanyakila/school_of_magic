@@ -57,11 +57,11 @@
                 <div class="img-thumb">
                     <picture>
                         <source srcset="./images/main_page/main_hero.webp 1x, ./images/main_page/hero_@2x.webp 2x" media="(min-width: 1304px)"
-                            type="image/jpeg" />
+                            type="image/webp" />
                         <source srcset="./images/main_page/hero_@0.5x.webp 1x, ./images/main_page/main_hero.webp 2x" media="(min-width: 768x)"
-                            type="image/jpeg" />
+                            type="image/webp" />
                         <source srcset="./images/main_page/hero_@0.5x.webp 1x, ./images/main_page/main_hero.webp 2x" media="(max-width: 767px)"
-                            type="image/jpeg" />
+                            type="image/webp" />
                         <img src="./images/main_page/main_hero.webp" alt="довільний малюнок" />
                     </picture>
                 </div>
@@ -107,8 +107,8 @@
                 <h3 class="courses-text">Дудл у скетчі</h3>
                 <div class="img-thumb">
                     <img
-                    srcset="./images/main_page/sketch_@1x.jpg 1x, ./images/main_page/sketch_@2x.jpg 2x" 
-                    src="./images/main_page/sketch_@1x.jpg" 
+                    srcset="./images/main_page/sketch_@1x.webp 1x, ./images/main_page/sketch_@2x.webp 2x" 
+                    src="./images/main_page/sketch_@1x.webp" 
                     alt="довільний малюнок"
                     />
                 </div>
@@ -119,8 +119,8 @@
                 <h3 class="courses-text">Дудл у Procreate</h3>
                 <div class="img-thumb">
                     <img
-                    srcset="./images/main_page/procreate_@1x.jpg 1x, ./images/main_page/procreate_@2x.jpg 2x" 
-                    src="./images/main_page/procreate_@1x.jpg" alt="довільний малюнок" />
+                    srcset="./images/main_page/procreate_@1x.webp 1x, ./images/main_page/procreate_@2x.webp 2x" 
+                    src="./images/main_page/procreate_@1x.webp" alt="довільний малюнок" />
                 </div>
                 <p>2000грн</p>
                 <a href="./doodle_procreate.html" class="btn-link">Дізнатися про курс</a>
@@ -129,8 +129,8 @@
                 <h3 class="courses-text">Дудл NFT</h3>
                 <div class="img-thumb">
                     <img
-                    srcset="./images/main_page/nft_@1x.jpg 1x, ./images/main_page/nft_@2x.jpg 2x"
-                     src="./images/main_page/nft_@1x.jpg" alt="довільний малюнок" />
+                    srcset="./images/main_page/nft_@1x.webp 1x, ./images/main_page/nft_@2x.webp 2x"
+                     src="./images/main_page/nft_@1x.webp" alt="довільний малюнок" />
                 </div>
                 <p>3000грн</p>
                 <a href="./doodle_nft.html" class="btn-link">Дізнатися про курс</a>
@@ -146,7 +146,7 @@
                         <li>Відео уроки - ми створюємо цікаві та максимально корисні онлайн курси з малювання дудлів, з нами
                             ви самі
                             обираєте зручне
-                            місце та час заннять. А наші професійні викладачі завжди зможуть підтримати та дати зворотній
+                            місце та час занять. А наші професійні викладачі завжди зможуть підтримати та дати зворотній
                             зв’язок на
                             вашому творчому
                             шляху.
@@ -178,12 +178,14 @@
                     <button type="button" class="btn js-open-modal" data-modal="1">Задати питання</button>
                 </div>
             </section>
-            <a href="#header" class="return">
-                <svg class="return-arrow" widht="25" height="25">
-                    <use href="./images/sprite.svg#arrow-up">
-                    </use>
-                </svg>
-            </a>
+            <div id="arrowTop" hidden>
+                <a href="#header" class="return">
+                    <svg class="return-arrow" widht="25" height="25">
+                        <use href="./images/sprite.svg#arrow-up">
+                        </use>
+                    </svg>
+                </a>
+            </div>
       </main>
     </div>
     <footer class="section footer">

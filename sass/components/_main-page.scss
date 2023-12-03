@@ -303,14 +303,14 @@
 
     // mobile screen
 
-    background-image: url("../images/main_page/reviews_@0.5x.png");
+    background-image: url("../images/main_page/reviews_@0.5x.webp");
 
     // mobile screen retina
     
         @media screen and (min-device-pixel-ratio: 2),
         screen and (min-resolution: 192dpi),
         screen and (min-resolution: 2dppx) {
-            background-image: url("../images/main_page/reviews_@1x.png");
+            background-image: url("../images/main_page/reviews_@1x.webp");
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
@@ -318,7 +318,7 @@
     
         //tablet screen 
         @media screen and (min-width: 481px) {
-            background-image: url("../images/main_page/reviews_@0.5x.png");
+            background-image: url("../images/main_page/reviews_@0.5x.webp");
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
@@ -328,7 +328,7 @@
             @media screen and (min-device-pixel-ratio: 2),
             screen and (min-resolution: 192dpi),
             screen and (min-resolution: 2dppx) {
-                background-image: url("../images/main_page/reviews_@1x.png");
+                background-image: url("../images/main_page/reviews_@1x.webp");
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-position: center;
@@ -337,7 +337,7 @@
     
         //desktop screen 
         @media screen and (min-width: 769px) {
-            background-image: url("../images/main_page/reviews_@1x.png");
+            background-image: url("../images/main_page/reviews_@1x.webp");
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
@@ -347,7 +347,7 @@
             @media screen and (min-device-pixel-ratio: 2),
             screen and (min-resolution: 192dpi),
             screen and (min-resolution: 2dppx) {
-                background-image: url("../images/main_page/reviews_@2x.png");
+                background-image: url("../images/main_page/reviews_@2x.webp");
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-position: center;

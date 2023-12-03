@@ -12,8 +12,12 @@
     background-color: var(--btn-bck-color);
     // border: 1px solid #000000;
     border-radius: 50%;
-    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.3);
+    
     z-index: 12;
+    transition: 
+        background-color 300ms linear,
+        color 300ms linear,
+        box-shadow 300ms linear;
 
     &:not(:hover):focus {
         color: var(--title-text-color);
@@ -23,6 +27,7 @@
     &:focus {
         color: var(--accent-color);
         background-color: rgb(118, 21, 177);
+        box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.3);
     }    
     
     @media screen and (min-width: 1304px) {
