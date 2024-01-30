@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', function () {
   document.body.addEventListener(
     'keyup',
     function (e) {
-      var key = e.keyCode;
+      var key = e.code;
 
       if (key == 27) {
         document.querySelector('.modal.active').classList.remove('active');
@@ -92,3 +92,35 @@ document.addEventListener('DOMContentLoaded', function () {
     this.classList.remove('active');
   });
 });
+
+// const refs = {
+//   openModalBtn: document.querySelectorAll('.js-open-modal'),
+//   closeModalBtn: document.querySelectorAll('.js-modal-close'),
+//   overlay: document.querySelectorAll('.js-overlay-modal'),
+// };
+
+// refs.openModalBtn.addEventListener('click', onOpenModal);
+// refs.closeModalBtn.addEventListener('click', onCloseModal);
+// refs.overlay.addEventListener('click', onOverlayClick);
+
+// function onOpenModal() {
+//   window.addEventListener('keydown', onEscKeyPress);
+//   document.body.classList.add('active');
+// }
+
+// function onCloseModal() {
+//   window.removeEventListener('keydown', onEscKeyPress);
+//   document.body.classList.remove('active');
+// }
+
+// function onOverlayClick(event) {
+//   if (event.currentTarget === event.target) {
+//     onCloseModal()
+//   }
+// }
+
+// function onEscKeyPress(event) {
+//   if (event.code === 'Escape') {
+//     onCloseModal();
+//   }
+// }

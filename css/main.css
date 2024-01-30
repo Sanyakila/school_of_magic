@@ -720,7 +720,7 @@ a {
   padding: 5px;
   text-align: center;
   border-radius: 50px;
-  background-image: url("../images/footer-bck.png");
+  background-image: url("../images/footer-bck.webp");
   -webkit-transition: -webkit-transform 250ms linear;
   transition: -webkit-transform 250ms linear;
   transition: transform 250ms linear;
@@ -742,7 +742,8 @@ a {
 @media screen and (min-width: 1304px) {
   .modal {
     min-width: 844px;
-    min-height: 664px;
+    height: 80%;
+    max-height: 664px;
     padding: 33px;
   }
 }
